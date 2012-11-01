@@ -80,30 +80,38 @@
         <controls:Pivot>
             <!--Pivot item one-->
             <controls:PivotItem >
-                <!--Double line list with text wrapping-->
-                <ListBox x:Name="FirstListBox" Margin="0,0,0,0" ItemsSource="{Binding ComponentItems}">
-                    <ListBox.ItemTemplate>
-                        <DataTemplate>
-                            <StackPanel Margin="0,0,0,17" Width="432" Height="78">
-                                <!--<TextBlock Text="{Binding LineOne}" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>-->
-                                <!--<TextBlock Text="{Binding LineTwo}" TextWrapping="NoWrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>-->
-                                <TextBlock Text="{Binding ItemName}" FontSize="{StaticResource PhoneFontSizeLarge}" TextWrapping="NoWrap" VerticalAlignment="Center"/>
-                                <Button BorderThickness="0" Style="{StaticResource RoundButton}" Height="72" Width="72" Click="ImageButton_Click">
-                                    <Button.Content>
-                                        <Image Source="Image/button+.png"  Width="42" Height="42"></Image>
-                                    </Button.Content>
-                                </Button>
-                            </StackPanel>
-                        </DataTemplate>
-                    </ListBox.ItemTemplate>
-                </ListBox>
+                <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <!--Double line list with text wrapping-->
+                    <ListBox x:Name="FirstListBox" Margin="0,0,0,0" ItemsSource="{Binding ComponentItems}"  Grid.Row="0">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Margin="0,0,0,17" Width="432" Height="auto" Background="PapayaWhip">
+                                    <!--<TextBlock Text="{Binding LineOne}" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>-->
+                                    <!--<TextBlock Text="{Binding LineTwo}" TextWrapping="NoWrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>-->
+                                    <TextBlock Text="{Binding ItemName}" FontSize="{StaticResource PhoneFontSizeLarge}" TextWrapping="NoWrap" VerticalAlignment="Center"/>
+
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>                       
+                    </ListBox>
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Button Margin="0,0,0,0" BorderThickness="0" Style="{StaticResource RoundButton}" Height="72" Width="72" Click="ImageButton_Click">
+                            <Button.Content>
+                                <Image Source="Image/button+.png"  Width="42" Height="42"></Image>
+                            </Button.Content>
+                        </Button>
+                    </Grid>
+                </Grid>
             </controls:PivotItem>
         </controls:Pivot>
-        <Button BorderThickness="0" Style="{StaticResource RoundButton}" Height="72" Width="72" Click="ImageButton_Click">
-            <Button.Content>
-                <Image Source="Image/button+.png"  Width="42" Height="42"></Image>
-            </Button.Content>
-        </Button>
     </Grid>
 
     <!--Sample code showing usage of ApplicationBar-->

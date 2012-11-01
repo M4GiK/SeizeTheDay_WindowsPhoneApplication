@@ -10,8 +10,6 @@ D:\Studies\Jyväskylän ammattikorkeakoulu\Windows Phone Programming\Project\end
 D:\Studies\Jyväskylän ammattikorkeakoulu\Windows Phone Programming\Project\endProject\SeizeDay\SeizeDay\obj\Debug\SeizeDay.dll
 D:\Studies\Jyväskylän ammattikorkeakoulu\Windows Phone Programming\Project\endProject\SeizeDay\SeizeDay\obj\Debug\SeizeDay.pdb
 D:\Studies\Jyväskylän ammattikorkeakoulu\Windows Phone Programming\Project\endProject\SeizeDay\SeizeDay\obj\Debug\XapCacheFile.xml
-D:\Studies\Jyväskylän ammattikorkeakoulu\Windows Phone Programming\Project\endProject\SeizeDay\SeizeDay\Bin\Debug\Telerik.Windows.Controls.Primitives.dll
-D:\Studies\Jyväskylän ammattikorkeakoulu\Windows Phone Programming\Project\endProject\SeizeDay\SeizeDay\Bin\Debug\Telerik.Windows.Core.dll
 D:\Studies\Jyväskylän ammattikorkeakoulu\Windows Phone Programming\Project\endProject\SeizeDay\SeizeDay\Bin\Debug\System.Windows.Interactivity.dll
 D:\Studies\Jyväskylän ammattikorkeakoulu\Windows Phone Programming\Project\endProject\SeizeDay\SeizeDay\Bin\Debug\Telerik.Windows.Controls.Primitives.pdb
 D:\Studies\Jyväskylän ammattikorkeakoulu\Windows Phone Programming\Project\endProject\SeizeDay\SeizeDay\Bin\Debug\Telerik.Windows.Controls.Primitives.xml
@@ -30,3 +28,4 @@ D:\Studies\Jyväskylän ammattikorkeakoulu\Windows Phone Programming\Project\end
 D:\Studies\Jyväskylän ammattikorkeakoulu\Windows Phone Programming\Project\endProject\SeizeDay\SeizeDay\Bin\Debug\ko\System.Windows.Interactivity.resources.dll
 D:\Studies\Jyväskylän ammattikorkeakoulu\Windows Phone Programming\Project\endProject\SeizeDay\SeizeDay\Bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
 D:\Studies\Jyväskylän ammattikorkeakoulu\Windows Phone Programming\Project\endProject\SeizeDay\SeizeDay\Bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+D:\Studies\Jyväskylän ammattikorkeakoulu\Windows Phone Programming\Project\endProject\SeizeDay\SeizeDay\obj\Debug\SeizeDay.csprojResolveAssemblyReference.cache
