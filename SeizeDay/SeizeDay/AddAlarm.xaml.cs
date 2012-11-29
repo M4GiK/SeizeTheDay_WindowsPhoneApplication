@@ -92,7 +92,8 @@ namespace AlarmAlarm
             int h = Convert.ToInt16(tbxAlarmHour.Text);
             int min = Convert.ToInt16(tbxAlarmMin.Text);
             DateTime dt = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, h, min, 0);
-            if (dt < DateTime.Now) dt.AddDays(1);
+            if (
+                dt < DateTime.Now) dt = dt.AddDays(1);
             
             Uri navigationUri = new Uri("/ShowAlarm.xaml", UriKind.Relative);
 
@@ -102,8 +103,11 @@ namespace AlarmAlarm
            // reminder.Title = titleTextBox.Text;
            // reminder.Content = contentTextBox.Text;
             reminder.BeginTime = dt;//DateTime.Now.AddMinutes(1); //beginTime;
-            //reminder.ExpirationTime = DateTime.Now.AddMinutes(2); //expirationTime;
+            reminder.ExpirationTime = dt.AddMinutes(2);// DateTime.Now.AddMinutes(2); //expirationTime;
             reminder.NavigationUri = navigationUri;
+
+            // Register the reminder with the system.
+            ScheduledActionService.Add(reminder);
 
             NavigationService.GoBack();
         }

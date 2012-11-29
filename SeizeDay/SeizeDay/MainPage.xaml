@@ -31,13 +31,13 @@
                     </Grid.RowDefinitions>
                     <Grid>
                         <TextBlock Name="EmptyTextBlock">Where time of alarm should be displayed</TextBlock>
-                            <Button Margin="326,-10,-1,-10" BorderThickness="0" Name="btnAddAlarm" Height="92" Width="107" Click="ButtonAddAlarm_Click">
+                        <Button Margin="326,-10,-1,-10" BorderThickness="0" Name="btnAddAlarm" Height="92" Width="107" Click="ButtonAddAlarm_Click">
                             <Button.Content>
                                 <Image Source="Image/button+.png"  Width="52" Height="80"></Image>
                             </Button.Content>
                         </Button>
 
-                        <ListBox Name="NotificationListBox" Margin="6,68,-6,518" Grid.RowSpan="3" Visibility="Collapsed">
+                        <ListBox Name="NotificationListBox" Margin="0,0,0,0" Grid.RowSpan="3" Visibility="Collapsed">
                             <ListBox.ItemTemplate>
                                 <DataTemplate>
                                     <Grid Background="Transparent" Margin="0,0,0,30">
@@ -63,7 +63,7 @@
                     </Grid>
                     <!--Double line list with text wrapping-->
                     <Grid Height="0" Margin="0,0,0,72">
-                        <ListBox x:Name="FirstListBox" ItemsSource="{Binding ComponentItems}" Height="91" Margin="1,87,-1,-151">
+                        <ListBox x:Name="FirstListBox" ItemsSource="{Binding ComponentItems}" Margin="1,87,-1,-651">
                             <ListBox.ItemTemplate>
                                 <DataTemplate>
                                     <StackPanel Width="432" Height="auto" Background="PapayaWhip">
@@ -75,17 +75,6 @@
                                 </DataTemplate>
                             </ListBox.ItemTemplate>                       
                         </ListBox>
-                    </Grid>
-                    <Grid Grid.Row="2">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
-                   <!--     <Button Margin="0,0,0,0" BorderThickness="0" Style="{StaticResource RoundButton}" Height="72" Width="72" Click="ImageButton_Click">
-                            <Button.Content>
-                                <Image Source="Image/button+.png"  Width="42" Height="42"></Image>
-                            </Button.Content>
-                        </Button> -->
                     </Grid>
 
                 </Grid>

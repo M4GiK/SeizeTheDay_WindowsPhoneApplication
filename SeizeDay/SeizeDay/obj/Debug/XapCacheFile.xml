@@ -1,11 +1,11 @@
-﻿<xapCache source="C:\studia\project\repo6\endProject\SeizeDay\SeizeDay\Bin\Debug\SeizeDay.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="2012-11-29 14:55:51">
+﻿<xapCache source="C:\studia\project\repo6\endProject\SeizeDay\SeizeDay\Bin\Debug\SeizeDay.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="2012-11-29 18:15:52">
   <file source="C:\studia\project\repo6\endProject\SeizeDay\SeizeDay\Bin\Debug\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="2012-11-28 22:46:05" />
   <file source="C:\studia\project\repo6\endProject\SeizeDay\SeizeDay\Image\Background.png" archivePath="Image\Background.png" lastWriteTime="2012-11-27 12:33:26" />
   <file source="C:\studia\project\repo6\endProject\SeizeDay\SeizeDay\Image\ApplicationIcon.png" archivePath="Image\ApplicationIcon.png" lastWriteTime="2012-11-27 12:33:26" />
-  <file source="C:\studia\project\repo6\endProject\SeizeDay\SeizeDay\obj\Debug\SeizeDay.dll" archivePath="SeizeDay.dll" lastWriteTime="2012-11-29 14:55:51" />
+  <file source="C:\studia\project\repo6\endProject\SeizeDay\SeizeDay\obj\Debug\SeizeDay.dll" archivePath="SeizeDay.dll" lastWriteTime="2012-11-29 18:15:51" />
   <file source="c:\Program Files\Microsoft SDKs\Windows Phone\v7.1\Libraries\Silverlight\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="2012-03-19 16:29:06" />
   <file source="C:\studia\project\repo6\endProject\SeizeDay\SeizeDay\Bin\Debug\Telerik.Windows.Controls.Primitives.dll" archivePath="Telerik.Windows.Controls.Primitives.dll" lastWriteTime="2012-11-27 12:33:25" />
   <file source="C:\studia\project\repo6\endProject\SeizeDay\SeizeDay\Bin\Debug\Telerik.Windows.Core.dll" archivePath="Telerik.Windows.Core.dll" lastWriteTime="2012-11-27 12:33:25" />
-  <file source="C:\studia\project\repo6\endProject\SeizeDay\SeizeDay\Bin\Debug\System.Windows.Interactivity.dll" archivePath="System.Windows.Interactivity.dll" lastWriteTime="2011-08-17 01:48:22" />
-  <file source="C:\studia\project\repo6\endProject\SeizeDay\SeizeDay\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="2012-11-29 12:37:32" />
+  <file source="c:\Program Files\Microsoft SDKs\Expression\Blend\Windows Phone\v7.1\Libraries\System.Windows.Interactivity.dll" archivePath="System.Windows.Interactivity.dll" lastWriteTime="2011-08-17 01:48:22" />
+  <file source="C:\studia\project\repo6\endProject\SeizeDay\SeizeDay\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="2012-11-29 18:15:51" />
 </xapCache>
