@@ -3,12 +3,18 @@ using Microsoft.Phone.Controls;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
+using System;
+using Microsoft.Phone.Scheduler;
+using System.Collections.Generic;
+using System.Windows.Controls;
 
 
 namespace SeizeDay
 {
     public partial class MainPage : PhoneApplicationPage, INotifyPropertyChanged
     {
+        IEnumerable<ScheduledNotification> notifications;
+
         // Data context for the local database
         private ViewModels.Component ComponentDB;
 
@@ -167,10 +173,55 @@ namespace SeizeDay
             // Execute the query and place the results into a collection.
             ComponentItems = new ObservableCollection<ViewModels.ComponentItem>(ComponentItemInDB);
 
+            //Reset the ReminderListBox items when the page is navigated to.
+            ResetItemsList();
+
             // Call the base method.
             base.OnNavigatedTo(e);
         }
+        private void ResetItemsList()
+        {
+            // Use GetActions to retrieve all of the scheduled actions
+            // stored for this application. The type <Reminder> is specified
+            // to retrieve only Reminder objects.
+            //reminders = ScheduledActionService.GetActions<Reminder>();
+            notifications = ScheduledActionService.GetActions<ScheduledNotification>();
 
+            // If there are 1 or more reminders, hide the "no reminders"
+            // TextBlock. IF there are zero reminders, show the TextBlock.
+            //if (reminders.Count<Reminder>() > 0)
+            if (notifications.Count<ScheduledNotification>() > 0)
+            {
+                EmptyTextBlock.Visibility = Visibility.Collapsed;
+                btnAddAlarm.Visibility = Visibility.Collapsed;
+                NotificationListBox.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                EmptyTextBlock.Visibility = Visibility.Visible;
+                btnAddAlarm.Visibility = Visibility.Visible;
+                NotificationListBox.Visibility = Visibility.Collapsed;
+            }
+
+            
+            // Update the ReminderListBox with the list of reminders.
+            // A full MVVM implementation can automate this step.
+            NotificationListBox.ItemsSource = notifications;
+        }
+
+        private void ApplicationBarAddButton_Click(object sender, EventArgs e)
+        {
+
+
+            // Create a new to-do item based on the text box.
+            ViewModels.ComponentItem newComponent = new ViewModels.ComponentItem { ItemName = "component1" };
+
+            // Add a to-do item to the observable collection.
+            ComponentItems.Add(newComponent);
+
+            // Add a to-do item to the local database.
+            ComponentDB.ComponentItems.InsertOnSubmit(newComponent);
+        }
 
         #region INotifyPropertyChanged Members
 
@@ -185,5 +236,24 @@ namespace SeizeDay
             }
         }
         #endregion
+
+        private void ButtonAddAlarm_Click(object sender, RoutedEventArgs e)
+        {
+            // Navigate to the AddReminder page when the add button is clicked.
+            NavigationService.Navigate(new Uri("/AddAlarm.xaml", UriKind.RelativeOrAbsolute));
+        }
+
+        private void deleteButton_Click(object sender, RoutedEventArgs e)
+        {
+            // The scheduled action name is stored in the Tag property
+            // of the delete button for each reminder.
+            string name = (string)((Button)sender).Tag;
+
+            // Call Remove to unregister the scheduled action with the service.
+            ScheduledActionService.Remove(name);
+
+            // Reset the ReminderListBox items
+            ResetItemsList();
+        }
     }
 }
