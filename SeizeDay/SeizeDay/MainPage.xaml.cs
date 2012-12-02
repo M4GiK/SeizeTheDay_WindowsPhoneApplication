@@ -9,6 +9,7 @@ using System.Windows.Controls;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Scheduler;
 
+
 namespace SeizeDay
 {
     /// <summary>
@@ -214,28 +215,6 @@ namespace SeizeDay
         /// <returns>Date in DateTime format</returns>
         private DateTime toDate(string dateString)
         {
-            //string day;
-            //string month;
-            //string year;
-            //string hour;
-            //string minute;
-            //string secunde;
-
-            //string[] temp_1 = dateString.Split('/');
-
-            //month = temp_1[0];
-            //day = temp_1[1];
-
-            //string[] temp_2 = temp_1[2].Split(' ');
-
-            //year = temp_2[0];
-
-            //string[] temp_3 = temp_2[1].Split(':');
-
-            //hour = temp_3[0];
-            //minute = temp_3[1];
-            //secunde = temp_3[2];
-
             return DateTime.Parse(dateString);
         }
 
@@ -249,7 +228,7 @@ namespace SeizeDay
         private void ButtonAddAlarm_Click(object sender, RoutedEventArgs e)
         {
             // Navigate to the AddAlarm page when the add button is clicked.
-            NavigationService.Navigate(new Uri("/AddAlarm.xaml", UriKind.RelativeOrAbsolute));
+            NavigationService.Navigate(new Uri("/AddAlarm.xaml", UriKind.Relative));
 
         }
 
@@ -260,17 +239,19 @@ namespace SeizeDay
         /// </summary>
         /// <param name="sender">object</param>
         /// <param name="e">EventArgs</param>
-        private void ApplicationBarAddButton_Click(object sender, EventArgs e)
+        private void AddComponent_Click(object sender, EventArgs e)
         {
+            // Navigate to the ComponentPage page when the add button is clicked.
+            NavigationService.Navigate(new Uri("/ComponentPage.xaml", UriKind.Relative));
 
-            // Create a new to-do item based on the text box.
-            ViewModels.ComponentItem newComponent = new ViewModels.ComponentItem { ItemName = "component1" };
+            //// Create a new to-do item based on the text box.
+            //ViewModels.ComponentItem newComponent = new ViewModels.ComponentItem { ItemName = "component1" };
 
-            // Add a to-do item to the observable collection.
-            ComponentItems.Add(newComponent);
+            //// Add a to-do item to the observable collection.
+            //ComponentItems.Add(newComponent);
 
-            // Add a to-do item to the local database.
-            ComponentDB.ComponentItems.InsertOnSubmit(newComponent);
+            //// Add a to-do item to the local database.
+            //ComponentDB.ComponentItems.InsertOnSubmit(newComponent);
 
         }
 
@@ -288,7 +269,97 @@ namespace SeizeDay
             // Reset the ReminderListBox items
             //ResetItemsList();
         }
-      
+
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender">object</param>
+        /// <param name="e">SelectionChangedEventArgs</param>
+        private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            MessageBox.Show("KLIKNIETE" + sender + " ,  " + e);
+
+        }
+
+
+
+        /// <summary>
+        /// Method called before going to another page.
+        /// </summary>
+        /// <param name="e">NavigationEventArgs</param>
+        protected override void OnNavigatedFrom(System.Windows.Navigation.NavigationEventArgs e)
+        {
+            // Call the base method.
+            base.OnNavigatedFrom(e);
+
+            // Save changes to the database.
+            ComponentDB.SubmitChanges();
+        }
+
+
+
+        /// <summary>
+        ///  Method called after back from another page.
+        /// </summary>
+        /// <param name="e">NavigationEventArgs</param>
+        protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
+        {
+            // Define the query to gather all of the to-do items.
+            var ComponentItemInDB = from ViewModels.ComponentItem todo in ComponentDB.ComponentItems select todo;
+
+            // Execute the query and place the results into a collection.
+            ComponentItems = new ObservableCollection<ViewModels.ComponentItem>(ComponentItemInDB);
+
+            // Define the query to gather all of the time items.
+            var TimeItemInDB = from ViewModels.TimeItem times in ComponentDB.TimeItems select times;
+
+            // Execute the query and place the results into a collection.
+            TimeItems = new ObservableCollection<ViewModels.TimeItem>(TimeItemInDB);
+
+            //Reset the ReminderListBox items when the page is navigated to.
+            //ResetItemsList();
+
+            // Call the base method.
+            base.OnNavigatedTo(e);
+
+            // Create a strings for containing data about alarm
+            string alarmName;
+            string reminderName;
+            string time;
+
+            // Get vaule from AddAlarm page
+            NavigationContext.QueryString.TryGetValue("alarm", out alarmName);
+            NavigationContext.QueryString.TryGetValue("reminder", out reminderName);
+            NavigationContext.QueryString.TryGetValue("time", out time);
+
+            // Create a new to-do item based on the string.
+            ViewModels.TimeItem newComponent = new ViewModels.TimeItem
+            {
+                ItemAlarmName = alarmName,
+                ItemReminderName = reminderName,
+                DataField = time
+            };
+
+            // Add a to-do item to the observable collection.
+            TimeItems.Add(newComponent);
+
+            // Add a to-do item to the local database.
+            ComponentDB.TimeItems.InsertOnSubmit(newComponent);
+
+
+        }
+
+
+
+
+
+
+
+
+
+
 
         //private void deleteTaskButton_Click(object sender, RoutedEventArgs e)
         //{
@@ -337,71 +408,6 @@ namespace SeizeDay
 
 
 
-        /// <summary>
-        /// Method called before going to another page.
-        /// </summary>
-        /// <param name="e">NavigationEventArgs</param>
-        protected override void OnNavigatedFrom(System.Windows.Navigation.NavigationEventArgs e)
-        {
-            // Call the base method.
-            base.OnNavigatedFrom(e);
-
-            // Save changes to the database.
-            ComponentDB.SubmitChanges();
-        }
-
-
-
-        /// <summary>
-        ///  Method called after back from another page.
-        /// </summary>
-        /// <param name="e">NavigationEventArgs</param>
-        protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
-        {
-            // Define the query to gather all of the to-do items.
-            var ComponentItemInDB = from ViewModels.ComponentItem todo in ComponentDB.ComponentItems select todo;
-
-            // Execute the query and place the results into a collection.
-            ComponentItems = new ObservableCollection<ViewModels.ComponentItem>(ComponentItemInDB);
-
-            // Define the query to gather all of the time items.
-            var TimeItemInDB = from ViewModels.TimeItem times in ComponentDB.TimeItems select times;
-
-            // Execute the query and place the results into a collection.
-            TimeItems = new ObservableCollection<ViewModels.TimeItem>(TimeItemInDB);
-            
-            //Reset the ReminderListBox items when the page is navigated to.
-            //ResetItemsList();
-
-            // Call the base method.
-            base.OnNavigatedTo(e);
-
-            // Create a strings for containing data about alarm
-            string alarmName;
-            string reminderName;
-            string time;
-
-            // Get vaule from AddAlarm page
-            NavigationContext.QueryString.TryGetValue("alarm", out alarmName);
-            NavigationContext.QueryString.TryGetValue("reminder", out reminderName);
-            NavigationContext.QueryString.TryGetValue("time", out time);
-
-            // Create a new to-do item based on the string.
-            ViewModels.TimeItem newComponent = new ViewModels.TimeItem 
-            { 
-                ItemAlarmName = alarmName,
-                ItemReminderName = reminderName,
-                DataField = time
-            };
-
-            // Add a to-do item to the observable collection.
-            TimeItems.Add(newComponent);
-
-            // Add a to-do item to the local database.
-            ComponentDB.TimeItems.InsertOnSubmit(newComponent);
-
-
-        }
 
 
 
@@ -449,5 +455,6 @@ namespace SeizeDay
             }
         }
         #endregion
+
     }
 }

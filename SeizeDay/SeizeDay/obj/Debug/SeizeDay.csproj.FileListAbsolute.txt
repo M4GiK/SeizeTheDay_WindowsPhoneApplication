@@ -56,3 +56,4 @@ D:\Studies\Jyväskylän ammattikorkeakoulu\Windows Phone Programming\Project\end
 D:\Studies\Jyväskylän ammattikorkeakoulu\Windows Phone Programming\Project\endProject\SeizeDay\SeizeDay\obj\Debug\MainPage.g.cs
 D:\Studies\Jyväskylän ammattikorkeakoulu\Windows Phone Programming\Project\endProject\SeizeDay\SeizeDay\Bin\Debug\microsoft.phone.controls.toolkit.dll
 D:\Studies\Jyväskylän ammattikorkeakoulu\Windows Phone Programming\Project\endProject\SeizeDay\SeizeDay\obj\Debug\ShowSeizeDay.g.cs
+D:\Studies\Jyväskylän ammattikorkeakoulu\Windows Phone Programming\Project\endProject\SeizeDay\SeizeDay\obj\Debug\ComponentPage.g.cs
