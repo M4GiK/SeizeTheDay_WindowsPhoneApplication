@@ -4,6 +4,103 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True"
+    Loaded="MainPage_Loaded">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentGrid" Grid.Row="1">
+            <Grid Width="150" Height="150" Margin="0,0,330,612">
+                <Ellipse x:Name="ClockFaceEllipse" Style="{StaticResource ClockFace}">
+                </Ellipse>
+                <Canvas x:Name="ClockHandsCanvas">
+                    <Canvas.Resources>
+                        <Storyboard x:Name="ClockStoryboard">
+                            <DoubleAnimation x:Name="HourAnimation"
+                                             Storyboard.TargetName="HourHandTransform"
+                                             Storyboard.TargetProperty="Angle"
+                                             Duration="12:0:0" RepeatBehavior="Forever" To="360" />
+                            <DoubleAnimation x:Name="MinuteAnimation"
+                                             Storyboard.TargetName="MinuteHandTransform" 
+                                             Storyboard.TargetProperty="Angle"
+                                             Duration="1:0:0" RepeatBehavior="Forever" To="360" />
+                            <DoubleAnimation x:Name="SecondAnimation"
+                                             Storyboard.TargetName="SecondHandTransform" 
+                                             Storyboard.TargetProperty="Angle"
+                                             Duration="0:1:0" RepeatBehavior="Forever" To="360" />
+                        </Storyboard>
+                    </Canvas.Resources>
+                    <Rectangle Canvas.ZIndex="3" Width="2" Height="87" RadiusX="1" RadiusY="1" Style="{StaticResource SecondHand}" Canvas.Left="76.5" Canvas.Top="8">
+                        <Rectangle.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform CenterX="1" CenterY="67" x:Name="SecondHandTransform" />
+                            </TransformGroup>
+                        </Rectangle.RenderTransform>
+                    </Rectangle>
+                    <Rectangle Canvas.ZIndex="2" Width="4" Height="67" RadiusX="2" RadiusY="2" Style="{StaticResource ClockHand}" Canvas.Left="75.5" Canvas.Top="8">
+                        <Rectangle.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform CenterX="2" CenterY="67" x:Name="MinuteHandTransform" />
+                            </TransformGroup>
+                        </Rectangle.RenderTransform>
+                    </Rectangle>
+                    <Ellipse Canvas.ZIndex="0" Width="5" Height="5" Style="{StaticResource ClockCenter}" Canvas.Left="75" Canvas.Top="75" />
+                    <Rectangle Canvas.ZIndex="1" Width="5" Height="45" RadiusX="3" RadiusY="3" Style="{StaticResource ClockHand}" Canvas.Left="75" Canvas.Top="30">
+                        <Rectangle.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform CenterX="2.5" CenterY="45" x:Name="HourHandTransform" />
+                            </TransformGroup>
+                        </Rectangle.RenderTransform>
+                    </Rectangle>
+                </Canvas>
+            </Grid>
+            <ProgressBar x:Name="myProgressBar" HorizontalAlignment="Left" Height="80" Width="400" Margin="40,384,0,0" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Height="150" Width="330" Margin="150,3,0,615" Grid.Row="1">
+            <ListBox x:Name="alarmList" ItemsSource="{Binding TimeItems}" Width="255" Height="150" Margin="0,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Width="255" Height="50" Margin="0,0,0,0" x:Name="AlarmTextBlock" TextWrapping="Wrap" Style="{StaticResource PhoneTextLargeStyle}" Text="{Binding DataField}" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <Button Height="75" Width="75" Margin="255,35,6,0" Style="{StaticResource RoundButton}" BorderThickness="0" Name="btnAddAlarm" Click="ButtonAddAlarm_Click" VerticalAlignment="Top">
+                <Button.Content>
+                    <Image Width="40" Height="40" Margin="-20,-20,-20,-20" Source="Image/button+.png"></Image>
+                </Button.Content>
+            </Button>
+        </Grid>     
+    </Grid>
+
+</phone:PhoneApplicationPage>
+
+
+
+
+
+
+
+
+
+<!--<phone:PhoneApplicationPage 
+    x:Class="SeizeDay.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -16,12 +113,12 @@
     shell:SystemTray.IsVisible="True">
 
 
-    <!--LayoutRoot is the root grid where all page content is placed-->
+    LayoutRoot is the root grid where all page content is placed
     <Grid x:Name="LayoutRoot" Background="Transparent">
         <ProgressBar Height="13" HorizontalAlignment="Left"  Name="myProgressBar" VerticalAlignment="Top" Width="460" />
-        <!--Pivot Control-->
+        Pivot Control
         <controls:Pivot>
-            <!--Pivot item one-->
+            Pivot item one
             <controls:PivotItem >
                 <Grid x:Name="ContentPanel" Grid.Row="0" Margin="12,0,12,0">
                     <Grid.RowDefinitions>
@@ -61,14 +158,14 @@
                             </ListBox.ItemTemplate>
                         </ListBox>
                     </Grid>
-                    <!--Double line list with text wrapping-->
+                    Double line list with text wrapping
                     <Grid Height="0" Margin="0,0,0,72">
                         <ListBox x:Name="FirstListBox" ItemsSource="{Binding ComponentItems}" Margin="1,87,-1,-651">
                             <ListBox.ItemTemplate>
                                 <DataTemplate>
                                     <StackPanel Width="432" Height="auto" Background="PapayaWhip">
-                                        <!--<TextBlock Text="{Binding LineOne}" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>-->
-                                        <!--<TextBlock Text="{Binding LineTwo}" TextWrapping="NoWrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>-->
+                                        <TextBlock Text="{Binding LineOne}" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
+                                        <TextBlock Text="{Binding LineTwo}" TextWrapping="NoWrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
                                         <TextBlock Text="{Binding ItemName}" FontSize="{StaticResource PhoneFontSizeLarge}" TextWrapping="NoWrap" VerticalAlignment="Center"/>
 
                                     </StackPanel>
@@ -82,11 +179,11 @@
         </controls:Pivot>
     </Grid>
 
-    <!--Sample code showing usage of ApplicationBar -->
+    Sample code showing usage of ApplicationBar
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
             <shell:ApplicationBarIconButton IconUri="Image/button.png" Text="Add" Click="ApplicationBarAddButton_Click"/>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar> 
 
-</phone:PhoneApplicationPage>
+</phone:PhoneApplicationPage>-->
