@@ -21,6 +21,11 @@ namespace SeizeDay.ViewModels
         public Table<ComponentItem> ComponentItems;
 
         /// <summary>
+        /// Specify a single table for the to-do items.
+        /// </summary>
+        public Table<ToDoItem> ToDoItems;
+
+        /// <summary>
         /// Specify a single table for the time items.
         /// </summary>
         public Table<TimeItem> TimeItems;

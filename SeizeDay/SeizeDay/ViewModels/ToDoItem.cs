@@ -8,13 +8,13 @@ namespace SeizeDay.ViewModels
     /// Table in Database containing inforamtian about ...
     /// </summary>
     [Table]
-    public class ComponentItem : INotifyPropertyChanged, INotifyPropertyChanging
+    public class ToDoItem : INotifyPropertyChanged, INotifyPropertyChanging
     {
         // Define ID: private field, public property and database column.
         private int _componentItemId;
-
+        
         [Column(IsPrimaryKey = true, IsDbGenerated = true, DbType = "INT NOT NULL Identity", CanBeNull = false, AutoSync = AutoSync.OnInsert)]
-        public int ItemId
+        public int ToDoItemId
         {
             get
             {
@@ -48,6 +48,27 @@ namespace SeizeDay.ViewModels
                     NotifyPropertyChanging("ItemName");
                     _itemName = value;
                     NotifyPropertyChanged("ItemName");
+                }
+            }
+        }
+
+        // Define completion value: private field, public property and database column.
+        private bool _isComplete;
+
+        [Column]
+        public bool IsComplete
+        {
+            get
+            {
+                return _isComplete;
+            }
+            set
+            {
+                if (_isComplete != value)
+                {
+                    NotifyPropertyChanging("IsComplete");
+                    _isComplete = value;
+                    NotifyPropertyChanged("IsComplete");
                 }
             }
         }

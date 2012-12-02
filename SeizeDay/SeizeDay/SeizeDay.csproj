@@ -85,7 +85,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\Component.cs" />
     <Compile Include="ViewModels\ComponentItem.cs" />
-    <Compile Include="ViewModels\Components.cs" />
+    <Compile Include="ViewModels\Maintenance.cs" />
+    <Compile Include="ViewModels\ToDoItem.cs" />
     <Compile Include="ViewModels\ItemViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\TimeItem.cs" />

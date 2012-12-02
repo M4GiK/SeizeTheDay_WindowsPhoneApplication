@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Windows;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Scheduler;
 
@@ -59,10 +60,9 @@ namespace AlarmAlarm
 
             // Register the alarm with the system.
             ScheduledActionService.Add(alarm);
-
             
             // Navigate back to the main page.
-             NavigationService.Navigate(new Uri("/MainPage.xaml?alarm=" + nameAlarm + "&reminder=" + nameReminder + "&time=" + time.ToString(), UriKind.Relative));
+            NavigationService.Navigate(new Uri("/MainPage.xaml?alarm=" + nameAlarm + "&reminder=" + nameReminder + "&time=" + time.ToString(), UriKind.Relative));
         }
         
     }

@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Globalization;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
-
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Scheduler;
+using SeizeDay.ViewModels;
 
 
 namespace SeizeDay
@@ -92,7 +93,7 @@ namespace SeizeDay
 
             // Checking if date is not validate, remove from database
             ValidateDate();
-           
+
         }
 
 
@@ -146,12 +147,14 @@ namespace SeizeDay
                     App.ViewModel.LoadData();
                 }
 
+                Clock_Loaded(sender, e);
+
                 // Hide loading.
                 myProgressBar.IsEnabled = false;
                 myProgressBar.IsIndeterminate = false;
                 myProgressBar.Visibility = System.Windows.Visibility.Collapsed;
 
-                Clock_Loaded(sender, e);
+                
 
             }
             catch (Exception ex)
@@ -187,35 +190,18 @@ namespace SeizeDay
         /// </summary>
         private void ValidateDate()
         {
-            for (int i = 0; i < 10; i++)
-            {
 
-                // Define the query to gather all of the time items.
-                //IQueryable TimeQuery = from ViewModels.TimeItem times in ComponentDB.TimeItems where toDate(times.DataField) < DateTime.Now select times;
+            // Define the query to gather all of the time items.
+            //var olderThanDate = from ViewModels.TimeItem times in ComponentDB.TimeItems where toDate(times.DataField) < toDate(DateTime.Now.ToString()) select times;
+            //var olderThanDate = ComponentDB.TimeItems.Where(item => item.DataField.toDate() < DateTime.Now.ToString().toDate());
 
-                //// Execute the query and place the results into a collection.
-                ////TimeItems = new ObservableCollection<ViewModels.TimeItem>(TimeQuery);
+                // Delete city from the context.
+            //ComponentDB.TimeItems.DeleteAllOnSubmit(olderThanDate);
 
-                //// Delete city from the context.
-                //ComponentDB.TimeItems.DeleteOnSubmit(TimeQuery);
-
-                //// Save changes to the database.
-                //ComponentDB.SubmitChanges();
-
-            }
-
-        }
+            // Save changes to the database.
+            //ComponentDB.SubmitChanges();
 
 
-
-        /// <summary>
-        /// This method changing date in string to object in DataTime
-        /// </summary>
-        /// <param name="dateString">string</param>
-        /// <returns>Date in DateTime format</returns>
-        private DateTime toDate(string dateString)
-        {
-            return DateTime.Parse(dateString);
         }
 
 
@@ -312,6 +298,79 @@ namespace SeizeDay
             // Execute the query and place the results into a collection.
             ComponentItems = new ObservableCollection<ViewModels.ComponentItem>(ComponentItemInDB);
 
+            // Create a strings for containing data about chosen component
+            string component;
+
+            // Try get value for component
+            if (NavigationContext.QueryString.TryGetValue("component", out component))
+            {
+                if (component.Equals("listToDo"))
+                {
+                    var firstOccurence = ComponentItems.Where(item => item.ItemName == "List to do");
+
+                    if (firstOccurence.Count() == 0)
+                    {
+                        // Create a new to-do item based on the text box.
+                        ViewModels.ComponentItem newComponent = new ViewModels.ComponentItem { ItemName = "List to do" };
+
+                        // Add a to-do item to the observable collection.
+                        ComponentItems.Add(newComponent);
+
+                        // Add a component item to the local database
+                        ComponentDB.ComponentItems.InsertOnSubmit(newComponent);
+                    }
+                }
+                else if (component.Equals("weather"))
+                {
+                    var firstOccurence = ComponentItems.Where(item => item.ItemName == "Weather");
+
+                    if (firstOccurence.Count() == 0)
+                    {
+                        // Create a new to-do item based on the text box.
+                        ViewModels.ComponentItem newComponent = new ViewModels.ComponentItem { ItemName = "Weather" };
+
+                        // Add a to-do item to the observable collection.
+                        ComponentItems.Add(newComponent);
+
+                        // Add a component item to the local database
+                        ComponentDB.ComponentItems.InsertOnSubmit(newComponent);
+                    }
+                }
+                else if (component.Equals("news"))
+                {
+                    var firstOccurence = ComponentItems.Where(item => item.ItemName == "News");
+
+                    if (firstOccurence.Count() == 0)
+                    {
+                        // Create a new to-do item based on the text box.
+                        ViewModels.ComponentItem newComponent = new ViewModels.ComponentItem { ItemName = "News" };
+
+                        // Add a to-do item to the observable collection.
+                        ComponentItems.Add(newComponent);
+
+                        // Add a component item to the local database
+                        ComponentDB.ComponentItems.InsertOnSubmit(newComponent);
+                    }
+                }
+                else if (component.Equals("aphorism"))
+                {
+                    var firstOccurence = ComponentItems.Where(item => item.ItemName == "Aphorism");
+
+                    if (firstOccurence.Count() == 0)
+                    {
+                        // Create a new to-do item based on the text box.
+                        ViewModels.ComponentItem newComponent = new ViewModels.ComponentItem { ItemName = "Aphorism" };
+
+                        // Add a to-do item to the observable collection.
+                        ComponentItems.Add(newComponent);
+
+                        // Add a component item to the local database
+                        ComponentDB.ComponentItems.InsertOnSubmit(newComponent);
+                    }
+                }
+            }
+
+
             // Define the query to gather all of the time items.
             var TimeItemInDB = from ViewModels.TimeItem times in ComponentDB.TimeItems select times;
 
@@ -335,19 +394,18 @@ namespace SeizeDay
             NavigationContext.QueryString.TryGetValue("time", out time);
 
             // Create a new to-do item based on the string.
-            ViewModels.TimeItem newComponent = new ViewModels.TimeItem
+            ViewModels.TimeItem newTimeItem = new ViewModels.TimeItem
             {
                 ItemAlarmName = alarmName,
                 ItemReminderName = reminderName,
                 DataField = time
             };
 
-            // Add a to-do item to the observable collection.
-            TimeItems.Add(newComponent);
+            // Add a alarm item to the observable collection.
+            TimeItems.Add(newTimeItem);
 
-            // Add a to-do item to the local database.
-            ComponentDB.TimeItems.InsertOnSubmit(newComponent);
-
+            // Add a alarm item to the local database.
+            ComponentDB.TimeItems.InsertOnSubmit(newTimeItem);
 
         }
 
