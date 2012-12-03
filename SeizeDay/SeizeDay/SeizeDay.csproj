@@ -63,6 +63,7 @@
     <Reference Include="System.Net" />
     <Reference Include="System.Xml" />
     <Reference Include="mscorlib.extensions" />
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="Telerik.Windows.Controls.Primitives, Version=2012.3.1016.2040, Culture=neutral, PublicKeyToken=5803cfa389c90ce7" />
     <Reference Include="Telerik.Windows.Core, Version=2012.3.1016.2040, Culture=neutral, PublicKeyToken=5803cfa389c90ce7" />
   </ItemGroup>
@@ -90,6 +91,10 @@
     <Compile Include="ViewModels\ItemViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\TimeItem.cs" />
+    <Compile Include="WeatherInfo.cs" />
+    <Compile Include="WeatherSettings.xaml.cs">
+      <DependentUpon>WeatherSettings.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -115,6 +120,10 @@
     <Page Include="ShowSeizeDay.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WeatherSettings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>

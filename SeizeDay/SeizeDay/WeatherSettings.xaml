@@ -1,0 +1,81 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="SeizeDay.WeatherSettings"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="MY APPLICATION" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="page name" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Grid x:Name="Options">
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="60,53,0,0" Name="textBlock1" Text="Set location of weather forecast:" VerticalAlignment="Top" />
+            <CheckBox Content="Auto" Height="72" HorizontalAlignment="Left" Margin="60,100,0,0" Name="cbxLocationAuto" VerticalAlignment="Top" IsEnabled="False" />
+            <CheckBox Content="Set location manually" Height="72" HorizontalAlignment="Left" Margin="60,235,0,0" Name="cbxLocationMan" IsChecked="True" VerticalAlignment="Top" />
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="111,164,0,0" Name="textBlock2" Text="Set location based on GPS" VerticalAlignment="Top" />
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="97,307,0,0" Name="tbxCity" Text="Cracow" VerticalAlignment="Top" Width="353" />
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="97,385,0,0" Name="tbxCountry" Text="Poland" VerticalAlignment="Top" Width="353" />
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="12,330,0,0" Name="textBlock3" Text="City:" VerticalAlignment="Top" />
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="9,406,0,0" Name="textBlock4" Text="Country:" VerticalAlignment="Top" />
+            <Button Content="Save" Height="72" HorizontalAlignment="Left" Margin="141,529,0,0" Name="btnSaveLocation" VerticalAlignment="Top" Width="160" Click="btnSaveLocation_Click" />
+        </Grid>
+        <Grid x:Name="Weather" Visibility="Collapsed">
+                <ListBox  Height="99" HorizontalAlignment="Left" Margin="0,20,0,0" Name="listBoxc" VerticalAlignment="Top" Width="460" ItemsSource="{Binding xyz}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" Height="99" >
+                                <Grid Height="100">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="100"></ColumnDefinition>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image  Grid.Column="0" Height="100" Width="100" Source="{Binding Path=icon}"></Image>
+                                    <TextBlock Text="{Binding Path=observation_time}" Foreground="Orange"  Grid.Column="1" Margin="10,10,10,60"></TextBlock>
+                                    <TextBlock Grid.Column="1" Margin="10,40,300,30" Text="C: "></TextBlock>
+                                    <TextBlock Text="{Binding Path=temp_C}" Grid.Column="1" Margin="70,40,250,30" FontWeight="Bold"></TextBlock>
+                                    <TextBlock Text="{Binding Path=condition}" Grid.Column="1" Margin="10,75,10,0"></TextBlock>
+
+                                </Grid>
+                            </StackPanel>
+                        </DataTemplate>
+
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+        </Grid>
+    </Grid>
+ 
+    <!--Sample code showing usage of ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+</phone:PhoneApplicationPage>

@@ -369,8 +369,9 @@ namespace SeizeDay
 
                     if (firstOccurence.Count() == 0)
                     {
+
                         // Create a new to-do item based on the text box.
-                        ViewModels.ComponentItem newComponent = new ViewModels.ComponentItem { ItemName = "List to do" };
+                        ViewModels.ComponentItem newComponent = new ViewModels.ComponentItem { ItemName = "List to do"};
 
                         // Add a to-do item to the observable collection.
                         ComponentItems.Add(newComponent);
@@ -385,8 +386,11 @@ namespace SeizeDay
 
                     if (firstOccurence.Count() == 0)
                     {
+                        string city;
+                        NavigationContext.QueryString.TryGetValue("city", out city);
+
                         // Create a new to-do item based on the text box.
-                        ViewModels.ComponentItem newComponent = new ViewModels.ComponentItem { ItemName = "Weather" };
+                        ViewModels.ComponentItem newComponent = new ViewModels.ComponentItem { ItemName = "Weather", Data = city  };
 
                         // Add a to-do item to the observable collection.
                         ComponentItems.Add(newComponent);

@@ -51,7 +51,10 @@ namespace SeizeDay
             Weather.Background = Application.Current.Resources["PhoneAccentBrush"] as SolidColorBrush;
 
             // Navigate back to the main page.
-            NavigationService.Navigate(new Uri("/MainPage.xaml?component=weather", UriKind.Relative));
+            //NavigationService.Navigate(new Uri("/MainPage.xaml?component=weather", UriKind.Relative));
+
+            // Navigate to setting of weather component
+            NavigationService.Navigate(new Uri("/WeatherSettings.xaml", UriKind.Relative));
         }
 
 
