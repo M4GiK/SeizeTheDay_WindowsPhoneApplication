@@ -5,49 +5,91 @@ using System.Data.Linq.Mapping;
 namespace SeizeDay.ViewModels
 {
     /// <summary>
-    /// Table in Database containing inforamtian about ...
+    /// Table in Database containing inforamtian about saved alarms
     /// </summary>
     [Table]
-    public class ComponentItem : INotifyPropertyChanged, INotifyPropertyChanging
+    public class TimeItem : INotifyPropertyChanged, INotifyPropertyChanging
     {
         // Define ID: private field, public property and database column.
-        private int _componentItemId;
+        private int _timeItemId;
 
         [Column(IsPrimaryKey = true, IsDbGenerated = true, DbType = "INT NOT NULL Identity", CanBeNull = false, AutoSync = AutoSync.OnInsert)]
-        public int ItemId
+        public int ToDoItemId
         {
             get
             {
-                return _componentItemId;
+                return _timeItemId;
             }
             set
             {
-                if (_componentItemId != value)
+                if (_timeItemId != value)
                 {
-                    NotifyPropertyChanging("ComponentItemId");
-                    _componentItemId = value;
-                    NotifyPropertyChanged("ComponentItemId");
+                    NotifyPropertyChanging("TimeItemId");
+                    _timeItemId = value;
+                    NotifyPropertyChanged("TimeItemId");
                 }
             }
         }
 
         // Define item name: private field, public property and database column.
-        private string _itemName;
+        private string _itemAlarmName;
 
         [Column]
-        public string ItemName
+        public string ItemAlarmName
         {
             get
             {
-                return _itemName;
+                return _itemAlarmName;
             }
             set
             {
-                if (_itemName != value)
+                if (_itemAlarmName != value)
                 {
                     NotifyPropertyChanging("ItemName");
-                    _itemName = value;
+                    _itemAlarmName = value;
                     NotifyPropertyChanged("ItemName");
+                }
+            }
+        }
+
+        // Define item name: private field, public property and database column.
+        private string _itemReminderName;
+
+        [Column]
+        public string ItemReminderName
+        {
+            get
+            {
+                return _itemReminderName;
+            }
+            set
+            {
+                if (_itemReminderName != value)
+                {
+                    NotifyPropertyChanging("ItemName");
+                    _itemReminderName = value;
+                    NotifyPropertyChanged("ItemName");
+                }
+            }
+        }
+
+        // Define completion value: private field, public property and database column.
+        private string _dateField;
+
+        [Column]
+        public string DateField
+        {
+            get
+            {
+                return _dateField;
+            }
+            set
+            {
+                if (_dateField != value)
+                {
+                    NotifyPropertyChanging("IsComplete");
+                    _dateField = value;
+                    NotifyPropertyChanged("IsComplete");
                 }
             }
         }
