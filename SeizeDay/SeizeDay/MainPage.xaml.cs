@@ -6,6 +6,7 @@ using System.Globalization;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Scheduler;
 using SeizeDay.ViewModels;
@@ -19,9 +20,14 @@ namespace SeizeDay
     public partial class MainPage : PhoneApplicationPage, INotifyPropertyChanged
     {
         /// <summary>
-        /// Variable to storage notifications.
+        /// Variable to storage temporary information about time list.
         /// </summary>
-        IEnumerable<ScheduledNotification> notifications;
+        private TimeItem itemTimeToDelete;
+
+        /// <summary>
+        /// Variable to storage temporary information about component list.
+        /// </summary>
+        private ComponentItem itemComponentToDelete;
 
         /// <summary>
         /// Data context for the local database
@@ -207,6 +213,43 @@ namespace SeizeDay
 
 
         /// <summary>
+        /// Method adding new component to main page.
+        /// </summary>
+        /// <param name="sender">object</param>
+        /// <param name="e">EventArgs</param>
+        private void AddComponent_Click(object sender, EventArgs e)
+        {
+            // Navigate to the ComponentPage page when the add button is clicked.
+            NavigationService.Navigate(new Uri("/ComponentPage.xaml", UriKind.Relative));
+
+        }
+
+
+
+        /// <summary>
+        /// This method delete component from list and database.
+        /// </summary>
+        /// <param name="sender">object</param>
+        /// <param name="e">RoutedEventArgs</param>
+        private void DeleteComponent_Click(object sender, RoutedEventArgs e)
+        {
+            if (itemComponentToDelete != null)
+            {
+
+                ComponentItems.Remove(itemComponentToDelete);
+                ComponentDB.ComponentItems.DeleteOnSubmit(itemComponentToDelete);
+
+                // Set to null itemTimeToDelete
+                itemComponentToDelete = null;
+
+                // Save changes to the database.
+                ComponentDB.SubmitChanges();
+            }
+        }
+
+
+
+        /// <summary>
         /// This method moved view to new window, where is possibility to add new alarm.
         /// </summary>
         /// <param name="sender">sender</param>
@@ -221,52 +264,68 @@ namespace SeizeDay
 
 
         /// <summary>
-        /// Method adding new component to main page.
+        /// This method delete alarm time form list and database.
         /// </summary>
         /// <param name="sender">object</param>
-        /// <param name="e">EventArgs</param>
-        private void AddComponent_Click(object sender, EventArgs e)
+        /// <param name="e">RoutedEventArgs</param>
+        private void ButtonDeleteAlarm_Click(object sender, RoutedEventArgs e)
         {
-            // Navigate to the ComponentPage page when the add button is clicked.
-            NavigationService.Navigate(new Uri("/ComponentPage.xaml", UriKind.Relative));
+      
+            if (itemTimeToDelete != null)
+            {
+                // Call Remove to unregister the scheduled action with the service.
+                ScheduledActionService.Remove(itemTimeToDelete.ItemAlarmName);
+                ScheduledActionService.Remove(itemTimeToDelete.ItemReminderName); 
 
-            //// Create a new to-do item based on the text box.
-            //ViewModels.ComponentItem newComponent = new ViewModels.ComponentItem { ItemName = "component1" };
+                TimeItems.Remove(itemTimeToDelete);
+                ComponentDB.TimeItems.DeleteOnSubmit(itemTimeToDelete);
 
-            //// Add a to-do item to the observable collection.
-            //ComponentItems.Add(newComponent);
+                // Set to null itemTimeToDelete
+                itemTimeToDelete = null;
 
-            //// Add a to-do item to the local database.
-            //ComponentDB.ComponentItems.InsertOnSubmit(newComponent);
-
-        }
-
-
-
-        private void deleteButton_Click(object sender, RoutedEventArgs e)
-        {
-            // The scheduled action name is stored in the Tag property
-            // of the delete button for each reminder.
-            string name = (string)((Button)sender).Tag;
-
-            // Call Remove to unregister the scheduled action with the service.
-            ScheduledActionService.Remove(name);
-
-            // Reset the ReminderListBox items
-            //ResetItemsList();
+                // Save changes to the database.
+                ComponentDB.SubmitChanges();
+            }
+   
         }
 
 
 
         /// <summary>
-        /// 
+        /// This method select current object from list and marked selected item.
+        /// </summary>
+        /// <param name="sender">object</param>
+        /// <param name="e">SelectionChangedEventArgs</param>
+        private void listBoxComponent_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (e.AddedItems.Count > 0)
+            {
+                var mySelectedItem = e.AddedItems[0] as ComponentItem;
+                if (mySelectedItem != null)
+                {
+                    itemComponentToDelete = mySelectedItem;
+                }
+            }
+
+        }
+
+
+
+        /// <summary>
+        /// This method select current object from list and marked selected item.
         /// </summary>
         /// <param name="sender">object</param>
         /// <param name="e">SelectionChangedEventArgs</param>
         private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            MessageBox.Show("KLIKNIETE" + sender + " ,  " + e);
-
+            if (e.AddedItems.Count > 0)
+            {
+                var mySelectedItem = e.AddedItems[0] as TimeItem;
+                if (mySelectedItem != null)
+                {
+                    itemTimeToDelete = mySelectedItem;            
+                }
+            }
         }
 
 
@@ -389,24 +448,29 @@ namespace SeizeDay
             string time;
 
             // Get vaule from AddAlarm page
-            NavigationContext.QueryString.TryGetValue("alarm", out alarmName);
-            NavigationContext.QueryString.TryGetValue("reminder", out reminderName);
-            NavigationContext.QueryString.TryGetValue("time", out time);
-
-            // Create a new to-do item based on the string.
-            ViewModels.TimeItem newTimeItem = new ViewModels.TimeItem
+            if (NavigationContext.QueryString.TryGetValue("alarm", out alarmName))
             {
-                ItemAlarmName = alarmName,
-                ItemReminderName = reminderName,
-                DataField = time
-            };
+                NavigationContext.QueryString.TryGetValue("reminder", out reminderName);
+                NavigationContext.QueryString.TryGetValue("time", out time);
 
-            // Add a alarm item to the observable collection.
-            TimeItems.Add(newTimeItem);
+                // Create a new to-do item based on the string.
+                ViewModels.TimeItem newTimeItem = new ViewModels.TimeItem
+                {
+                    ItemAlarmName = alarmName,
+                    ItemReminderName = reminderName,
+                    DateField = time
+                };
 
-            // Add a alarm item to the local database.
-            ComponentDB.TimeItems.InsertOnSubmit(newTimeItem);
+                // Add a alarm item to the observable collection.
+                TimeItems.Add(newTimeItem);
 
+                // Add a alarm item to the local database.
+                ComponentDB.TimeItems.InsertOnSubmit(newTimeItem);
+            }
+
+            // Save changes to the database.
+            ComponentDB.SubmitChanges();
+            
         }
 
 
@@ -465,39 +529,6 @@ namespace SeizeDay
         //}
 
 
-
-
-
-
-        //private void ResetItemsList()
-        //{
-        //    // Use GetActions to retrieve all of the scheduled actions
-        //    // stored for this application. The type <Reminder> is specified
-        //    // to retrieve only Reminder objects.
-        //    //reminders = ScheduledActionService.GetActions<Reminder>();
-        //    notifications = ScheduledActionService.GetActions<ScheduledNotification>();
-
-        //    // If there are 1 or more reminders, hide the "no reminders"
-        //    // TextBlock. IF there are zero reminders, show the TextBlock.
-        //    //if (reminders.Count<Reminder>() > 0)
-        //    if (notifications.Count<ScheduledNotification>() > 0)
-        //    {
-        //        EmptyTextBlock.Visibility = Visibility.Collapsed;
-        //        btnAddAlarm.Visibility = Visibility.Collapsed;
-        //        NotificationListBox.Visibility = Visibility.Visible;
-        //    }
-        //    else
-        //    {
-        //        EmptyTextBlock.Visibility = Visibility.Visible;
-        //        btnAddAlarm.Visibility = Visibility.Visible;
-        //        NotificationListBox.Visibility = Visibility.Collapsed;
-        //    }
-
-            
-        //    // Update the ReminderListBox with the list of reminders.
-        //    // A full MVVM implementation can automate this step.
-        //    NotificationListBox.ItemsSource = notifications;
-        //}
 
 
         #region INotifyPropertyChanged Members

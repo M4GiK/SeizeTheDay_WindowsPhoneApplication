@@ -74,21 +74,21 @@ namespace SeizeDay.ViewModels
         }
 
         // Define completion value: private field, public property and database column.
-        private string _dataField;
+        private string _dateField;
 
         [Column]
-        public string DataField
+        public string DateField
         {
             get
             {
-                return _dataField;
+                return _dateField;
             }
             set
             {
-                if (_dataField != value)
+                if (_dateField != value)
                 {
                     NotifyPropertyChanging("IsComplete");
-                    _dataField = value;
+                    _dateField = value;
                     NotifyPropertyChanged("IsComplete");
                 }
             }
