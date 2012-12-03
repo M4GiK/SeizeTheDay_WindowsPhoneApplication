@@ -2,6 +2,7 @@
 using System.Windows;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Scheduler;
+using SeizeDay.ViewModels;
 
 namespace AlarmAlarm
 {
@@ -60,9 +61,28 @@ namespace AlarmAlarm
 
             // Register the alarm with the system.
             ScheduledActionService.Add(alarm);
+
+            // Get vaule from AddAlarm page
+
+            // Create a new to-do item based on the string.
+            TimeItem newTimeItem = new TimeItem
+            {
+                ItemAlarmName = nameAlarm,
+                ItemReminderName = nameReminder,
+                DateField = time.ToString()
+            };
+
+            // Connect to the database and instantiate data context.
+            Component ComponentDB = new Component(Component.DBConnectionString);
+
+            // Add a alarm item to the local database.
+            ComponentDB.TimeItems.InsertOnSubmit(newTimeItem);
+            
+            // Save changes to the database.
+            ComponentDB.SubmitChanges();
             
             // Navigate back to the main page.
-            NavigationService.Navigate(new Uri("/MainPage.xaml?alarm=" + nameAlarm + "&reminder=" + nameReminder + "&time=" + time.ToString(), UriKind.Relative));
+            NavigationService.GoBack();
         }
         
     }

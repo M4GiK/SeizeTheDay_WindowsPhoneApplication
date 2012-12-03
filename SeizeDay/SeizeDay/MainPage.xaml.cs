@@ -198,16 +198,14 @@ namespace SeizeDay
         {
 
             // Define the query to gather all of the time items.
-            //var olderThanDate = from ViewModels.TimeItem times in ComponentDB.TimeItems where toDate(times.DataField) < toDate(DateTime.Now.ToString()) select times;
-            //var olderThanDate = ComponentDB.TimeItems.Where(item => item.DataField.toDate() < DateTime.Now.ToString().toDate());
-
-                // Delete city from the context.
-            //ComponentDB.TimeItems.DeleteAllOnSubmit(olderThanDate);
+            var olderThanDate = from ViewModels.TimeItem times in ComponentDB.TimeItems.AsEnumerable() where times.DateField.toDate() < DateTime.Now.ToString().toDate() select times;
+            
+            // Delete time from the context.
+            ComponentDB.TimeItems.DeleteAllOnSubmit(olderThanDate);
 
             // Save changes to the database.
-            //ComponentDB.SubmitChanges();
-
-
+            ComponentDB.SubmitChanges();
+            
         }
 
 
@@ -275,11 +273,11 @@ namespace SeizeDay
             {
                 // Call Remove to unregister the scheduled action with the service.
                 ScheduledActionService.Remove(itemTimeToDelete.ItemAlarmName);
-                ScheduledActionService.Remove(itemTimeToDelete.ItemReminderName); 
-
+                ScheduledActionService.Remove(itemTimeToDelete.ItemReminderName);
+                
                 TimeItems.Remove(itemTimeToDelete);
                 ComponentDB.TimeItems.DeleteOnSubmit(itemTimeToDelete);
-
+                
                 // Set to null itemTimeToDelete
                 itemTimeToDelete = null;
 
@@ -351,6 +349,9 @@ namespace SeizeDay
         /// <param name="e">NavigationEventArgs</param>
         protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
         {
+            // Call the base method.
+            base.OnNavigatedTo(e);
+
             // Define the query to gather all of the to-do items.
             var ComponentItemInDB = from ViewModels.ComponentItem todo in ComponentDB.ComponentItems select todo;
 
@@ -438,35 +439,6 @@ namespace SeizeDay
 
             //Reset the ReminderListBox items when the page is navigated to.
             //ResetItemsList();
-
-            // Call the base method.
-            base.OnNavigatedTo(e);
-
-            // Create a strings for containing data about alarm
-            string alarmName;
-            string reminderName;
-            string time;
-
-            // Get vaule from AddAlarm page
-            if (NavigationContext.QueryString.TryGetValue("alarm", out alarmName))
-            {
-                NavigationContext.QueryString.TryGetValue("reminder", out reminderName);
-                NavigationContext.QueryString.TryGetValue("time", out time);
-
-                // Create a new to-do item based on the string.
-                ViewModels.TimeItem newTimeItem = new ViewModels.TimeItem
-                {
-                    ItemAlarmName = alarmName,
-                    ItemReminderName = reminderName,
-                    DateField = time
-                };
-
-                // Add a alarm item to the observable collection.
-                TimeItems.Add(newTimeItem);
-
-                // Add a alarm item to the local database.
-                ComponentDB.TimeItems.InsertOnSubmit(newTimeItem);
-            }
 
             // Save changes to the database.
             ComponentDB.SubmitChanges();
