@@ -91,7 +91,7 @@
     <Compile Include="ViewModels\ItemViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\TimeItem.cs" />
-    <Compile Include="WeatherInfo.cs" />
+    <Compile Include="ViewModels\WeatherInfo.cs" />
     <Compile Include="WeatherSettings.xaml.cs">
       <DependentUpon>WeatherSettings.xaml</DependentUpon>
     </Compile>
