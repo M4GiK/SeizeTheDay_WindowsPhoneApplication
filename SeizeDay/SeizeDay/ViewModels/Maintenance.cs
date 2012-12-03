@@ -12,10 +12,6 @@ namespace SeizeDay.ViewModels
         /// <returns>Date in DateTime format</returns>
         public static DateTime toDate(this string dateString)
         {
-            //CultureInfo provider = CultureInfo.InvariantCulture;
-
-            //string format = "g"; //g
-
             return DateTime.Parse(dateString);
         }
     }

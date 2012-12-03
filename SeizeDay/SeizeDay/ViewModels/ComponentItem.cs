@@ -56,6 +56,25 @@ namespace SeizeDay.ViewModels
         [Column(IsVersion = true)]
         private Binary _version;
 
+        // property for some more data like city&country for weather component
+        private string _data;
+        [Column]
+        public string Data
+        {
+            get
+            {
+                return _data;
+            }
+            set
+            {
+                if (_data != value)
+                {
+                    NotifyPropertyChanging("Data");
+                    _data = value;
+                    NotifyPropertyChanged("Data");
+                }
+            }
+        }
         #region INotifyPropertyChanged Members
 
         public event PropertyChangedEventHandler PropertyChanged;

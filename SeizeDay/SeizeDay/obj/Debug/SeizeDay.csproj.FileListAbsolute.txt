@@ -50,3 +50,33 @@ D:\Studies\Jyväskylän ammattikorkeakoulu\Windows Phone Programming\Project\end
 D:\Studies\Jyväskylän ammattikorkeakoulu\Windows Phone Programming\Project\endProject\SeizeDay\SeizeDay\Bin\Debug\microsoft.phone.controls.toolkit.dll
 D:\Studies\Jyväskylän ammattikorkeakoulu\Windows Phone Programming\Project\endProject\SeizeDay\SeizeDay\obj\Debug\ShowSeizeDay.g.cs
 D:\Studies\Jyväskylän ammattikorkeakoulu\Windows Phone Programming\Project\endProject\SeizeDay\SeizeDay\obj\Debug\ComponentPage.g.cs
+C:\studia\project\n1\endProject\SeizeDay\SeizeDay\Bin\Debug\SeizeDay.dll
+C:\studia\project\n1\endProject\SeizeDay\SeizeDay\Bin\Debug\SeizeDay.pdb
+C:\studia\project\n1\endProject\SeizeDay\SeizeDay\Bin\Debug\AppManifest.xaml
+C:\studia\project\n1\endProject\SeizeDay\SeizeDay\Bin\Debug\SeizeDay.xap
+C:\studia\project\n1\endProject\SeizeDay\SeizeDay\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\studia\project\n1\endProject\SeizeDay\SeizeDay\Bin\Debug\microsoft.phone.controls.toolkit.dll
+C:\studia\project\n1\endProject\SeizeDay\SeizeDay\Bin\Debug\System.Windows.Interactivity.dll
+C:\studia\project\n1\endProject\SeizeDay\SeizeDay\Bin\Debug\Microsoft.Phone.Controls.xml
+C:\studia\project\n1\endProject\SeizeDay\SeizeDay\Bin\Debug\System.Windows.Interactivity.xml
+C:\studia\project\n1\endProject\SeizeDay\SeizeDay\Bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\studia\project\n1\endProject\SeizeDay\SeizeDay\Bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\studia\project\n1\endProject\SeizeDay\SeizeDay\Bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\studia\project\n1\endProject\SeizeDay\SeizeDay\Bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\studia\project\n1\endProject\SeizeDay\SeizeDay\Bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\studia\project\n1\endProject\SeizeDay\SeizeDay\Bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\studia\project\n1\endProject\SeizeDay\SeizeDay\Bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\studia\project\n1\endProject\SeizeDay\SeizeDay\Bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\studia\project\n1\endProject\SeizeDay\SeizeDay\Bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\studia\project\n1\endProject\SeizeDay\SeizeDay\obj\Debug\App.g.i.cs
+C:\studia\project\n1\endProject\SeizeDay\SeizeDay\obj\Debug\AddAlarm.g.i.cs
+C:\studia\project\n1\endProject\SeizeDay\SeizeDay\obj\Debug\ComponentPage.g.i.cs
+C:\studia\project\n1\endProject\SeizeDay\SeizeDay\obj\Debug\MainPage.g.i.cs
+C:\studia\project\n1\endProject\SeizeDay\SeizeDay\obj\Debug\ShowSeizeDay.g.i.cs
+C:\studia\project\n1\endProject\SeizeDay\SeizeDay\obj\Debug\WeatherSettings.g.i.cs
+C:\studia\project\n1\endProject\SeizeDay\SeizeDay\obj\Debug\SeizeDay.g.resources
+C:\studia\project\n1\endProject\SeizeDay\SeizeDay\obj\Debug\SeizeDay.dll
+C:\studia\project\n1\endProject\SeizeDay\SeizeDay\obj\Debug\SeizeDay.pdb
+C:\studia\project\n1\endProject\SeizeDay\SeizeDay\obj\Debug\XapCacheFile.xml
+C:\studia\project\n1\endProject\SeizeDay\SeizeDay\obj\Debug\SeizeDay.csprojResolveAssemblyReference.cache
+D:\Studies\Jyväskylän ammattikorkeakoulu\Windows Phone Programming\Project\endProject\SeizeDay\SeizeDay\obj\Debug\WeatherSettings.g.cs
