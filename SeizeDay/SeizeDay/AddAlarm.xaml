@@ -25,11 +25,12 @@
 
             <ScrollViewer Margin="0,-10,0,10">
                 <StackPanel Orientation="Vertical">
-                    <TextBlock Height="53" HorizontalAlignment="Center"  x:Name="beginTimeLabel" Style="{StaticResource PhoneTextExtraLargeStyle}" Text="Alarm time" VerticalAlignment="Top" Width="219" />
-                    <Button Margin="0,200,0,0" Content="Save alarm" Height="72" x:Name="btnSaveAlarm" Width="200" Click="SaveButton_Click" />
+                    <TextBlock Height="70" HorizontalAlignment="Center"  x:Name="beginTimeLabel" Style="{StaticResource PhoneTextExtraLargeStyle}" Text="Set alarm time" VerticalAlignment="Top" Width="289" />
+                    <Button Margin="0,180,0,0" Content="Choose sound" Height="72" x:Name="btnSoundAlarm" Width="250" Click="ChooseSoundButton_Click" />
+                    <Button Margin="0,210,0,0" Content="Save alarm" Height="72" x:Name="btnSaveAlarm" Width="250" Click="SaveButton_Click" />
                 </StackPanel>
             </ScrollViewer>
-            <toolkit:TimePicker x:Name="timePicker" HorizontalAlignment="Left" Height="82" Margin="109,107,0,0" VerticalAlignment="Top" Width="239"/>
+            <toolkit:TimePicker x:Name="timePicker" HorizontalAlignment="Left" Height="82" Width="250" Margin="100,107,0,0" VerticalAlignment="Top"/>
         </Grid>
     </Grid>
 

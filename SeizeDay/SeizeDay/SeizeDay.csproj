@@ -84,6 +84,9 @@
       <DependentUpon>ShowSeizeDay.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SoundCollectionPage.xaml.cs">
+      <DependentUpon>SoundCollectionPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\Component.cs" />
     <Compile Include="ViewModels\ComponentItem.cs" />
     <Compile Include="ViewModels\Maintenance.cs" />
@@ -121,6 +124,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="SoundCollectionPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WeatherSettings.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -141,9 +148,14 @@
   <ItemGroup>
     <Content Include="Image\Button-.png" />
     <Content Include="Image\Button-_pressed.png" />
+    <Content Include="Ringtones\baroqueloop.wma" />
+    <Content Include="Ringtones\beyonthepain.wma" />
+    <Content Include="Ringtones\inbetween.wma" />
+    <Content Include="Ringtones\sensitivewalk.wma" />
+    <Content Include="Ringtones\spanishmusic.wma" />
     <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
-    <Content Include="Ringtones\01.wma" />
+    <Content Include="Ringtones\ukrainwarship.wma" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />

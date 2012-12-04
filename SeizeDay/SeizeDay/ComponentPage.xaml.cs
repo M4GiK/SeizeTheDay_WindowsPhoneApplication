@@ -97,8 +97,8 @@ namespace SeizeDay
         protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
         {
             ListToDo.Background = Application.Current.Resources["PhoneBackgroundBrush"] as SolidColorBrush;
-            Weather.Background = Application.Current.Resources["PhoneBackgroundBrush"] as SolidColorBrush;
-            News.Background = Application.Current.Resources["PhoneBackgroundBrush"] as SolidColorBrush;
+            Weather.Background  = Application.Current.Resources["PhoneBackgroundBrush"] as SolidColorBrush;
+            News.Background     = Application.Current.Resources["PhoneBackgroundBrush"] as SolidColorBrush;
             Aphorism.Background = Application.Current.Resources["PhoneBackgroundBrush"] as SolidColorBrush;
         }
     }
