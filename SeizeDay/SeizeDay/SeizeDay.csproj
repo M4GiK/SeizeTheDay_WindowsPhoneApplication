@@ -88,6 +88,9 @@
     <Compile Include="SoundCollectionPage.xaml.cs">
       <DependentUpon>SoundCollectionPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ToDoPage.xaml.cs">
+      <DependentUpon>ToDoPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\Component.cs" />
     <Compile Include="ViewModels\ComponentItem.cs" />
     <Compile Include="ViewModels\Maintenance.cs" />
@@ -129,6 +132,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ToDoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WeatherSettings.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -149,8 +156,9 @@
     <Resource Include="Image\Background.png" />
     <Resource Include="Image\Button+.png" />
     <Resource Include="Image\Button+_pressed.png" />
+    <Content Include="Image\appbar.delete.rest.png" />
     <Content Include="Image\arrow.png" />
-    <Content Include="Image\SplashScreenImage.jpg" />
+    <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

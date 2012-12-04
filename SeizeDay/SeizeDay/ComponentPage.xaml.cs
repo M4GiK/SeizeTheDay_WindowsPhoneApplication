@@ -36,7 +36,7 @@ namespace SeizeDay
             ListToDo.Background = Application.Current.Resources["PhoneAccentBrush"] as SolidColorBrush;
 
             // Navigate back to the main page.
-            NavigationService.Navigate(new Uri("/MainPage.xaml?component=listToDo", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/ToDoPage.xaml", UriKind.Relative));
         }
 
 
@@ -49,9 +49,6 @@ namespace SeizeDay
         private void Grid_Tap_Weather(object sender, System.Windows.Input.GestureEventArgs e)
         {
             Weather.Background = Application.Current.Resources["PhoneAccentBrush"] as SolidColorBrush;
-
-            // Navigate back to the main page.
-            //NavigationService.Navigate(new Uri("/MainPage.xaml?component=weather", UriKind.Relative));
 
             // Navigate to setting of weather component
             NavigationService.Navigate(new Uri("/WeatherSettings.xaml", UriKind.Relative));

@@ -353,6 +353,18 @@ namespace SeizeDay
 
 
         /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender">object</param>
+        /// <param name="e">System.Windows.Input.GestureEventArgs</param>
+        private void DoubleTap_action(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+
+        }
+
+
+
+        /// <summary>
         /// Method called before going to another page.
         /// </summary>
         /// <param name="e">NavigationEventArgs</param>
@@ -368,7 +380,7 @@ namespace SeizeDay
 
 
         /// <summary>
-        ///  Method called after back from another page.
+        /// Method called after back from another page.
         /// </summary>
         /// <param name="e">NavigationEventArgs</param>
         protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
@@ -544,6 +556,8 @@ namespace SeizeDay
             }
         }
         #endregion
+
+
 
     }
 }

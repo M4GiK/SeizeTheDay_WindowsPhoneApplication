@@ -8,6 +8,7 @@ using System.ComponentModel;
 using System.Xml.Linq;
 using SeizeDay.ViewModels;
 using Microsoft.Phone.Scheduler;
+using System.Collections.Generic;
 
 
 namespace SeizeDay
@@ -33,6 +34,7 @@ namespace SeizeDay
             {
                 return _componentItems;
             }
+
             set
             {
                 if (_componentItems != value)
@@ -186,6 +188,7 @@ namespace SeizeDay
         /// </summary>
         private void LoadComponents()
         {
+
             // TODO
             // check which components should be loaded
             var ComponentItemInDB = from ViewModels.ComponentItem weather in ComponentDB.ComponentItems select weather;
@@ -218,22 +221,28 @@ namespace SeizeDay
         {
             if (e.Error != null)
             {
-                MessageBox.Show("error");
+                // Show message about problem with connection.
+                MessageBox.Show("You have problem with internet connection");
 
+                WeatherInfoCurrent noInformationWeather = new WeatherInfoCurrent { observation_time = "No internet connection" };
+
+                this.listBoxc.ItemsSource = new List<WeatherInfoCurrent>() { noInformationWeather };
             }
+            else
+            {
+                XElement XmlWeather = XElement.Parse(e.Result);
 
-            XElement XmlWeather = XElement.Parse(e.Result);
+                listBoxc.ItemsSource = from weather in XmlWeather.Descendants("current_condition")
 
-            listBoxc.ItemsSource = from weather in XmlWeather.Descendants("current_condition")
-
-                                   select new WeatherInfoCurrent
-                                   {
-                                       observation_time = weather.Element("observation_time").Value,
-                                       temp_C = weather.Element("temp_C").Value,
-                                       temp_F = weather.Element("temp_F").Value,
-                                       icon = weather.Element("weatherIconUrl").Value,
-                                       condition = weather.Element("weatherDesc").Value
-                                   };
+                                       select new WeatherInfoCurrent
+                                       {
+                                           observation_time = weather.Element("observation_time").Value,
+                                           temp_C = weather.Element("temp_C").Value + "°C",
+                                           temp_F = weather.Element("temp_F").Value + "°F",
+                                           icon = weather.Element("weatherIconUrl").Value,
+                                           condition = weather.Element("weatherDesc").Value
+                                       };
+            }
         }
 
 

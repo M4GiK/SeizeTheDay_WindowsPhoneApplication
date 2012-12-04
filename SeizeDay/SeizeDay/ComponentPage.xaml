@@ -32,7 +32,7 @@
         		<ListBox HorizontalAlignment="Left" Height="619" VerticalAlignment="Top" Width="491" Margin="-13,0,0,0">
         			<Grid x:Name="ListToDo" Height="150" Width="480" Margin="10,0" Tap="Grid_Tap_ListToDo">
         				<TextBlock Text="List to do" Margin="0,23,0,40" Style="{StaticResource PhoneTextTitle1Style}"  HorizontalAlignment="Center"/>
-        				<TextBlock Text="This component store you task to do" Style="{StaticResource PhoneTextNormalStyle}" Margin="26,110,10,16" HorizontalAlignment="Center"/>
+        				<TextBlock Text="This component store task to do" Style="{StaticResource PhoneTextNormalStyle}" Margin="26,110,10,16" HorizontalAlignment="Center"/>
         			</Grid>
                     <Grid x:Name="Weather" Height="150" Width="480" Margin="10,0,0,0" Tap="Grid_Tap_Weather">
         				<TextBlock Text="Weather" Margin="0,23,0,40" Style="{StaticResource PhoneTextTitle1Style}"  HorizontalAlignment="Center"/>

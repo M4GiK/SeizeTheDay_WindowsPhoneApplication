@@ -98,7 +98,7 @@
                     <DataTemplate>
                         <StackPanel Width="432" Height="auto">
                             <Grid Height="150" Width="480" Margin="10,0">
-                                <TextBlock Text="{Binding ItemName}" FontSize="{StaticResource PhoneFontSizeExtraExtraLarge}" TextWrapping="NoWrap" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                <TextBlock Text="{Binding ItemName}" FontSize="{StaticResource PhoneFontSizeExtraExtraLarge}" TextWrapping="NoWrap" HorizontalAlignment="Center" VerticalAlignment="Center" DoubleTap="DoubleTap_action"/>
                             </Grid> 
                         </StackPanel>
                     </DataTemplate>

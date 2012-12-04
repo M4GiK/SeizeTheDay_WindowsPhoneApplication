@@ -84,7 +84,7 @@
                     <TextBlock Text="This component store you task to do" Style="{StaticResource PhoneTextNormalStyle}" Margin="26,110,10,16" HorizontalAlignment="Center"/>
                 </Grid>
                 <Grid x:Name="Weather" Height="150" Width="480">
-                    <ListBox  Height="150" HorizontalAlignment="Left"  Name="listBoxc" VerticalAlignment="Top" Width="480" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+                    <ListBox  Height="150" HorizontalAlignment="Left" ItemsSource="{Binding WeatherInfoCurrent}"  Name="listBoxc" VerticalAlignment="Top" Width="480" ScrollViewer.VerticalScrollBarVisibility="Disabled">
                         <ListBox.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal" Height="150">
@@ -94,10 +94,9 @@
                                             <ColumnDefinition Width="*"></ColumnDefinition>
                                         </Grid.ColumnDefinitions>
                                         <Image  Grid.Column="0" Height="150" Width="150" Source="{Binding Path=icon}"></Image>
-                                        <TextBlock Text="{Binding Path=observation_time}" Foreground="Orange"  Grid.Column="1" Margin="10,10,10,60"></TextBlock>
-                                        <TextBlock Grid.Column="1" Margin="10,40,300,30" Text="C: "></TextBlock>
-                                        <TextBlock Text="{Binding Path=temp_C}" Grid.Column="1" Margin="70,40,250,30" FontWeight="Bold"></TextBlock>
-                                        <TextBlock Text="{Binding Path=condition}" Grid.Column="1" Margin="10,75,10,0"></TextBlock>
+                                        <TextBlock Text="{Binding observation_time}" Foreground="{StaticResource PhoneAccentBrush}"  Grid.Column="1" Margin="10,10,10,60"></TextBlock>
+                                        <TextBlock Text="{Binding Path=temp_C}"  Style="{StaticResource PhoneTextTitle1Style}" FontSize="{StaticResource PhoneFontSizeMediumLarge}" Grid.Column="1" Margin="70,40,250,30" FontWeight="Bold"></TextBlock>
+                                        <TextBlock Text="{Binding Path=condition}" Style="{StaticResource PhoneTextTitle1Style}" FontSize="{StaticResource PhoneFontSizeMediumLarge}"  Grid.Column="1" Margin="10,75,10,0"></TextBlock>
                                     </Grid>
                                 </StackPanel>
                             </DataTemplate>

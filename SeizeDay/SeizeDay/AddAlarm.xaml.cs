@@ -12,12 +12,12 @@ namespace AlarmAlarm
     public partial class AddAlarm : PhoneApplicationPage
     {
         /// <summary>
-        /// Varible to need to set sound and alarm time
+        /// Varible to need to set sound and alarm time.
         /// </summary>
         private string alarmSound;
 
         /// <summary>
-        /// Constructor initializing all needs components
+        /// Constructor initializing all needs components.
         /// </summary>
         public AddAlarm()
         {
@@ -50,7 +50,7 @@ namespace AlarmAlarm
             Reminder reminder = new Reminder(nameReminder);
 
             reminder.Title = "“Determination is the wake-up call to the human will”";
-            reminder.BeginTime = time.AddSeconds(3);        //beginTime;
+            reminder.BeginTime = time.AddSeconds(4);         //beginTime;
             reminder.ExpirationTime = time.AddMinutes(2);    //expirationTime;
             reminder.NavigationUri = navigationUri;
 
