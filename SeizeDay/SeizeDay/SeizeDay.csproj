@@ -142,7 +142,7 @@
     <Resource Include="Image\Background.png" />
     <Resource Include="Image\Button+.png" />
     <Resource Include="Image\Button+_pressed.png" />
-    <Resource Include="Image\SplashScreenImage.jpg" />
+    <Content Include="Image\SplashScreenImage.jpg" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
