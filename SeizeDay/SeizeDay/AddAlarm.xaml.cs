@@ -59,7 +59,7 @@ namespace AlarmAlarm
 
             Alarm alarm = new Alarm(nameAlarm);
 
-            if (alarmSound.Equals(""))
+            if (alarmSound == null)
             {
                 alarm.Sound = new Uri("/Ringtones/sensitivewalk.wma", UriKind.Relative);
             }

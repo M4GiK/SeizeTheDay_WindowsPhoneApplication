@@ -172,26 +172,6 @@ namespace SeizeDay
 
 
         /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="sender">object</param>
-        /// <param name="e">RoutedEventArgs</param>
-        private void ImageButton_Click(object sender, RoutedEventArgs e)
-        {
-            
-            // Create a new to-do item based on the text box.
-            ViewModels.ComponentItem newComponent = new ViewModels.ComponentItem { ItemName = "component1" };
-
-            // Add a to-do item to the observable collection.
-            ComponentItems.Add(newComponent);
-
-            // Add a to-do item to the local database.
-            ComponentDB.ComponentItems.InsertOnSubmit(newComponent);
-        }
-
-
-
-        /// <summary>
         /// This method check, if date is not validate, remove from database
         /// </summary>
         private void ValidateDate()
