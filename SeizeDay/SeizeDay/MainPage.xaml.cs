@@ -100,6 +100,8 @@ namespace SeizeDay
             // Checking if date is not validate, remove from database
             ValidateDate();
 
+            // Checking if any element is in lists
+            CheckAddedElements();
         }
 
 
@@ -222,6 +224,9 @@ namespace SeizeDay
 
                 // Save changes to the database.
                 ComponentDB.SubmitChanges();
+
+                // Checking if any element is in lists
+                CheckAddedElements();
             }
         }
 
@@ -263,6 +268,9 @@ namespace SeizeDay
 
                 // Save changes to the database.
                 ComponentDB.SubmitChanges();
+
+                // Checking if any element is in lists
+                CheckAddedElements();
             }
    
         }
@@ -304,6 +312,42 @@ namespace SeizeDay
                     itemTimeToDelete = mySelectedItem;            
                 }
             }
+        }
+
+
+
+        /// <summary>
+        /// Method checking if any elements is added to alarm list or component list.
+        /// If is added, remove arrows and descryption.
+        /// </summary>
+        private void CheckAddedElements()
+        {
+            var ComponentItemInDB = from ViewModels.ComponentItem component in ComponentDB.ComponentItems select component;
+
+            if (ComponentItemInDB.Count() > 0)
+            {
+                text2.Visibility = Visibility.Collapsed;
+                arrow2.Visibility = Visibility.Collapsed;
+            }
+            else
+            {
+                text2.Visibility = Visibility.Visible;
+                arrow2.Visibility = Visibility.Visible;
+            }
+
+            var TimeItemInDB = from ViewModels.TimeItem times in ComponentDB.TimeItems select times;
+
+            if (TimeItemInDB.Count() > 0)
+            {
+                text1.Visibility = Visibility.Collapsed;
+                arrow1.Visibility = Visibility.Collapsed;
+            }
+            else
+            {
+                text1.Visibility = Visibility.Visible;
+                arrow1.Visibility = Visibility.Visible;
+            }
+
         }
 
 
@@ -421,11 +465,11 @@ namespace SeizeDay
             // Execute the query and place the results into a collection.
             TimeItems = new ObservableCollection<ViewModels.TimeItem>(TimeItemInDB);
 
-            //Reset the ReminderListBox items when the page is navigated to.
-            //ResetItemsList();
-
             // Save changes to the database.
             ComponentDB.SubmitChanges();
+
+            // Checking if any element is in lists
+            CheckAddedElements();
             
         }
 
