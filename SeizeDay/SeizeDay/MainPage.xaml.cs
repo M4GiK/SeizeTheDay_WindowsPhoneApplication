@@ -414,60 +414,8 @@ namespace SeizeDay
 
             // Try get value for component
             if (NavigationContext.QueryString.TryGetValue("component", out component))
-            {
-                if (component.Equals("listToDo"))
-                {
-                    var firstOccurence = ComponentItems.Where(item => item.ItemName == "List to do");
-
-                    if (firstOccurence.Count() == 0)
-                    {
-
-                        // Create a new to-do item based on the text box.
-                        ViewModels.ComponentItem newComponent = new ViewModels.ComponentItem { ItemName = "List to do"};
-
-                        // Add a to-do item to the observable collection.
-                        ComponentItems.Add(newComponent);
-
-                        // Add a component item to the local database
-                        ComponentDB.ComponentItems.InsertOnSubmit(newComponent);
-                    }
-                }
-                //else if (component.Equals("weather"))
-                //{
-                //    var firstOccurence = ComponentItems.Where(item => item.ItemName == "Weather");
-
-                //    if (firstOccurence.Count() == 0)
-                //    {
-                //        string city;
-                //        NavigationContext.QueryString.TryGetValue("city", out city);
-
-                //        // Create a new to-do item based on the text box.
-                //        ViewModels.ComponentItem newComponent = new ViewModels.ComponentItem { ItemName = "Weather", Data = city  };
-
-                //        // Add a to-do item to the observable collection.
-                //        ComponentItems.Add(newComponent);
-
-                //        // Add a component item to the local database
-                //        ComponentDB.ComponentItems.InsertOnSubmit(newComponent);
-                //    }
-                //}
-                //else if (component.Equals("news"))
-                //{
-                //    var firstOccurence = ComponentItems.Where(item => item.ItemName == "News");
-
-                //    if (firstOccurence.Count() == 0)
-                //    {
-                //        // Create a new to-do item based on the text box.
-                //        ViewModels.ComponentItem newComponent = new ViewModels.ComponentItem { ItemName = "News" };
-
-                //        // Add a to-do item to the observable collection.
-                //        ComponentItems.Add(newComponent);
-
-                //        // Add a component item to the local database
-                //        ComponentDB.ComponentItems.InsertOnSubmit(newComponent);
-                //    }
-                //}
-                else if (component.Equals("aphorism"))
+            {             
+                if (component.Equals("aphorism"))
                 {
                     var firstOccurence = ComponentItems.Where(item => item.ItemName == "Aphorism");
 

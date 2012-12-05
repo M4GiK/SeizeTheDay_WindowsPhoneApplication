@@ -285,7 +285,7 @@ namespace SeizeDay
                 // get data for weather: 
                 string city = firstOccurence.Data; // "Cracow,Poland"; // get from DB
                 WebClient webclient = new WebClient();
-                webclient.DownloadStringCompleted += new DownloadStringCompletedEventHandler(webclient_DownloadStringCompleted);
+                webclient.DownloadStringCompleted += new DownloadStringCompletedEventHandler(webclient_DownloadStringCompleted_Weather);
 
                 webclient.DownloadStringAsync(new Uri("http://free.worldweatheronline.com/feed/weather.ashx?key=bed6524371124406111310&q=" + city + "&num_of_days=1&format=xml")); // weather location 
                 // http://free.worldweatheronline.com/feed/weather.ashx?key=bed6524371124406111310&q=mumbai,india&num_of_days=3&format=xml
@@ -311,7 +311,7 @@ namespace SeizeDay
             {
                 string news = firstOccurence.Data;
                 WebClient _client = new WebClient();
-                _client.DownloadStringCompleted += Feed;
+                _client.DownloadStringCompleted += webclient_DownloadStringCompleted_Feed;
                 _client.DownloadStringAsync(new Uri((news)));
             }
             else
@@ -332,7 +332,10 @@ namespace SeizeDay
 
             if (firstOccurence != null)
             {
-                
+                string aphroism = "http://www.inspirationline.com/inspirationline.xml";
+                WebClient _client = new WebClient();
+                _client.DownloadStringCompleted += webclient_DownloadStringCompleted_Aphorism;
+                _client.DownloadStringAsync(new Uri((aphroism)));
             }
             else
             {
@@ -348,7 +351,7 @@ namespace SeizeDay
         /// </summary>
         /// <param name="sender">object</param>
         /// <param name="e">DownloadStringCompletedEventArgs</param>
-        private void webclient_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
+        private void webclient_DownloadStringCompleted_Weather(object sender, DownloadStringCompletedEventArgs e)
         {
             if (e.Error != null)
             {
@@ -381,25 +384,11 @@ namespace SeizeDay
 
 
         /// <summary>
-        /// This method show warrning about internet connection once.
-        /// </summary>
-        private void ShowError()
-        {
-            // Show message about problem with connection.
-            MessageBox.Show("You have problem with internet connection");
-
-            // Set this, and after that error never show again.
-            warning = true;
-        }
-
-
-
-        /// <summary>
         /// This method get inforamtion from xml about news.
         /// </summary>
         /// <param name="Sender">object</param>
         /// <param name="e">DownloadStringCompletedEventArgs</param>
-        private void Feed(object Sender, DownloadStringCompletedEventArgs e)
+        private void webclient_DownloadStringCompleted_Feed(object Sender, DownloadStringCompletedEventArgs e)
         {
             if (e.Error != null)
             {
@@ -415,6 +404,7 @@ namespace SeizeDay
             else
             {
                 XElement _xml;
+
                 try
                 {
                     if (!e.Cancelled)
@@ -438,6 +428,78 @@ namespace SeizeDay
                     // Ignore Errors
                 }
             }
+        }
+
+
+
+        /// <summary>
+        /// This method get inforamtion from xml about aphorism.
+        /// </summary>
+        /// <param name="Sender">object</param>
+        /// <param name="e">DownloadStringCompletedEventArgs</param>
+        private void webclient_DownloadStringCompleted_Aphorism(object Sender, DownloadStringCompletedEventArgs e)
+        {
+            if (e.Error != null)
+            {
+                if (warning == false)
+                {
+                    ShowError();
+                }
+
+                FeedItem noAphorismInfo = new FeedItem { Description = "No internet connection" };
+
+                this.AphorismList.ItemsSource = new List<FeedItem>() { noAphorismInfo };
+            }
+            else
+            {
+                XElement _xml;
+
+                try
+                {
+                    if (!e.Cancelled)
+                    {
+                        _xml = XElement.Parse(e.Result);
+                        AphorismList.Items.Clear();
+
+                        //FeedItem _item = new FeedItem();
+
+                        //_item.Title = _xml.Element("channel").Element("item").Element("title").Value;
+                        //_item.Description = Regex.Replace(_xml.Element("channel").Element("item").Element("description").Value, @"<(.|\n)*?>", String.Empty);
+                        //_item.Link = _xml.Element("channel").Element("item").Element("link").Value;
+                        //_item.Guid = _xml.Element("channel").Element("item").Element("guid").Value;
+                        //_item.Published = DateTime.Parse(_xml.Element("channel").Element("item").Element("pubDate").Value);
+
+                        //AphorismList.Items.Add(_item);
+
+                        foreach (XElement value in _xml.Elements("channel").Elements("item"))
+                        {
+                            FeedItem _item = new FeedItem();
+                            _item.Title = value.Element("title").Value;
+                            _item.Description = Regex.Replace(value.Element("description").Value, @"<(.|\n)*?>", String.Empty);
+
+                            AphorismList.Items.Add(_item);
+                        }
+                    }
+                }
+                catch
+                {
+                    // Ignore Errors
+                }
+            }
+        }
+
+
+
+        /// <summary>
+        /// This method show warrning about internet connection once.
+        /// </summary>
+        private void ShowError()
+        {
+            // Show message about problem with connection.
+            MessageBox.Show("You have problem with internet connection");
+
+            // Set this, and after that error never show again.
+            warning = true;
         }
 
 

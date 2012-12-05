@@ -78,7 +78,7 @@
 
         <Grid x:Name="ContentPanel" Grid.Row="1" >
             <ProgressBar x:Name="myProgressBar" HorizontalAlignment="Left" Height="80" Width="480" Margin="0,240,0,0" VerticalAlignment="Top"/>
-            <ListBox HorizontalAlignment="Left" Height="619" VerticalAlignment="Top" Width="491" Margin="-13,0,0,0">
+            <ListBox HorizontalAlignment="Left" Height="619" VerticalAlignment="Top" Width="491" Margin="-13,0,0,0">               
                 <Grid x:Name="ListToDo" Height="250" Width="480">
                     <TextBlock Text="List to do:" FontSize="{StaticResource PhoneFontSizeMediumLarge}" Style="{StaticResource PhoneTextNormalStyle}" Margin="0,5,324,217" HorizontalAlignment="Right" Width="126"/>
                     <ListBox x:Name="toDoItemsListBox" ItemsSource="{Binding ToDoItems}" Grid.Row="1" Margin="12, 35, 0, 0" Width="480" Height="215">
@@ -151,18 +151,27 @@
                     <ListBox  Height="250" HorizontalAlignment="Left" ItemsSource="{Binding NewsInfo}"  x:Name="NewsList" VerticalAlignment="Top" Width="480" Margin="0,40,0,0">
                         <ListBox.ItemTemplate>
                             <DataTemplate>
-                                    <Grid Height="150" Width="480" Margin="0,20,0,0">
-                                        <HyperlinkButton TargetName="_blank" NavigateUri="{Binding Path=Link}" Content="{Binding Path=Title}" Margin="0,-100,0,0" Width="480" Height="50"/>
-                                        <TextBlock Style="{StaticResource PhoneTextNormalStyle}" TextWrapping="Wrap" Text="{Binding Path=Description}" Margin="10,50,0,0" Height="90"/>
+                                    <Grid Height="170" Width="480">
+                                        <HyperlinkButton TargetName="_blank" NavigateUri="{Binding Path=Link}" Content="{Binding Path=Title}" Margin="0,-120,0,0" Width="480" Height="50"/>
+                                        <TextBlock Style="{StaticResource PhoneTextNormalStyle}" TextWrapping="Wrap" Text="{Binding Path=Description}" Margin="10,40,0,0" Height="110"/>
                                         <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="{Binding Path=Publishe}" Height="20" Margin="10,130,0,0"/>
                                     </Grid>
                         </DataTemplate>
                         </ListBox.ItemTemplate>
                     </ListBox>
                 </Grid>
-                <Grid x:Name="Aphorism" Height="150" Width="480" Margin="10,0,0,0">
-                    <TextBlock Text="Aphorism" Margin="92,23,53.5,40" Style="{StaticResource PhoneTextTitle1Style}"  HorizontalAlignment="Center"/>
-                    <TextBlock Text="This component show aphorism for day" Style="{StaticResource PhoneTextNormalStyle}" Margin="67,110,0,10" HorizontalAlignment="Center" Width="375"/>
+                <Grid x:Name="Aphorism" Height="200" Width="480" Margin="10,0,0,0">
+                    <TextBlock Text="Aphorism:" FontSize="{StaticResource PhoneFontSizeMediumLarge}" Style="{StaticResource PhoneTextNormalStyle}" Margin="20,-155,0,0" HorizontalAlignment="Left" Height="30"/>
+                    <ListBox  Height="150" HorizontalAlignment="Left" ItemsSource="{Binding Aphorism}"  x:Name="AphorismList" VerticalAlignment="Top" Width="480" ScrollViewer.VerticalScrollBarVisibility="Disabled" Margin="0,40,0,0">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Height="150" Width="480">
+                                    <TextBlock Style="{StaticResource PhoneTextNormalStyle}" TextWrapping="Wrap"  FontSize="{StaticResource PhoneFontSizeMediumLarge}" Text="{Binding Path=Title}" Margin="10,-80,0,0" Width="480" Height="80"/>
+                                    <TextBlock Style="{StaticResource PhoneTextNormalStyle}" TextWrapping="Wrap" Text="{Binding Path=Description}" Margin="10,60,0,0" Height="80"/>
+                                </Grid>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
                 </Grid>
             </ListBox>
 
