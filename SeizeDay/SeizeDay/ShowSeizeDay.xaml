@@ -76,12 +76,12 @@
         </StackPanel>
 
 
-        <Grid x:Name="ContentPanel" Grid.Row="1">
+        <Grid x:Name="ContentPanel" Grid.Row="1" >
             <ProgressBar x:Name="myProgressBar" HorizontalAlignment="Left" Height="80" Width="480" Margin="0,240,0,0" VerticalAlignment="Top"/>
             <ListBox HorizontalAlignment="Left" Height="619" VerticalAlignment="Top" Width="491" Margin="-13,0,0,0">
-                <Grid x:Name="ListToDo" Height="250" Width="480" >
+                <Grid x:Name="ListToDo" Height="250" Width="480">
                     <TextBlock Text="List to do:" FontSize="{StaticResource PhoneFontSizeMediumLarge}" Style="{StaticResource PhoneTextNormalStyle}" Margin="0,5,324,217" HorizontalAlignment="Right" Width="126"/>
-                    <ListBox x:Name="toDoItemsListBox" ItemsSource="{Binding ToDoItems}" Grid.Row="1" Margin="12, 0, 0, 0" Width="480" Height="250">
+                    <ListBox x:Name="toDoItemsListBox" ItemsSource="{Binding ToDoItems}" Grid.Row="1" Margin="12, 35, 0, 0" Width="480" Height="215">
                         <ListBox.ItemTemplate>
                             <DataTemplate>
                                 <Grid HorizontalAlignment="Stretch" Width="440" >
@@ -146,9 +146,19 @@
                     </ListBox>
 
                 </Grid>
-                <Grid x:Name="News" Height="150" Width="480" Margin="10,0,0,0">
-                    <TextBlock Text="News" Margin="0,23,0,40" Style="{StaticResource PhoneTextTitle1Style}"  HorizontalAlignment="Center"/>
-                    <TextBlock Text="This component show interesting news for you" Style="{StaticResource PhoneTextNormalStyle}" Margin="26,110,10,16" HorizontalAlignment="Center"/>
+                <Grid x:Name="News" Height="250" Width="480" Margin="10,0,0,0">
+                    <TextBlock Text="News:" FontSize="{StaticResource PhoneFontSizeMediumLarge}" Style="{StaticResource PhoneTextNormalStyle}" Margin="20,5,0,0" HorizontalAlignment="Left" Width="126"/>
+                    <ListBox  Height="250" HorizontalAlignment="Left" ItemsSource="{Binding NewsInfo}"  x:Name="NewsList" VerticalAlignment="Top" Width="480" Margin="0,40,0,0">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                    <Grid Height="150" Width="480" Margin="0,20,0,0">
+                                        <HyperlinkButton TargetName="_blank" NavigateUri="{Binding Path=Link}" Content="{Binding Path=Title}" Margin="0,-100,0,0" Width="480" Height="50"/>
+                                        <TextBlock Style="{StaticResource PhoneTextNormalStyle}" TextWrapping="Wrap" Text="{Binding Path=Description}" Margin="10,50,0,0" Height="90"/>
+                                        <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="{Binding Path=Publishe}" Height="20" Margin="10,130,0,0"/>
+                                    </Grid>
+                        </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
                 </Grid>
                 <Grid x:Name="Aphorism" Height="150" Width="480" Margin="10,0,0,0">
                     <TextBlock Text="Aphorism" Margin="92,23,53.5,40" Style="{StaticResource PhoneTextTitle1Style}"  HorizontalAlignment="Center"/>

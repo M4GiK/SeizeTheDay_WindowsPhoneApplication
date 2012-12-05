@@ -8,7 +8,6 @@ using Microsoft.Phone.Controls;
 using Microsoft.Phone.Scheduler;
 using SeizeDay.ViewModels;
 
-
 namespace SeizeDay
 {
     /// <summary>
@@ -368,7 +367,8 @@ namespace SeizeDay
             }
             else if (itemComponentToDelete.ItemName == "News")
             {
-
+                // Navigate back to the NewsPage page.
+                NavigationService.Navigate(new Uri("/NewsPage.xaml", UriKind.Relative));
             }
             else if (itemComponentToDelete.ItemName == "Aphorism")
             {
@@ -432,41 +432,41 @@ namespace SeizeDay
                         ComponentDB.ComponentItems.InsertOnSubmit(newComponent);
                     }
                 }
-                else if (component.Equals("weather"))
-                {
-                    var firstOccurence = ComponentItems.Where(item => item.ItemName == "Weather");
+                //else if (component.Equals("weather"))
+                //{
+                //    var firstOccurence = ComponentItems.Where(item => item.ItemName == "Weather");
 
-                    if (firstOccurence.Count() == 0)
-                    {
-                        string city;
-                        NavigationContext.QueryString.TryGetValue("city", out city);
+                //    if (firstOccurence.Count() == 0)
+                //    {
+                //        string city;
+                //        NavigationContext.QueryString.TryGetValue("city", out city);
 
-                        // Create a new to-do item based on the text box.
-                        ViewModels.ComponentItem newComponent = new ViewModels.ComponentItem { ItemName = "Weather", Data = city  };
+                //        // Create a new to-do item based on the text box.
+                //        ViewModels.ComponentItem newComponent = new ViewModels.ComponentItem { ItemName = "Weather", Data = city  };
 
-                        // Add a to-do item to the observable collection.
-                        ComponentItems.Add(newComponent);
+                //        // Add a to-do item to the observable collection.
+                //        ComponentItems.Add(newComponent);
 
-                        // Add a component item to the local database
-                        ComponentDB.ComponentItems.InsertOnSubmit(newComponent);
-                    }
-                }
-                else if (component.Equals("news"))
-                {
-                    var firstOccurence = ComponentItems.Where(item => item.ItemName == "News");
+                //        // Add a component item to the local database
+                //        ComponentDB.ComponentItems.InsertOnSubmit(newComponent);
+                //    }
+                //}
+                //else if (component.Equals("news"))
+                //{
+                //    var firstOccurence = ComponentItems.Where(item => item.ItemName == "News");
 
-                    if (firstOccurence.Count() == 0)
-                    {
-                        // Create a new to-do item based on the text box.
-                        ViewModels.ComponentItem newComponent = new ViewModels.ComponentItem { ItemName = "News" };
+                //    if (firstOccurence.Count() == 0)
+                //    {
+                //        // Create a new to-do item based on the text box.
+                //        ViewModels.ComponentItem newComponent = new ViewModels.ComponentItem { ItemName = "News" };
 
-                        // Add a to-do item to the observable collection.
-                        ComponentItems.Add(newComponent);
+                //        // Add a to-do item to the observable collection.
+                //        ComponentItems.Add(newComponent);
 
-                        // Add a component item to the local database
-                        ComponentDB.ComponentItems.InsertOnSubmit(newComponent);
-                    }
-                }
+                //        // Add a component item to the local database
+                //        ComponentDB.ComponentItems.InsertOnSubmit(newComponent);
+                //    }
+                //}
                 else if (component.Equals("aphorism"))
                 {
                     var firstOccurence = ComponentItems.Where(item => item.ItemName == "Aphorism");
