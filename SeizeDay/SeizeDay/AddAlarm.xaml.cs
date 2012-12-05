@@ -11,9 +11,13 @@ namespace AlarmAlarm
     /// </summary>
     public partial class AddAlarm : PhoneApplicationPage
     {
+        /// <summary>
+        /// Varible to need to set sound and alarm time.
+        /// </summary>
+        private string alarmSound;
 
         /// <summary>
-        /// Constructor initializing all needs components
+        /// Constructor initializing all needs components.
         /// </summary>
         public AddAlarm()
         {
@@ -46,7 +50,7 @@ namespace AlarmAlarm
             Reminder reminder = new Reminder(nameReminder);
 
             reminder.Title = "“Determination is the wake-up call to the human will”";
-            reminder.BeginTime = time.AddSeconds(15);        //beginTime;
+            reminder.BeginTime = time.AddSeconds(6);         //beginTime;
             reminder.ExpirationTime = time.AddMinutes(2);    //expirationTime;
             reminder.NavigationUri = navigationUri;
 
@@ -55,7 +59,15 @@ namespace AlarmAlarm
 
             Alarm alarm = new Alarm(nameAlarm);
 
-            alarm.Sound = new Uri("/Ringtones/01.wma", UriKind.Relative);
+            if (alarmSound == null)
+            {
+                alarm.Sound = new Uri("/Ringtones/sensitivewalk.wma", UriKind.Relative);
+            }
+            else
+            {
+                alarm.Sound = new Uri(alarmSound, UriKind.Relative);
+            }
+
             alarm.BeginTime = time;                         // beginTime;
             alarm.ExpirationTime = time.AddMinutes(2);      // expirationTime;
 
@@ -82,8 +94,39 @@ namespace AlarmAlarm
             ComponentDB.SubmitChanges();
             
             // Navigate back to the main page.
-            NavigationService.GoBack();
+            NavigationService.Navigate(new Uri("/mainPage.xaml", UriKind.Relative)); ;
         }
-        
+
+
+
+        /// <summary>
+        /// Method call new page with option to choose music
+        /// </summary>
+        /// <param name="sender">object</param>
+        /// <param name="e">RoutedEventArgs</param>
+        private void ChooseSoundButton_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/SoundCollectionPage.xaml", UriKind.Relative));
+        }
+
+
+
+        /// <summary>
+        ///  Method called after back from another page.
+        /// </summary>
+        /// <param name="e">NavigationEventArgs</param>
+        protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
+        {
+            // Call the base method.
+            base.OnNavigatedTo(e);
+
+            string sound;
+
+            // Try get value for component
+            if (NavigationContext.QueryString.TryGetValue("sound", out sound))
+            {
+                alarmSound = "/Ringtones/" + sound;
+            }
+        }
     }
 }

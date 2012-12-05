@@ -11,50 +11,140 @@
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
     mc:Ignorable="d"
-    shell:SystemTray.IsVisible="True" d:DesignHeight="768" d:DesignWidth="480">
+    shell:SystemTray.IsVisible="True" d:DesignHeight="768" d:DesignWidth="480"
+    Loaded="MainPage_Loaded">
 
     <!--LayoutRoot is the root grid where all page content is placed-->
-    <Grid x:Name="LayoutRoot" Background="Transparent">
+    <Grid x:Name="LayoutRoot" Opacity="0.995">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Image/backgorund.jpg"/>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
         <!--TitlePanel contains the name of the application and page title-->
-        <StackPanel Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="MY APPLICATION" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock Text="page name" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+
+        <StackPanel Grid.Row="0">
+            <Grid x:Name="ContentGrid" Grid.Row="1">
+                <Grid Height="150" Margin="162,0" >
+                    <Ellipse x:Name="ClockFaceEllipse" Style="{StaticResource ClockFace}">
+                    </Ellipse>
+                    <Canvas x:Name="ClockHandsCanvas">
+                        <Canvas.Resources>
+                            <Storyboard x:Name="ClockStoryboard">
+                                <DoubleAnimation x:Name="HourAnimation"
+                                             Storyboard.TargetName="HourHandTransform"
+                                             Storyboard.TargetProperty="Angle"
+                                             Duration="12:0:0" RepeatBehavior="Forever" To="360" />
+                                <DoubleAnimation x:Name="MinuteAnimation"
+                                             Storyboard.TargetName="MinuteHandTransform" 
+                                             Storyboard.TargetProperty="Angle"
+                                             Duration="1:0:0" RepeatBehavior="Forever" To="360" />
+                                <DoubleAnimation x:Name="SecondAnimation"
+                                             Storyboard.TargetName="SecondHandTransform" 
+                                             Storyboard.TargetProperty="Angle"
+                                             Duration="0:1:0" RepeatBehavior="Forever" To="360" />
+                            </Storyboard>
+                        </Canvas.Resources>
+                        <Rectangle Canvas.ZIndex="3" Width="2" Height="87" RadiusX="1" RadiusY="1" Style="{StaticResource SecondHand}" Canvas.Left="76.5" Canvas.Top="8">
+                            <Rectangle.RenderTransform>
+                                <TransformGroup>
+                                    <RotateTransform CenterX="1" CenterY="67" x:Name="SecondHandTransform" />
+                                </TransformGroup>
+                            </Rectangle.RenderTransform>
+                        </Rectangle>
+                        <Rectangle Canvas.ZIndex="2" Width="4" Height="67" RadiusX="2" RadiusY="2" Style="{StaticResource ClockHand}" Canvas.Left="75.5" Canvas.Top="8">
+                            <Rectangle.RenderTransform>
+                                <TransformGroup>
+                                    <RotateTransform CenterX="2" CenterY="67" x:Name="MinuteHandTransform" />
+                                </TransformGroup>
+                            </Rectangle.RenderTransform>
+                        </Rectangle>
+                        <Ellipse Canvas.ZIndex="0" Width="5" Height="5" Style="{StaticResource ClockCenter}" Canvas.Left="75" Canvas.Top="75" />
+                        <Rectangle Canvas.ZIndex="1" Width="5" Height="45" RadiusX="3" RadiusY="3" Style="{StaticResource ClockHand}" Canvas.Left="75" Canvas.Top="30">
+                            <Rectangle.RenderTransform>
+                                <TransformGroup>
+                                    <RotateTransform CenterX="2.5" CenterY="45" x:Name="HourHandTransform" />
+                                </TransformGroup>
+                            </Rectangle.RenderTransform>
+                        </Rectangle>
+                    </Canvas>
+                </Grid>
+            </Grid>
         </StackPanel>
 
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+
+        <Grid x:Name="ContentPanel" Grid.Row="1">
+            <ProgressBar x:Name="myProgressBar" HorizontalAlignment="Left" Height="80" Width="480" Margin="0,240,0,0" VerticalAlignment="Top"/>
             <ListBox HorizontalAlignment="Left" Height="619" VerticalAlignment="Top" Width="491" Margin="-13,0,0,0">
-                <Grid x:Name="ListToDo" Height="150" Width="480" Margin="10,0" >
-                    <TextBlock Text="List to do" Margin="0,23,0,40" Style="{StaticResource PhoneTextTitle1Style}"  HorizontalAlignment="Center"/>
-                    <TextBlock Text="This component store you task to do" Style="{StaticResource PhoneTextNormalStyle}" Margin="26,110,10,16" HorizontalAlignment="Center"/>
-                </Grid>
-                <Grid x:Name="Weather" Height="150" Width="480" Margin="10,0,0,0">
-                    <ListBox  Height="99" HorizontalAlignment="Left" Margin="0,20,0,0" Name="listBoxc" VerticalAlignment="Top" Width="460" ItemsSource="{Binding xyz}">
+                <Grid x:Name="ListToDo" Height="250" Width="480" >
+                    <TextBlock Text="List to do:" FontSize="{StaticResource PhoneFontSizeMediumLarge}" Style="{StaticResource PhoneTextNormalStyle}" Margin="0,5,324,217" HorizontalAlignment="Right" Width="126"/>
+                    <ListBox x:Name="toDoItemsListBox" ItemsSource="{Binding ToDoItems}" Grid.Row="1" Margin="12, 0, 0, 0" Width="480" Height="250">
                         <ListBox.ItemTemplate>
                             <DataTemplate>
-                                <StackPanel Orientation="Horizontal" Height="99" >
-                                    <Grid Height="100">
+                                <Grid HorizontalAlignment="Stretch" Width="440" >
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50" />
+                                        <ColumnDefinition Width="*" />            
+                                    </Grid.ColumnDefinitions>
+                                    <CheckBox
+                                        IsChecked="{Binding IsComplete, Mode=TwoWay}"
+                                        Grid.Column="0"
+                                        VerticalAlignment="Center"/>
+                                            <TextBlock
+                                        Text="{Binding ItemName}"
+                                        FontSize="{StaticResource PhoneFontSizeLarge}"
+                                        Grid.Column="1"
+                                        VerticalAlignment="Center"/>
+                                </Grid>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </Grid>
+                <Grid x:Name="Weather" Height="150" Width="480">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="61*"/>
+                        <ColumnDefinition Width="19*"/>
+                    </Grid.ColumnDefinitions>
+                    <ListBox  Height="150" HorizontalAlignment="Left" ItemsSource="{Binding WeatherInfoCurrent}"  Name="listBoxc" VerticalAlignment="Top" Width="480" ScrollViewer.VerticalScrollBarVisibility="Disabled" Grid.ColumnSpan="2">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal" Height="150">
+                                    <Grid Height="150">
                                         <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="100"></ColumnDefinition>
+                                            <ColumnDefinition Width="150"></ColumnDefinition>
                                             <ColumnDefinition Width="*"></ColumnDefinition>
                                         </Grid.ColumnDefinitions>
-
-                                        <Image  Grid.Column="0" Height="100" Width="100" Source="{Binding Path=icon}"></Image>
-                                        <TextBlock Text="{Binding Path=observation_time}" Foreground="Orange"  Grid.Column="1" Margin="10,10,10,60"></TextBlock>
-                                        <TextBlock Grid.Column="1" Margin="10,40,300,30" Text="C: "></TextBlock>
-                                        <TextBlock Text="{Binding Path=temp_C}" Grid.Column="1" Margin="70,40,250,30" FontWeight="Bold"></TextBlock>
-                                        <TextBlock Text="{Binding Path=condition}" Grid.Column="1" Margin="10,75,10,0"></TextBlock>
-
+                                        <Image  Grid.Column="0" Height="150" Width="150" Source="{Binding Path=icon}"></Image>
+                                        <TextBlock Text="{Binding observation_time}" Foreground="{StaticResource PhoneAccentBrush}"  Grid.Column="1" Margin="10,10,10,60"></TextBlock>
+                                        <TextBlock Text="{Binding Path=temp_C}"  Style="{StaticResource PhoneTextTitle1Style}" FontSize="{StaticResource PhoneFontSizeMediumLarge}" Grid.Column="1" Margin="70,40,250,30" FontWeight="Bold"></TextBlock>
+                                        <TextBlock Text="{Binding Path=condition}" Style="{StaticResource PhoneTextTitle1Style}" FontSize="{StaticResource PhoneFontSizeMediumLarge}"  Grid.Column="1" Margin="10,75,10,0"></TextBlock>
                                     </Grid>
                                 </StackPanel>
                             </DataTemplate>
-
                         </ListBox.ItemTemplate>
                     </ListBox>
+                    <ListBox  Height="150" HorizontalAlignment="Left" ItemsSource="{Binding WeatherInfoCurrent}"  x:Name="listBoxc_Copy" VerticalAlignment="Top" Width="480" ScrollViewer.VerticalScrollBarVisibility="Disabled" Margin="0,-208,0,0" Grid.ColumnSpan="2">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal" Height="150">
+                                    <Grid Height="150">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="150"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image  Grid.Column="0" Height="150" Width="150" Source="{Binding icon}"/>
+                                        <TextBlock Text="{Binding observation_time}" Foreground="{StaticResource PhoneAccentBrush}"  Grid.Column="1" Margin="10,10,10,60"/>
+                                        <TextBlock Text="{Binding temp_C}"  Style="{StaticResource PhoneTextTitle1Style}" FontSize="{StaticResource PhoneFontSizeMediumLarge}" Grid.Column="1" Margin="70,40,250,30" FontWeight="Bold"/>
+                                        <TextBlock Text="{Binding condition}" Style="{StaticResource PhoneTextTitle1Style}" FontSize="{StaticResource PhoneFontSizeMediumLarge}"  Grid.Column="1" Margin="10,75,10,0"/>
+                                    </Grid>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+
                 </Grid>
                 <Grid x:Name="News" Height="150" Width="480" Margin="10,0,0,0">
                     <TextBlock Text="News" Margin="0,23,0,40" Style="{StaticResource PhoneTextTitle1Style}"  HorizontalAlignment="Center"/>

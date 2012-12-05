@@ -1,4 +1,0 @@
-C:\studia\project\repo6\endProject\SeizeDay\ScheduledTaskAgent1\Bin\Debug\ScheduledTaskAgent1.dll
-C:\studia\project\repo6\endProject\SeizeDay\ScheduledTaskAgent1\Bin\Debug\ScheduledTaskAgent1.pdb
-C:\studia\project\repo6\endProject\SeizeDay\ScheduledTaskAgent1\obj\Debug\ScheduledTaskAgent1.dll
-C:\studia\project\repo6\endProject\SeizeDay\ScheduledTaskAgent1\obj\Debug\ScheduledTaskAgent1.pdb

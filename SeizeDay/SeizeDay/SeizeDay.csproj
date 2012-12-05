@@ -25,6 +25,7 @@
     <SilverlightAppEntry>SeizeDay.App</SilverlightAppEntry>
     <ValidateXaml>true</ValidateXaml>
     <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <ExpressionBlendVersion>5.0.30924.0</ExpressionBlendVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -64,8 +65,6 @@
     <Reference Include="System.Xml" />
     <Reference Include="mscorlib.extensions" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="Telerik.Windows.Controls.Primitives, Version=2012.3.1016.2040, Culture=neutral, PublicKeyToken=5803cfa389c90ce7" />
-    <Reference Include="Telerik.Windows.Core, Version=2012.3.1016.2040, Culture=neutral, PublicKeyToken=5803cfa389c90ce7" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddAlarm.xaml.cs">
@@ -84,6 +83,12 @@
       <DependentUpon>ShowSeizeDay.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SoundCollectionPage.xaml.cs">
+      <DependentUpon>SoundCollectionPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ToDoPage.xaml.cs">
+      <DependentUpon>ToDoPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\Component.cs" />
     <Compile Include="ViewModels\ComponentItem.cs" />
     <Compile Include="ViewModels\Maintenance.cs" />
@@ -121,6 +126,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="SoundCollectionPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ToDoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WeatherSettings.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -131,19 +144,32 @@
     <None Include="Properties\WMAppManifest.xml" />
   </ItemGroup>
   <ItemGroup>
+    <BlendEmbeddedFont Include="Fonts\QuartzMS.TTF">
+      <IsSystemFont>True</IsSystemFont>
+      <All>True</All>
+      <AutoFill>True</AutoFill>
+    </BlendEmbeddedFont>
     <Resource Include="Image\ApplicationIcon.png" />
+    <Resource Include="Image\backgorund.jpg" />
     <Resource Include="Image\Background.png" />
     <Resource Include="Image\Button+.png" />
     <Resource Include="Image\Button+_pressed.png" />
-    <Resource Include="Image\SplashScreenImage.jpg" />
+    <Content Include="Image\appbar.delete.rest.png" />
+    <Content Include="Image\arrow.png" />
+    <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
     <Content Include="Image\Button-.png" />
     <Content Include="Image\Button-_pressed.png" />
+    <Content Include="Ringtones\baroqueloop.wma" />
+    <Content Include="Ringtones\beyonthepain.wma" />
+    <Content Include="Ringtones\inbetween.wma" />
+    <Content Include="Ringtones\sensitivewalk.wma" />
+    <Content Include="Ringtones\spanishmusic.wma" />
     <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
-    <Content Include="Ringtones\01.wma" />
+    <Content Include="Ringtones\ukrainwarship.wma" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
@@ -155,4 +181,5 @@
   </Target>
   -->
   <ProjectExtensions />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Expression\Blend\WindowsPhone\v8.0\Microsoft.Expression.Blend.WindowsPhone.targets" />
 </Project>
