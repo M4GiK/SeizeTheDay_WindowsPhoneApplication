@@ -13,6 +13,9 @@ using System.Collections.Generic;
 
 namespace SeizeDay
 {
+    /// <summary>
+    /// This class show significant components for user.
+    /// </summary>
     public partial class ShowSeizeDay : PhoneApplicationPage
     {
         /// <summary>
@@ -189,13 +192,50 @@ namespace SeizeDay
         private void LoadComponents()
         {
 
-            // TODO
             // check which components should be loaded
-            var ComponentItemInDB = from ViewModels.ComponentItem weather in ComponentDB.ComponentItems select weather;
+            var ComponentItemInDB = from ViewModels.ComponentItem item in ComponentDB.ComponentItems select item;
 
             // Execute the query and place the results into a collection.
             ComponentItems = new ObservableCollection<ViewModels.ComponentItem>(ComponentItemInDB);
 
+            ListComponent(ComponentItems);
+
+            WeatherComponent(ComponentItems);
+
+            NewsComponent(ComponentItems);
+
+            AphorismComponent(ComponentItems);
+
+        }
+
+
+
+        /// <summary>
+        /// Load List to do component to list.
+        /// </summary>
+        /// <param name="ComponentItems">ObservableCollection<ViewModels.ComponentItem></param>
+        private void ListComponent(ObservableCollection<ViewModels.ComponentItem> ComponentItems)
+        {
+            ViewModels.ComponentItem firstOccurence = ComponentItems.FirstOrDefault(item => item.ItemName == "List to do");
+
+            if (firstOccurence != null)
+            {
+
+            }
+            else
+            {
+                ListToDo.Visibility = Visibility.Collapsed;
+            }
+        }
+
+
+
+        /// <summary>
+        /// Load Weather component to list.
+        /// </summary>
+        /// <param name="ComponentItems">ObservableCollection<ViewModels.ComponentItem></param>
+        private void WeatherComponent(ObservableCollection<ViewModels.ComponentItem> ComponentItems)
+        {
             ViewModels.ComponentItem firstOccurence = ComponentItems.FirstOrDefault(item => item.ItemName == "Weather");
 
             if (firstOccurence != null)
@@ -208,12 +248,58 @@ namespace SeizeDay
                 webclient.DownloadStringAsync(new Uri("http://free.worldweatheronline.com/feed/weather.ashx?key=bed6524371124406111310&q=" + city + "&num_of_days=1&format=xml")); // weather location 
                 // http://free.worldweatheronline.com/feed/weather.ashx?key=bed6524371124406111310&q=mumbai,india&num_of_days=3&format=xml
             }
+            else
+            {
+                Weather.Visibility = Visibility.Collapsed;
+            }
         }
 
 
 
         /// <summary>
-        /// 
+        /// Load News component to list.
+        /// </summary>
+        /// <param name="ComponentItems">ObservableCollection<ViewModels.ComponentItem> ComponentItems</param>
+        private void NewsComponent(ObservableCollection<ViewModels.ComponentItem> ComponentItems)
+        {
+
+            ViewModels.ComponentItem firstOccurence = ComponentItems.FirstOrDefault(item => item.ItemName == "News");
+
+            if (firstOccurence != null)
+            {
+                
+            }
+            else
+            {
+                News.Visibility = Visibility.Collapsed;
+            }
+        }
+
+
+
+        /// <summary>
+        /// Load Aphorism component to list.
+        /// </summary>
+        /// <param name="ComponentItems">ObservableCollection<ViewModels.ComponentItem></param>
+        private void AphorismComponent(ObservableCollection<ViewModels.ComponentItem> ComponentItems)
+        {
+            ViewModels.ComponentItem firstOccurence = ComponentItems.FirstOrDefault(item => item.ItemName == "Aphorism");
+
+            if (firstOccurence != null)
+            {
+                
+            }
+            else
+            {
+                Aphorism.Visibility = Visibility.Collapsed;
+            }
+        }
+
+
+
+
+        /// <summary>
+        /// Method fill inforamtion in component inside list. Also get information form internet about weather.
         /// </summary>
         /// <param name="sender">object</param>
         /// <param name="e">DownloadStringCompletedEventArgs</param>

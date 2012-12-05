@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Globalization;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Media;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Scheduler;
 using SeizeDay.ViewModels;
@@ -353,13 +350,31 @@ namespace SeizeDay
 
 
         /// <summary>
-        /// 
+        /// This method moved  to chosen page after double click on current element.
         /// </summary>
         /// <param name="sender">object</param>
-        /// <param name="e">System.Windows.Input.GestureEventArgs</param>
-        private void DoubleTap_action(object sender, System.Windows.Input.GestureEventArgs e)
+        /// <param name="e">Microsoft.Phone.Controls..GestureEventArgs</param>
+         private void DoubleTap_action(object sender, System.Windows.Input.GestureEventArgs e)
         {
+            if ( itemComponentToDelete.ItemName == "List to do" )
+            {
+                // Navigate back to the ToDoPage page.
+                NavigationService.Navigate(new Uri("/ToDoPage.xaml", UriKind.Relative));
+            }
+            else if (itemComponentToDelete.ItemName == "Weather")
+            {
+                // Navigate back to the WeatherSettings page.
+                NavigationService.Navigate(new Uri("/WeatherSettings.xaml", UriKind.Relative));
+            }
+            else if (itemComponentToDelete.ItemName == "News")
+            {
 
+            }
+            else if (itemComponentToDelete.ItemName == "Aphorism")
+            {
+
+
+            }
         }
 
 
@@ -484,62 +499,6 @@ namespace SeizeDay
             CheckAddedElements();
             
         }
-
-
-
-
-
-
-
-
-
-
-
-        //private void deleteTaskButton_Click(object sender, RoutedEventArgs e)
-        //{
-        //    // Cast parameter as a button.
-        //    var button = sender as Button;
-
-        //    if (button != null)
-        //    {
-        //        // Get a handle for the to-do item bound to the button.
-        //        ToDoItem toDoForDelete = button.DataContext as ToDoItem;
-
-        //        // Remove the to-do item from the observable collection.
-        //        ToDoItems.Remove(toDoForDelete);
-
-        //        // Remove the to-do item from the local database.
-        //        toDoDB.ToDoItems.DeleteOnSubmit(toDoForDelete);
-
-        //        // Save changes to the database.
-        //        toDoDB.SubmitChanges();
-
-        //        // Put the focus back to the main page.
-        //        this.Focus();
-        //    }
-        //}
-
-        //private void newToDoTextBox_GotFocus(object sender, RoutedEventArgs e)
-        //{
-        //    // Clear the text box when it gets focus.
-        //    newToDoTextBox.Text = String.Empty;
-        //}
-
-
-
-
-        //private void newToDoAddButton_Click(object sender, RoutedEventArgs e)
-        //{
-        //    // Create a new to-do item based on the text box.
-        //    ViewModels.ComponentItem newComponent = new ViewModels.ComponentItem { ItemName = newToDoTextBox.Text };
-
-        //    // Add a to-do item to the observable collection.
-        //    ViewModels.ComponentItem.Add(newComponent);
-
-        //    // Add a to-do item to the local database.
-        //    ComponentDB.ComponentItems.InsertOnSubmit(newComponent);
-        //}
-
 
 
 

@@ -65,8 +65,6 @@
     <Reference Include="System.Xml" />
     <Reference Include="mscorlib.extensions" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="Telerik.Windows.Controls.Primitives, Version=2012.3.1016.2040, Culture=neutral, PublicKeyToken=5803cfa389c90ce7" />
-    <Reference Include="Telerik.Windows.Core, Version=2012.3.1016.2040, Culture=neutral, PublicKeyToken=5803cfa389c90ce7" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddAlarm.xaml.cs">
