@@ -76,6 +76,10 @@
     <Compile Include="ComponentPage.xaml.cs">
       <DependentUpon>ComponentPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="NewsPage.xaml.cs">
+      <DependentUpon>NewsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\FeedItem.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -122,6 +126,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </DesignData>
+    <Page Include="NewsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ShowSeizeDay.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

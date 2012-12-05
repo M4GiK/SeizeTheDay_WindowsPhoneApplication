@@ -66,7 +66,7 @@ namespace SeizeDay
             News.Background = Application.Current.Resources["PhoneAccentBrush"] as SolidColorBrush;
 
             // Navigate back to the main page.
-            NavigationService.Navigate(new Uri("/MainPage.xaml?component=news", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/NewsPage.xaml", UriKind.Relative));
         }
 
 

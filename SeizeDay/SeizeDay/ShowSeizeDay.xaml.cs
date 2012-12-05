@@ -9,15 +9,20 @@ using System.Xml.Linq;
 using SeizeDay.ViewModels;
 using Microsoft.Phone.Scheduler;
 using System.Collections.Generic;
-
+using System.Text.RegularExpressions;
 
 namespace SeizeDay
 {
     /// <summary>
     /// This class show significant components for user.
     /// </summary>
-    public partial class ShowSeizeDay : PhoneApplicationPage
+    public partial class ShowSeizeDay : PhoneApplicationPage, INotifyPropertyChanged
     {
+        /// <summary>
+        /// Varible to show only once information about error
+        /// </summary>
+        private bool warning;
+
         /// <summary>
         /// Data context for the local database
         /// </summary>
@@ -245,11 +250,19 @@ namespace SeizeDay
             if (firstOccurence != null)
             {
                 // Define the query to gather all of the to-do items which are not done.
-                var toDoItemsInDB = from ViewModels.ToDoItem todo in ComponentDB.ToDoItems select todo;
-                //var toDoItemsInDBProperly = ComponentDB.ToDoItems.Where(item => item.IsComplete == false);
+                //var toDoItemsInDB = from ViewModels.ToDoItem todo in ComponentDB.ToDoItems select todo;
+                var toDoItemsInDBProperly = ComponentDB.ToDoItems.Where(item => item.IsComplete == false);
 
-                // Execute the query and place the results into a collection.
-                ToDoItems = new ObservableCollection<ViewModels.ToDoItem>(toDoItemsInDB);
+                if (toDoItemsInDBProperly.Count() > 0)
+                {
+                    // Execute the query and place the results into a collection.
+                    ToDoItems = new ObservableCollection<ViewModels.ToDoItem>(toDoItemsInDBProperly);
+                }
+                else
+                {
+                    ListToDo.Visibility = Visibility.Collapsed;
+                }
+
             }
             else
             {
@@ -296,7 +309,10 @@ namespace SeizeDay
 
             if (firstOccurence != null)
             {
-                
+                string news = firstOccurence.Data;
+                WebClient _client = new WebClient();
+                _client.DownloadStringCompleted += Feed;
+                _client.DownloadStringAsync(new Uri((news)));
             }
             else
             {
@@ -332,12 +348,14 @@ namespace SeizeDay
         /// </summary>
         /// <param name="sender">object</param>
         /// <param name="e">DownloadStringCompletedEventArgs</param>
-        void webclient_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
+        private void webclient_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
         {
             if (e.Error != null)
             {
-                // Show message about problem with connection.
-                MessageBox.Show("You have problem with internet connection");
+                if ( warning == false )
+                {
+                    ShowError();
+                }
 
                 WeatherInfoCurrent noInformationWeather = new WeatherInfoCurrent { observation_time = "No internet connection" };
 
@@ -357,6 +375,68 @@ namespace SeizeDay
                                            icon = weather.Element("weatherIconUrl").Value,
                                            condition = weather.Element("weatherDesc").Value
                                        };
+            }
+        }
+
+
+
+        /// <summary>
+        /// This method show warrning about internet connection once.
+        /// </summary>
+        private void ShowError()
+        {
+            // Show message about problem with connection.
+            MessageBox.Show("You have problem with internet connection");
+
+            // Set this, and after that error never show again.
+            warning = true;
+        }
+
+
+
+        /// <summary>
+        /// This method get inforamtion from xml about news.
+        /// </summary>
+        /// <param name="Sender">object</param>
+        /// <param name="e">DownloadStringCompletedEventArgs</param>
+        private void Feed(object Sender, DownloadStringCompletedEventArgs e)
+        {
+            if (e.Error != null)
+            {
+                if (warning == false)
+                {
+                    ShowError();
+                }
+
+                FeedItem noNewsInfo = new FeedItem { Description = "No internet connection" };
+
+                this.NewsList.ItemsSource = new List<FeedItem>() { noNewsInfo };
+            }
+            else
+            {
+                XElement _xml;
+                try
+                {
+                    if (!e.Cancelled)
+                    {
+                        _xml = XElement.Parse(e.Result);
+                        NewsList.Items.Clear();
+                        foreach (XElement value in _xml.Elements("channel").Elements("item"))
+                        {
+                            FeedItem _item = new FeedItem();
+                            _item.Title = value.Element("title").Value;
+                            _item.Description = Regex.Replace(value.Element("description").Value,@"<(.|\n)*?>", String.Empty);
+                            _item.Link = value.Element("link").Value;
+                            _item.Guid = value.Element("guid").Value;
+                            _item.Published = DateTime.Parse(value.Element("pubDate").Value);
+                            NewsList.Items.Add(_item);
+                        }
+                    }
+                }
+                catch
+                {
+                    // Ignore Errors
+                }
             }
         }
 
