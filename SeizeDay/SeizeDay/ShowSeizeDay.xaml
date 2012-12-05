@@ -87,8 +87,7 @@
                                 <Grid HorizontalAlignment="Stretch" Width="440" >
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="50" />
-                                        <ColumnDefinition Width="*" />
-                                        <ColumnDefinition Width="100" />
+                                        <ColumnDefinition Width="*" />            
                                     </Grid.ColumnDefinitions>
                                     <CheckBox
                                         IsChecked="{Binding IsComplete, Mode=TwoWay}"
@@ -105,7 +104,11 @@
                     </ListBox>
                 </Grid>
                 <Grid x:Name="Weather" Height="150" Width="480">
-                    <ListBox  Height="150" HorizontalAlignment="Left" ItemsSource="{Binding WeatherInfoCurrent}"  Name="listBoxc" VerticalAlignment="Top" Width="480" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="61*"/>
+                        <ColumnDefinition Width="19*"/>
+                    </Grid.ColumnDefinitions>
+                    <ListBox  Height="150" HorizontalAlignment="Left" ItemsSource="{Binding WeatherInfoCurrent}"  Name="listBoxc" VerticalAlignment="Top" Width="480" ScrollViewer.VerticalScrollBarVisibility="Disabled" Grid.ColumnSpan="2">
                         <ListBox.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal" Height="150">
@@ -118,6 +121,24 @@
                                         <TextBlock Text="{Binding observation_time}" Foreground="{StaticResource PhoneAccentBrush}"  Grid.Column="1" Margin="10,10,10,60"></TextBlock>
                                         <TextBlock Text="{Binding Path=temp_C}"  Style="{StaticResource PhoneTextTitle1Style}" FontSize="{StaticResource PhoneFontSizeMediumLarge}" Grid.Column="1" Margin="70,40,250,30" FontWeight="Bold"></TextBlock>
                                         <TextBlock Text="{Binding Path=condition}" Style="{StaticResource PhoneTextTitle1Style}" FontSize="{StaticResource PhoneFontSizeMediumLarge}"  Grid.Column="1" Margin="10,75,10,0"></TextBlock>
+                                    </Grid>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                    <ListBox  Height="150" HorizontalAlignment="Left" ItemsSource="{Binding WeatherInfoCurrent}"  x:Name="listBoxc_Copy" VerticalAlignment="Top" Width="480" ScrollViewer.VerticalScrollBarVisibility="Disabled" Margin="0,-208,0,0" Grid.ColumnSpan="2">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal" Height="150">
+                                    <Grid Height="150">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="150"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image  Grid.Column="0" Height="150" Width="150" Source="{Binding icon}"/>
+                                        <TextBlock Text="{Binding observation_time}" Foreground="{StaticResource PhoneAccentBrush}"  Grid.Column="1" Margin="10,10,10,60"/>
+                                        <TextBlock Text="{Binding temp_C}"  Style="{StaticResource PhoneTextTitle1Style}" FontSize="{StaticResource PhoneFontSizeMediumLarge}" Grid.Column="1" Margin="70,40,250,30" FontWeight="Bold"/>
+                                        <TextBlock Text="{Binding condition}" Style="{StaticResource PhoneTextTitle1Style}" FontSize="{StaticResource PhoneFontSizeMediumLarge}"  Grid.Column="1" Margin="10,75,10,0"/>
                                     </Grid>
                                 </StackPanel>
                             </DataTemplate>

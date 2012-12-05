@@ -72,6 +72,30 @@ namespace SeizeDay
             }
         }
 
+        /// <summary>
+        ///  Define an observable collection property that controls can bind to.
+        /// </summary>
+        private ObservableCollection<ViewModels.ToDoItem> _toDoItems;
+
+        /// <summary>
+        ///  Define an observable collection property that controls can bind to.
+        /// </summary>
+        public ObservableCollection<ViewModels.ToDoItem> ToDoItems
+        {
+            get
+            {
+                return _toDoItems;
+            }
+            set
+            {
+                if (_toDoItems != value)
+                {
+                    _toDoItems = value;
+                    NotifyPropertyChanged("ToDoItems");
+                }
+            }
+        }
+
 
         /// <summary>
         /// 
@@ -216,11 +240,16 @@ namespace SeizeDay
         /// <param name="ComponentItems">ObservableCollection<ViewModels.ComponentItem></param>
         private void ListComponent(ObservableCollection<ViewModels.ComponentItem> ComponentItems)
         {
-            ViewModels.ComponentItem firstOccurence = ComponentItems.FirstOrDefault(item => item.ItemName == "List to do");
+            ViewModels.ComponentItem firstOccurence = ComponentItems.FirstOrDefault(item => item.ItemName == "List to do" );
 
             if (firstOccurence != null)
             {
+                // Define the query to gather all of the to-do items which are not done.
+                var toDoItemsInDB = from ViewModels.ToDoItem todo in ComponentDB.ToDoItems select todo;
+                //var toDoItemsInDBProperly = ComponentDB.ToDoItems.Where(item => item.IsComplete == false);
 
+                // Execute the query and place the results into a collection.
+                ToDoItems = new ObservableCollection<ViewModels.ToDoItem>(toDoItemsInDB);
             }
             else
             {
@@ -330,6 +359,22 @@ namespace SeizeDay
                                        };
             }
         }
+
+
+
+        /// <summary>
+        /// Method called before going to another page.
+        /// </summary>
+        /// <param name="e">System.Windows.Navigation.NavigationEventArgs</param>
+        protected override void OnNavigatedFrom(System.Windows.Navigation.NavigationEventArgs e)
+        {
+            // Call the base method.
+            base.OnNavigatedFrom(e);
+
+            // Save changes to the database.
+            ComponentDB.SubmitChanges();
+        }
+
 
 
         #region INotifyPropertyChanged Members

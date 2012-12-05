@@ -66,7 +66,7 @@ namespace SeizeDay
 
         public void AddComponent()
         {
-            this.Items.Add(new ItemViewModel() { LineOne = "runtime one", LineTwo = "Maecenas praesent accumsan bibendum", LineThree = "Facilisi faucibus habitant inceptos interdum lobortis nascetur pharetra placerat pulvinar sagittis senectus sociosqu" });
+           
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
