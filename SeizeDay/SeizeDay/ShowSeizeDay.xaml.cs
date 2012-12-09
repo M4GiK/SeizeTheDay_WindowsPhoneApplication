@@ -214,7 +214,7 @@ namespace SeizeDay
 
 
         /// <summary>
-        /// 
+        /// Load components information from database
         /// </summary>
         private void LoadComponents()
         {
