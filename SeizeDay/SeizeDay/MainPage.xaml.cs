@@ -349,7 +349,7 @@ namespace SeizeDay
 
 
         /// <summary>
-        /// This method moved  to chosen page after double click on current element.
+        /// This method moves to chosen page after double click on current element.
         /// </summary>
         /// <param name="sender">object</param>
         /// <param name="e">Microsoft.Phone.Controls..GestureEventArgs</param>

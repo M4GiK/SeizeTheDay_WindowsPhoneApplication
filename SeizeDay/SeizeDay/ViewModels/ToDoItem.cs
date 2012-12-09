@@ -5,7 +5,7 @@ using System.Data.Linq.Mapping;
 namespace SeizeDay.ViewModels
 {
     /// <summary>
-    /// Table in Database containing inforamtian about ...
+    /// Table in Database containing information about components
     /// </summary>
     [Table]
     public class ToDoItem : INotifyPropertyChanged, INotifyPropertyChanging

@@ -84,7 +84,7 @@
             </Button>
             <Button Height="75" Width="75" Margin="255,75,6,0" Style="{StaticResource RoundButton}" BorderThickness="0" Name="btndeleteAlarm" Click="ButtonDeleteAlarm_Click" VerticalAlignment="Top">
                 <Button.Content>
-                    <Image Width="40" Height="40" Margin="-20,-20,-20,-20" Source="Image/button-.png"></Image>
+                    <Image Width="40" Height="40" Margin="-20,-20,-20,-20" Source="Image/Button-.png"></Image>
                 </Button.Content>
             </Button>
         </Grid>

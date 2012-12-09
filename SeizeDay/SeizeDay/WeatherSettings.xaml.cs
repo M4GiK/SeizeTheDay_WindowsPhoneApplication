@@ -8,7 +8,7 @@ using System.Linq;
 namespace SeizeDay
 {
     /// <summary>
-    /// This class get inforamtion about user location.
+    /// This class get inforamtion about location for weather component
     /// </summary>
     public partial class WeatherSettings : PhoneApplicationPage, INotifyPropertyChanged
     {
@@ -44,7 +44,7 @@ namespace SeizeDay
 
 
         /// <summary>
-        /// Constructor initializing all needs components.
+        /// Constructor initializing all needed components.
         /// </summary>
         public WeatherSettings()
         {
@@ -75,10 +75,10 @@ namespace SeizeDay
             if (firstOccurence.Count() == 0)
             {
 
-                // Create a new to-do item based on the text box.
+                // Create a new weather item based on the text box.
                 ViewModels.ComponentItem newComponent = new ViewModels.ComponentItem { ItemName = "Weather", Data = tbxCity.Text + "," + tbxCountry.Text };
 
-                // Add a to-do item to the observable collection.
+                // Add a weather item to the observable collection.
                 ComponentItems.Add(newComponent);
 
                 // Add a component item to the local database
@@ -91,10 +91,10 @@ namespace SeizeDay
                 ComponentDB.ComponentItems.DeleteAllOnSubmit(firstOccurence);
 
                 // Add new record to database.
-                // Create a new to-do item based on the text box.
+                // Create a new weather item based on the text box.
                 ViewModels.ComponentItem newComponent = new ViewModels.ComponentItem { ItemName = "Weather", Data = tbxCity.Text + "," + tbxCountry.Text };
 
-                // Add a to-do item to the observable collection.
+                // Add a weather item to the observable collection.
                 ComponentItems.Add(newComponent);
 
                 // Add a component item to the local database

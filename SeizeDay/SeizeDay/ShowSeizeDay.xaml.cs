@@ -115,8 +115,6 @@ namespace SeizeDay
             // Data context and observable collection are children of the main page.
             this.DataContext = this;
 
-            //LoadComponents();
-
             // Checking if date is not validate, remove from database
             ValidateDate();
 
@@ -250,7 +248,6 @@ namespace SeizeDay
             if (firstOccurence != null)
             {
                 // Define the query to gather all of the to-do items which are not done.
-                //var toDoItemsInDB = from ViewModels.ToDoItem todo in ComponentDB.ToDoItems select todo;
                 var toDoItemsInDBProperly = ComponentDB.ToDoItems.Where(item => item.IsComplete == false);
 
                 if (toDoItemsInDBProperly.Count() > 0)
@@ -283,12 +280,12 @@ namespace SeizeDay
             if (firstOccurence != null)
             {
                 // get data for weather: 
-                string city = firstOccurence.Data; // "Cracow,Poland"; // get from DB
+                string city = firstOccurence.Data; 
                 WebClient webclient = new WebClient();
                 webclient.DownloadStringCompleted += new DownloadStringCompletedEventHandler(webclient_DownloadStringCompleted_Weather);
 
                 webclient.DownloadStringAsync(new Uri("http://free.worldweatheronline.com/feed/weather.ashx?key=bed6524371124406111310&q=" + city + "&num_of_days=1&format=xml")); // weather location 
-                // http://free.worldweatheronline.com/feed/weather.ashx?key=bed6524371124406111310&q=mumbai,india&num_of_days=3&format=xml
+                // example address: http://free.worldweatheronline.com/feed/weather.ashx?key=bed6524371124406111310&q=mumbai,india&num_of_days=3&format=xml
             }
             else
             {
@@ -332,10 +329,10 @@ namespace SeizeDay
 
             if (firstOccurence != null)
             {
-                string aphroism = "http://www.inspirationline.com/inspirationline.xml";
+                string aphorism = "http://www.inspirationline.com/inspirationline.xml";
                 WebClient _client = new WebClient();
                 _client.DownloadStringCompleted += webclient_DownloadStringCompleted_Aphorism;
-                _client.DownloadStringAsync(new Uri((aphroism)));
+                _client.DownloadStringAsync(new Uri((aphorism)));
             }
             else
             {
@@ -347,7 +344,7 @@ namespace SeizeDay
 
 
         /// <summary>
-        /// Method fill inforamtion in component inside list. Also get information form internet about weather.
+        /// Method to fill information in component inside list. Also get information form internet about weather.
         /// </summary>
         /// <param name="sender">object</param>
         /// <param name="e">DownloadStringCompletedEventArgs</param>
@@ -384,7 +381,7 @@ namespace SeizeDay
 
 
         /// <summary>
-        /// This method get inforamtion from xml about news.
+        /// This method get information from xml about news.
         /// </summary>
         /// <param name="Sender">object</param>
         /// <param name="e">DownloadStringCompletedEventArgs</param>
@@ -460,16 +457,6 @@ namespace SeizeDay
                     {
                         _xml = XElement.Parse(e.Result);
                         AphorismList.Items.Clear();
-
-                        //FeedItem _item = new FeedItem();
-
-                        //_item.Title = _xml.Element("channel").Element("item").Element("title").Value;
-                        //_item.Description = Regex.Replace(_xml.Element("channel").Element("item").Element("description").Value, @"<(.|\n)*?>", String.Empty);
-                        //_item.Link = _xml.Element("channel").Element("item").Element("link").Value;
-                        //_item.Guid = _xml.Element("channel").Element("item").Element("guid").Value;
-                        //_item.Published = DateTime.Parse(_xml.Element("channel").Element("item").Element("pubDate").Value);
-
-                        //AphorismList.Items.Add(_item);
 
                         foreach (XElement value in _xml.Elements("channel").Elements("item"))
                         {

@@ -43,8 +43,10 @@ namespace AlarmAlarm
             // value and the TimePicker value.
             DateTime time = (DateTime)timePicker.Value;
 
+            // if time of the day already passed, set alarm for next day
             if ( time < DateTime.Now ) time = time.AddDays(1);
 
+            // which page alarm should be navigated to after displaying
             Uri navigationUri = new Uri("/ShowSeizeDay.xaml", UriKind.Relative);
 
             Reminder reminder = new Reminder(nameReminder);

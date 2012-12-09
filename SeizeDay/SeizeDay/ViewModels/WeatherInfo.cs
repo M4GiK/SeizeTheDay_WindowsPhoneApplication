@@ -11,7 +11,9 @@ using System.Windows.Shapes;
 
 namespace SeizeDay
 {
-
+    /// <summary>
+    ///  class to store information about weather, got from XML parsing
+    /// </summary>
     public class WeatherInfo
     {
         public string day_of_week { get; set; }
@@ -21,6 +23,9 @@ namespace SeizeDay
         public string condition { get; set; }
     }
 
+    /// <summary>
+    ///  class to store information about current weather, got from XML parsing
+    /// </summary>
     public class WeatherInfoCurrent
     {
         public string observation_time { get; set; }

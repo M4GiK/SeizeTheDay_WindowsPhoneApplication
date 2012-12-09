@@ -126,25 +126,6 @@
                             </DataTemplate>
                         </ListBox.ItemTemplate>
                     </ListBox>
-                    <ListBox  Height="150" HorizontalAlignment="Left" ItemsSource="{Binding WeatherInfoCurrent}"  x:Name="listBoxc_Copy" VerticalAlignment="Top" Width="480" ScrollViewer.VerticalScrollBarVisibility="Disabled" Margin="0,-208,0,0" Grid.ColumnSpan="2">
-                        <ListBox.ItemTemplate>
-                            <DataTemplate>
-                                <StackPanel Orientation="Horizontal" Height="150">
-                                    <Grid Height="150">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="150"/>
-                                            <ColumnDefinition Width="*"/>
-                                        </Grid.ColumnDefinitions>
-                                        <Image  Grid.Column="0" Height="150" Width="150" Source="{Binding icon}"/>
-                                        <TextBlock Text="{Binding observation_time}" Foreground="{StaticResource PhoneAccentBrush}"  Grid.Column="1" Margin="10,10,10,60"/>
-                                        <TextBlock Text="{Binding temp_C}"  Style="{StaticResource PhoneTextTitle1Style}" FontSize="{StaticResource PhoneFontSizeMediumLarge}" Grid.Column="1" Margin="70,40,250,30" FontWeight="Bold"/>
-                                        <TextBlock Text="{Binding condition}" Style="{StaticResource PhoneTextTitle1Style}" FontSize="{StaticResource PhoneFontSizeMediumLarge}"  Grid.Column="1" Margin="10,75,10,0"/>
-                                    </Grid>
-                                </StackPanel>
-                            </DataTemplate>
-                        </ListBox.ItemTemplate>
-                    </ListBox>
-
                 </Grid>
                 <Grid x:Name="News" Height="250" Width="480" Margin="10,0,0,0">
                     <TextBlock Text="News:" FontSize="{StaticResource PhoneFontSizeMediumLarge}" Style="{StaticResource PhoneTextNormalStyle}" Margin="20,5,0,0" HorizontalAlignment="Left" Width="126"/>
