@@ -1,0 +1,707 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SeizeDay</name>
+    </assembly>
+    <members>
+        <member name="T:SeizeDay.ToDoPage">
+            <summary>
+            This class storage task to do. 
+            Possibility to added or remove from database.
+            </summary>
+        </member>
+        <member name="M:SeizeDay.ToDoPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="F:SeizeDay.ToDoPage.ComponentDB">
+            <summary>
+            Data context for the local database
+            </summary>
+        </member>
+        <member name="F:SeizeDay.ToDoPage._toDoItems">
+            <summary>
+             Define an observable collection property that controls can bind to.
+            </summary>
+        </member>
+        <member name="M:SeizeDay.ToDoPage.#ctor">
+            <summary>
+            Constructor initializing all needs components.
+            </summary>
+        </member>
+        <member name="M:SeizeDay.ToDoPage.SaveButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            This method back to MainPage and send info to add component to database.
+            </summary>
+            <param name="sender">object</param>
+            <param name="e">EventArgs</param>
+        </member>
+        <member name="M:SeizeDay.ToDoPage.deleteTaskButton_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            This method delete current task from list and database
+            </summary>
+            <param name="sender">object</param>
+            <param name="e">RoutedEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.ToDoPage.newToDoTextBox_GotFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender">object</param>
+            <param name="e">RoutedEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.ToDoPage.newToDoAddButton_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender">object</param>
+            <param name="e">RoutedEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.ToDoPage.OnNavigatedFrom(System.Windows.Navigation.NavigationEventArgs)">
+            <summary>
+            Method called before going to another page.
+            </summary>
+            <param name="e">System.Windows.Navigation.NavigationEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.ToDoPage.OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs)">
+            <summary>
+            Method called after back from another page.
+            </summary>
+            <param name="e">System.Windows.Navigation.NavigationEventArgs</param>
+        </member>
+        <member name="P:SeizeDay.ToDoPage.ToDoItems">
+            <summary>
+             Define an observable collection property that controls can bind to.
+            </summary>
+        </member>
+        <member name="T:SeizeDay.ShowSeizeDay">
+            <summary>
+            This class show significant components for user.
+            </summary>
+        </member>
+        <member name="M:SeizeDay.ShowSeizeDay.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="F:SeizeDay.ShowSeizeDay.warning">
+            <summary>
+            Varible to show only once information about error
+            </summary>
+        </member>
+        <member name="F:SeizeDay.ShowSeizeDay.ComponentDB">
+            <summary>
+            Data context for the local database
+            </summary>
+        </member>
+        <member name="F:SeizeDay.ShowSeizeDay._componentItems">
+            <summary>
+            Define an observable collection property that controls can bind to.
+            </summary>
+        </member>
+        <member name="F:SeizeDay.ShowSeizeDay._timeItems">
+            <summary>
+            Observable collection for property.
+            </summary>
+        </member>
+        <member name="F:SeizeDay.ShowSeizeDay._toDoItems">
+            <summary>
+             Define an observable collection property that controls can bind to.
+            </summary>
+        </member>
+        <member name="M:SeizeDay.ShowSeizeDay.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SeizeDay.ShowSeizeDay.ValidateDate">
+            <summary>
+            This method check, if date is not validate, remove from database
+            </summary>
+        </member>
+        <member name="M:SeizeDay.ShowSeizeDay.Clock_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            This method is load automaticlly with design xaml model.
+            Set actual time for analog clock.
+            </summary>
+            <param name="sender">object</param>
+            <param name="e">RoutedEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.ShowSeizeDay.MainPage_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Load data for the ViewModel Items
+            </summary>
+            <param name="sender">object</param>
+            <param name="e">RoutedEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.ShowSeizeDay.LoadComponents">
+            <summary>
+            Load components information from database
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:SeizeDay.ShowSeizeDay.ListComponent(System.Collections.ObjectModel.ObservableCollection{SeizeDay.ViewModels.ComponentItem})" -->
+        <!-- Badly formed XML comment ignored for member "M:SeizeDay.ShowSeizeDay.WeatherComponent(System.Collections.ObjectModel.ObservableCollection{SeizeDay.ViewModels.ComponentItem})" -->
+        <!-- Badly formed XML comment ignored for member "M:SeizeDay.ShowSeizeDay.NewsComponent(System.Collections.ObjectModel.ObservableCollection{SeizeDay.ViewModels.ComponentItem})" -->
+        <!-- Badly formed XML comment ignored for member "M:SeizeDay.ShowSeizeDay.AphorismComponent(System.Collections.ObjectModel.ObservableCollection{SeizeDay.ViewModels.ComponentItem})" -->
+        <member name="M:SeizeDay.ShowSeizeDay.webclient_DownloadStringCompleted_Weather(System.Object,System.Net.DownloadStringCompletedEventArgs)">
+            <summary>
+            Method to fill information in component inside list. Also get information form internet about weather.
+            </summary>
+            <param name="sender">object</param>
+            <param name="e">DownloadStringCompletedEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.ShowSeizeDay.webclient_DownloadStringCompleted_Feed(System.Object,System.Net.DownloadStringCompletedEventArgs)">
+            <summary>
+            This method get information from xml about news.
+            </summary>
+            <param name="Sender">object</param>
+            <param name="e">DownloadStringCompletedEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.ShowSeizeDay.webclient_DownloadStringCompleted_Aphorism(System.Object,System.Net.DownloadStringCompletedEventArgs)">
+            <summary>
+            This method get inforamtion from xml about aphorism.
+            </summary>
+            <param name="Sender">object</param>
+            <param name="e">DownloadStringCompletedEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.ShowSeizeDay.ShowError">
+            <summary>
+            This method show warrning about internet connection once.
+            </summary>
+        </member>
+        <member name="M:SeizeDay.ShowSeizeDay.OnNavigatedFrom(System.Windows.Navigation.NavigationEventArgs)">
+            <summary>
+            Method called before going to another page.
+            </summary>
+            <param name="e">System.Windows.Navigation.NavigationEventArgs</param>
+        </member>
+        <member name="P:SeizeDay.ShowSeizeDay.ComponentItems">
+            <summary>
+            Define an observable collection property that controls can bind to.
+            </summary>
+        </member>
+        <member name="P:SeizeDay.ShowSeizeDay.TimeItems">
+            <summary>
+            Define an observable collection property that controls can bind to.
+            </summary>
+        </member>
+        <member name="P:SeizeDay.ShowSeizeDay.ToDoItems">
+            <summary>
+             Define an observable collection property that controls can bind to.
+            </summary>
+        </member>
+        <member name="M:SeizeDay.SoundCollectionPage.#ctor">
+            <summary>
+            Constructor initalizing all components on current page
+            </summary>
+        </member>
+        <member name="M:SeizeDay.SoundCollectionPage.Grid_Tap_baroqueloop(System.Object,System.Windows.Input.GestureEventArgs)">
+            <summary>
+            This method send information to alarm page about chosen component
+            </summary>
+            <param name="sender">object</param>
+            <param name="e">GestureEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.SoundCollectionPage.Grid_Tap_beyonthepain(System.Object,System.Windows.Input.GestureEventArgs)">
+            <summary>
+            This method send information to alarm page about chosen component
+            </summary>
+            <param name="sender">object</param>
+            <param name="e">GestureEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.SoundCollectionPage.Grid_Tap_inbetween(System.Object,System.Windows.Input.GestureEventArgs)">
+            <summary>
+            This method send information to alarm page about chosen component
+            </summary>
+            <param name="sender">object</param>
+            <param name="e">GestureEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.SoundCollectionPage.Grid_Tap_sensitivewalk(System.Object,System.Windows.Input.GestureEventArgs)">
+            <summary>
+            This method send information to alarm page about chosen component
+            </summary>
+            <param name="sender">object</param>
+            <param name="e">GestureEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.SoundCollectionPage.Grid_Tap_spanishmusic(System.Object,System.Windows.Input.GestureEventArgs)">
+            <summary>
+            This method send information to alarm page about chosen component
+            </summary>
+            <param name="sender">object</param>
+            <param name="e">GestureEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.SoundCollectionPage.Grid_Tap_ukrainwarship(System.Object,System.Windows.Input.GestureEventArgs)">
+            <summary>
+            This method send information to alarm page about chosen component
+            </summary>
+            <param name="sender">object</param>
+            <param name="e">GestureEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.SoundCollectionPage.OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs)">
+            <summary>
+             Method called after back from another page.
+            </summary>
+            <param name="e">NavigationEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.SoundCollectionPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:SeizeDay.NewsPage">
+            <summary>
+            This class get inforamtion about chosen news.
+            </summary>
+        </member>
+        <member name="M:SeizeDay.NewsPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="F:SeizeDay.NewsPage.ComponentDB">
+            <summary>
+            Data context for the local database
+            </summary>
+        </member>
+        <member name="F:SeizeDay.NewsPage._componentItems">
+            <summary>
+            Observable collection for property.
+            </summary>
+        </member>
+        <member name="M:SeizeDay.NewsPage.#ctor">
+            <summary>
+            Constructor initializing all needs components.
+            </summary>
+        </member>
+        <member name="M:SeizeDay.NewsPage.Grid_Tap_World(System.Object,System.Windows.Input.GestureEventArgs)">
+            <summary>
+            This method send information to main page about chosen component
+            </summary>
+            <param name="sender">object</param>
+            <param name="e">GestureEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.NewsPage.Grid_Tap_Future(System.Object,System.Windows.Input.GestureEventArgs)">
+            <summary>
+            This method send information to main page about chosen component
+            </summary>
+            <param name="sender">object</param>
+            <param name="e">GestureEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.NewsPage.Grid_Tap_Travel(System.Object,System.Windows.Input.GestureEventArgs)">
+            <summary>
+            This method send information to main page about chosen component
+            </summary>
+            <param name="sender">object</param>
+            <param name="e">GestureEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.NewsPage.Grid_Tap_History(System.Object,System.Windows.Input.GestureEventArgs)">
+            <summary>
+            This method send information to main page about chosen component
+            </summary>
+            <param name="sender">object</param>
+            <param name="e">GestureEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.NewsPage.Grid_Tap_Nature(System.Object,System.Windows.Input.GestureEventArgs)">
+            <summary>
+            This method send information to main page about chosen component
+            </summary>
+            <param name="sender">object</param>
+            <param name="e">GestureEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.NewsPage.Grid_Tap_Health(System.Object,System.Windows.Input.GestureEventArgs)">
+            <summary>
+            This method send information to main page about chosen component
+            </summary>
+            <param name="sender">object</param>
+            <param name="e">GestureEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.NewsPage.SaveChosen(System.String)">
+            <summary>
+            Save information about chosen category.
+            </summary>
+        </member>
+        <member name="M:SeizeDay.NewsPage.OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs)">
+            <summary>
+             Method called after back from another page.
+            </summary>
+            <param name="e">NavigationEventArgs</param>
+        </member>
+        <member name="P:SeizeDay.NewsPage.ComponentItems">
+            <summary>
+            Define an observable collection property that controls can bind to.
+            </summary>
+        </member>
+        <member name="T:SeizeDay.MainPage">
+            <summary>
+            This class is the core of the entire application.
+            </summary>
+        </member>
+        <member name="F:SeizeDay.MainPage.itemTimeToDelete">
+            <summary>
+            Variable to storage temporary information about time list.
+            </summary>
+        </member>
+        <member name="F:SeizeDay.MainPage.itemComponentToDelete">
+            <summary>
+            Variable to storage temporary information about component list.
+            </summary>
+        </member>
+        <member name="F:SeizeDay.MainPage.ComponentDB">
+            <summary>
+            Data context for the local database
+            </summary>
+        </member>
+        <member name="F:SeizeDay.MainPage._componentItems">
+            <summary>
+            Observable collection for property.
+            </summary>
+        </member>
+        <member name="F:SeizeDay.MainPage._timeItems">
+            <summary>
+            Observable collection for property.
+            </summary>
+        </member>
+        <member name="M:SeizeDay.MainPage.#ctor">
+            <summary>
+            Contructor initializing all component of application
+            </summary>
+        </member>
+        <member name="M:SeizeDay.MainPage.Clock_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            This method is load automaticlly with design xaml model.
+            Set actual time for analog clock.
+            </summary>
+            <param name="sender">object</param>
+            <param name="e">RoutedEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.MainPage.MainPage_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Load data for the ViewModel Items
+            </summary>
+            <param name="sender">object</param>
+            <param name="e">RoutedEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.MainPage.ValidateDate">
+            <summary>
+            This method check, if date is not validate, remove from database
+            </summary>
+        </member>
+        <member name="M:SeizeDay.MainPage.AddComponent_Click(System.Object,System.EventArgs)">
+            <summary>
+            Method adding new component to main page.
+            </summary>
+            <param name="sender">object</param>
+            <param name="e">EventArgs</param>
+        </member>
+        <member name="M:SeizeDay.MainPage.DeleteComponent_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            This method delete component from list and database.
+            </summary>
+            <param name="sender">object</param>
+            <param name="e">RoutedEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.MainPage.ButtonAddAlarm_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            This method moved view to new window, where is possibility to add new alarm.
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">RoutedEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.MainPage.ButtonDeleteAlarm_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            This method delete alarm time form list and database.
+            </summary>
+            <param name="sender">object</param>
+            <param name="e">RoutedEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.MainPage.listBoxComponent_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            This method select current object from list and marked selected item.
+            </summary>
+            <param name="sender">object</param>
+            <param name="e">SelectionChangedEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.MainPage.listBox_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            This method select current object from list and marked selected item.
+            </summary>
+            <param name="sender">object</param>
+            <param name="e">SelectionChangedEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.MainPage.CheckAddedElements">
+            <summary>
+            Method checking if any elements is added to alarm list or component list.
+            If is added, remove arrows and descryption.
+            </summary>
+        </member>
+        <member name="M:SeizeDay.MainPage.DoubleTap_action(System.Object,System.Windows.Input.GestureEventArgs)">
+            <summary>
+            This method moves to chosen page after double click on current element.
+            </summary>
+            <param name="sender">object</param>
+            <param name="e">Microsoft.Phone.Controls..GestureEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.MainPage.OnNavigatedFrom(System.Windows.Navigation.NavigationEventArgs)">
+            <summary>
+            Method called before going to another page.
+            </summary>
+            <param name="e">NavigationEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.MainPage.OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs)">
+            <summary>
+            Method called after back from another page.
+            </summary>
+            <param name="e">NavigationEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.MainPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:SeizeDay.MainPage.ComponentItems">
+            <summary>
+            Define an observable collection property that controls can bind to.
+            </summary>
+        </member>
+        <member name="P:SeizeDay.MainPage.TimeItems">
+            <summary>
+            Define an observable collection property that controls can bind to.
+            </summary>
+        </member>
+        <member name="T:AlarmAlarm.AddAlarm">
+            <summary>
+            Class responsible for adding alarm.
+            </summary>
+        </member>
+        <member name="M:AlarmAlarm.AddAlarm.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="F:AlarmAlarm.AddAlarm.alarmSound">
+            <summary>
+            Varible to need to set sound and alarm time.
+            </summary>
+        </member>
+        <member name="M:AlarmAlarm.AddAlarm.#ctor">
+            <summary>
+            Constructor initializing all needs components.
+            </summary>
+        </member>
+        <member name="M:AlarmAlarm.AddAlarm.SaveButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            This method save selected time to remainder and alarm.
+            </summary>
+            <param name="sender">object</param>
+            <param name="e">EventArgs</param>
+        </member>
+        <member name="M:AlarmAlarm.AddAlarm.ChooseSoundButton_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Method call new page with option to choose music
+            </summary>
+            <param name="sender">object</param>
+            <param name="e">RoutedEventArgs</param>
+        </member>
+        <member name="M:AlarmAlarm.AddAlarm.OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs)">
+            <summary>
+             Method called after back from another page.
+            </summary>
+            <param name="e">NavigationEventArgs</param>
+        </member>
+        <member name="T:SeizeDay.ComponentPage">
+            <summary>
+            Class sending choosen component to MainPage
+            </summary>
+        </member>
+        <member name="M:SeizeDay.ComponentPage.#ctor">
+            <summary>
+            Constructor initalizing all components on current page
+            </summary>
+        </member>
+        <member name="M:SeizeDay.ComponentPage.Grid_Tap_ListToDo(System.Object,System.Windows.Input.GestureEventArgs)">
+            <summary>
+            This method send information to main page about chosen component
+            </summary>
+            <param name="sender">object</param>
+            <param name="e">GestureEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.ComponentPage.Grid_Tap_Weather(System.Object,System.Windows.Input.GestureEventArgs)">
+            <summary>
+            This method send information to main page about chosen component
+            </summary>
+            <param name="sender">object</param>
+            <param name="e">GestureEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.ComponentPage.Grid_Tap_News(System.Object,System.Windows.Input.GestureEventArgs)">
+            <summary>
+            This method send information to main page about chosen component
+            </summary>
+            <param name="sender">object</param>
+            <param name="e">GestureEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.ComponentPage.Grid_Tap_Aphorism(System.Object,System.Windows.Input.GestureEventArgs)">
+            <summary>
+            This method send information to main page about chosen component
+            </summary>
+            <param name="sender">object</param>
+            <param name="e">GestureEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.ComponentPage.OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs)">
+            <summary>
+             Method called after back from another page.
+            </summary>
+            <param name="e">NavigationEventArgs</param>
+        </member>
+        <member name="M:SeizeDay.ComponentPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:SeizeDay.ViewModels.Maintenance.toDate(System.String)">
+            <summary>
+            This method changing date in string to object in DataTime
+            </summary>
+            <param name="dateString">string</param>
+            <returns>Date in DateTime format</returns>
+        </member>
+        <member name="M:SeizeDay.App.#ctor">
+            <summary>
+            Constructor for the Application object.
+            </summary>
+        </member>
+        <member name="M:SeizeDay.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:SeizeDay.App.ViewModel">
+            <summary>
+            A static ViewModel used by the views to bind against.
+            </summary>
+            <returns>The MainViewModel object.</returns>
+        </member>
+        <member name="P:SeizeDay.App.RootFrame">
+            <summary>
+            Provides easy access to the root frame of the Phone Application.
+            </summary>
+            <returns>The root frame of the Phone Application.</returns>
+        </member>
+        <member name="T:SeizeDay.ViewModels.TimeItem">
+            <summary>
+            Table in Database containing inforamtian about saved alarms
+            </summary>
+        </member>
+        <member name="T:SeizeDay.WeatherSettings">
+            <summary>
+            This class get inforamtion about location for weather component
+            </summary>
+        </member>
+        <member name="M:SeizeDay.WeatherSettings.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="F:SeizeDay.WeatherSettings.ComponentDB">
+            <summary>
+            Data context for the local database
+            </summary>
+        </member>
+        <member name="F:SeizeDay.WeatherSettings._componentItems">
+            <summary>
+            Observable collection for property.
+            </summary>
+        </member>
+        <member name="M:SeizeDay.WeatherSettings.#ctor">
+            <summary>
+            Constructor initializing all needed components.
+            </summary>
+        </member>
+        <member name="M:SeizeDay.WeatherSettings.btnSaveLocation_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Send information about chosen location to main page.
+            </summary>
+            <param name="sender">object</param>
+            <param name="e">RoutedEventArgs</param>
+        </member>
+        <member name="P:SeizeDay.WeatherSettings.ComponentItems">
+            <summary>
+            Define an observable collection property that controls can bind to.
+            </summary>
+        </member>
+        <member name="T:SeizeDay.WeatherInfo">
+            <summary>
+             class to store information about weather, got from XML parsing
+            </summary>
+        </member>
+        <member name="T:SeizeDay.WeatherInfoCurrent">
+            <summary>
+             class to store information about current weather, got from XML parsing
+            </summary>
+        </member>
+        <member name="P:SeizeDay.ItemViewModel.LineOne">
+            <summary>
+            Sample ViewModel property; this property is used in the view to display its value using a Binding.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:SeizeDay.ItemViewModel.LineTwo">
+            <summary>
+            Sample ViewModel property; this property is used in the view to display its value using a Binding.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:SeizeDay.ItemViewModel.LineThree">
+            <summary>
+            Sample ViewModel property; this property is used in the view to display its value using a Binding.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SeizeDay.ViewModels.ToDoItem">
+            <summary>
+            Table in Database containing information about components
+            </summary>
+        </member>
+        <member name="T:SeizeDay.ViewModels.ComponentItem">
+            <summary>
+            Table in Database containing inforamtian about ...
+            </summary>
+        </member>
+        <member name="F:SeizeDay.ViewModels.Component.DBConnectionString">
+            <summary>
+            Specify the connection string as a static, used in main page and app.xaml.
+            </summary>
+        </member>
+        <member name="M:SeizeDay.ViewModels.Component.#ctor(System.String)">
+            <summary>
+            Pass the connection string to the base class.
+            </summary>
+            <param name="connectionString"></param>
+        </member>
+        <member name="F:SeizeDay.ViewModels.Component.ComponentItems">
+            <summary>
+            Specify a single table for the to-do items.
+            </summary>
+        </member>
+        <member name="F:SeizeDay.ViewModels.Component.ToDoItems">
+            <summary>
+            Specify a single table for the to-do items.
+            </summary>
+        </member>
+        <member name="F:SeizeDay.ViewModels.Component.TimeItems">
+            <summary>
+            Specify a single table for the time items.
+            </summary>
+        </member>
+        <member name="M:SeizeDay.MainViewModel.LoadData">
+            <summary>
+            Creates and adds a few ItemViewModel objects into the Items collection.
+            </summary>
+        </member>
+        <member name="P:SeizeDay.MainViewModel.Items">
+            <summary>
+            A collection for ItemViewModel objects.
+            </summary>
+        </member>
+    </members>
+</doc>
