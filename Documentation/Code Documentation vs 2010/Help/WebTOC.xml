@@ -1,0 +1,492 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="13f83ec2-db87-42f8-a5be-1f744721ca46" Title="AlarmAlarm Namespace" Url="html/N_AlarmAlarm.htm">
+    <HelpTOCNode Id="2ba81b39-69a0-4fcf-8bb1-b842b0173869" Title="AddAlarm Class" Url="html/T_AlarmAlarm_AddAlarm.htm">
+      <HelpTOCNode Title="AddAlarm Members" Url="html/AllMembers_T_AlarmAlarm_AddAlarm.htm" />
+      <HelpTOCNode Title="AddAlarm Constructor " Url="html/M_AlarmAlarm_AddAlarm__ctor.htm" />
+      <HelpTOCNode Id="477467fa-ea2e-4fb8-8830-2a9d993b9aa4" Title="AddAlarm Fields" Url="html/Fields_T_AlarmAlarm_AddAlarm.htm">
+        <HelpTOCNode Title="_contentLoaded Field" Url="html/F_AlarmAlarm_AddAlarm__contentLoaded.htm" />
+        <HelpTOCNode Title="alarmSound Field" Url="html/F_AlarmAlarm_AddAlarm_alarmSound.htm" />
+        <HelpTOCNode Title="ApplicationTitle Field" Url="html/F_AlarmAlarm_AddAlarm_ApplicationTitle.htm" />
+        <HelpTOCNode Title="beginTimeLabel Field" Url="html/F_AlarmAlarm_AddAlarm_beginTimeLabel.htm" />
+        <HelpTOCNode Title="btnSaveAlarm Field" Url="html/F_AlarmAlarm_AddAlarm_btnSaveAlarm.htm" />
+        <HelpTOCNode Title="btnSoundAlarm Field" Url="html/F_AlarmAlarm_AddAlarm_btnSoundAlarm.htm" />
+        <HelpTOCNode Title="ContentPanel Field" Url="html/F_AlarmAlarm_AddAlarm_ContentPanel.htm" />
+        <HelpTOCNode Title="LayoutRoot Field" Url="html/F_AlarmAlarm_AddAlarm_LayoutRoot.htm" />
+        <HelpTOCNode Title="PageTitle Field" Url="html/F_AlarmAlarm_AddAlarm_PageTitle.htm" />
+        <HelpTOCNode Title="timePicker Field" Url="html/F_AlarmAlarm_AddAlarm_timePicker.htm" />
+        <HelpTOCNode Title="TitlePanel Field" Url="html/F_AlarmAlarm_AddAlarm_TitlePanel.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="88530637-a4fe-4f26-bf08-2ba91db17da8" Title="AddAlarm Methods" Url="html/Methods_T_AlarmAlarm_AddAlarm.htm">
+        <HelpTOCNode Title="ChooseSoundButton_Click Method " Url="html/M_AlarmAlarm_AddAlarm_ChooseSoundButton_Click.htm" />
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/M_AlarmAlarm_AddAlarm_InitializeComponent.htm" />
+        <HelpTOCNode Title="OnNavigatedTo Method " Url="html/M_AlarmAlarm_AddAlarm_OnNavigatedTo.htm" />
+        <HelpTOCNode Title="SaveButton_Click Method " Url="html/M_AlarmAlarm_AddAlarm_SaveButton_Click.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="3219c6f1-efab-4b45-8c23-bce033281739" Title="SeizeDay Namespace" Url="html/N_SeizeDay.htm">
+    <HelpTOCNode Id="725d3ac0-6b5f-41f5-91d3-44735c821bcd" Title="App Class" Url="html/T_SeizeDay_App.htm">
+      <HelpTOCNode Title="App Members" Url="html/AllMembers_T_SeizeDay_App.htm" />
+      <HelpTOCNode Title="App Constructor " Url="html/M_SeizeDay_App__ctor.htm" />
+      <HelpTOCNode Title="App Constructor " Url="html/M_SeizeDay_App__cctor.htm" />
+      <HelpTOCNode Id="86c0c6b2-b847-4a2f-a8fd-eee35e9f29cf" Title="App Fields" Url="html/Fields_T_SeizeDay_App.htm">
+        <HelpTOCNode Title="_contentLoaded Field" Url="html/F_SeizeDay_App__contentLoaded.htm" />
+        <HelpTOCNode Title="phoneApplicationInitialized Field" Url="html/F_SeizeDay_App_phoneApplicationInitialized.htm" />
+        <HelpTOCNode Title="viewModel Field" Url="html/F_SeizeDay_App_viewModel.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="aa404b87-f0b5-4a03-95d5-7466ebe4cfa3" Title="App Methods" Url="html/Methods_T_SeizeDay_App.htm">
+        <HelpTOCNode Title="Application_Activated Method " Url="html/M_SeizeDay_App_Application_Activated.htm" />
+        <HelpTOCNode Title="Application_Closing Method " Url="html/M_SeizeDay_App_Application_Closing.htm" />
+        <HelpTOCNode Title="Application_Deactivated Method " Url="html/M_SeizeDay_App_Application_Deactivated.htm" />
+        <HelpTOCNode Title="Application_Launching Method " Url="html/M_SeizeDay_App_Application_Launching.htm" />
+        <HelpTOCNode Title="Application_UnhandledException Method " Url="html/M_SeizeDay_App_Application_UnhandledException.htm" />
+        <HelpTOCNode Title="CompleteInitializePhoneApplication Method " Url="html/M_SeizeDay_App_CompleteInitializePhoneApplication.htm" />
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/M_SeizeDay_App_InitializeComponent.htm" />
+        <HelpTOCNode Title="InitializePhoneApplication Method " Url="html/M_SeizeDay_App_InitializePhoneApplication.htm" />
+        <HelpTOCNode Title="RootFrame_NavigationFailed Method " Url="html/M_SeizeDay_App_RootFrame_NavigationFailed.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="bbe503ee-db3d-41e1-8da6-660d0937d54d" Title="App Properties" Url="html/Properties_T_SeizeDay_App.htm">
+        <HelpTOCNode Title="RootFrame Property " Url="html/P_SeizeDay_App_RootFrame.htm" />
+        <HelpTOCNode Title="ViewModel Property " Url="html/P_SeizeDay_App_ViewModel.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="184f2e67-d143-45a2-b2c2-fbc1a6cd0156" Title="ComponentPage Class" Url="html/T_SeizeDay_ComponentPage.htm">
+      <HelpTOCNode Title="ComponentPage Members" Url="html/AllMembers_T_SeizeDay_ComponentPage.htm" />
+      <HelpTOCNode Title="ComponentPage Constructor " Url="html/M_SeizeDay_ComponentPage__ctor.htm" />
+      <HelpTOCNode Id="2938c4cd-f994-462b-b678-67affd6d6a5d" Title="ComponentPage Fields" Url="html/Fields_T_SeizeDay_ComponentPage.htm">
+        <HelpTOCNode Title="_contentLoaded Field" Url="html/F_SeizeDay_ComponentPage__contentLoaded.htm" />
+        <HelpTOCNode Title="Aphorism Field" Url="html/F_SeizeDay_ComponentPage_Aphorism.htm" />
+        <HelpTOCNode Title="ContentPanel Field" Url="html/F_SeizeDay_ComponentPage_ContentPanel.htm" />
+        <HelpTOCNode Title="LayoutRoot Field" Url="html/F_SeizeDay_ComponentPage_LayoutRoot.htm" />
+        <HelpTOCNode Title="ListToDo Field" Url="html/F_SeizeDay_ComponentPage_ListToDo.htm" />
+        <HelpTOCNode Title="News Field" Url="html/F_SeizeDay_ComponentPage_News.htm" />
+        <HelpTOCNode Title="Weather Field" Url="html/F_SeizeDay_ComponentPage_Weather.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="938891d9-4f40-444c-b674-4755192dd1b5" Title="ComponentPage Methods" Url="html/Methods_T_SeizeDay_ComponentPage.htm">
+        <HelpTOCNode Title="Grid_Tap_Aphorism Method " Url="html/M_SeizeDay_ComponentPage_Grid_Tap_Aphorism.htm" />
+        <HelpTOCNode Title="Grid_Tap_ListToDo Method " Url="html/M_SeizeDay_ComponentPage_Grid_Tap_ListToDo.htm" />
+        <HelpTOCNode Title="Grid_Tap_News Method " Url="html/M_SeizeDay_ComponentPage_Grid_Tap_News.htm" />
+        <HelpTOCNode Title="Grid_Tap_Weather Method " Url="html/M_SeizeDay_ComponentPage_Grid_Tap_Weather.htm" />
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/M_SeizeDay_ComponentPage_InitializeComponent.htm" />
+        <HelpTOCNode Title="OnNavigatedTo Method " Url="html/M_SeizeDay_ComponentPage_OnNavigatedTo.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="9c470e73-307b-447c-a290-71a379acc9fd" Title="FeedItem Class" Url="html/T_SeizeDay_FeedItem.htm">
+      <HelpTOCNode Title="FeedItem Members" Url="html/AllMembers_T_SeizeDay_FeedItem.htm" />
+      <HelpTOCNode Title="FeedItem Constructor " Url="html/M_SeizeDay_FeedItem__ctor.htm" />
+      <HelpTOCNode Id="1bfa9d16-a186-4a3a-a451-6e2fc4599889" Title="FeedItem Fields" Url="html/Fields_T_SeizeDay_FeedItem.htm">
+        <HelpTOCNode Title="_description Field" Url="html/F_SeizeDay_FeedItem__description.htm" />
+        <HelpTOCNode Title="_guid Field" Url="html/F_SeizeDay_FeedItem__guid.htm" />
+        <HelpTOCNode Title="_link Field" Url="html/F_SeizeDay_FeedItem__link.htm" />
+        <HelpTOCNode Title="_published Field" Url="html/F_SeizeDay_FeedItem__published.htm" />
+        <HelpTOCNode Title="_title Field" Url="html/F_SeizeDay_FeedItem__title.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="d8b41a3b-05e6-4964-98ba-20a6079a143b" Title="FeedItem Properties" Url="html/Properties_T_SeizeDay_FeedItem.htm">
+        <HelpTOCNode Title="Description Property " Url="html/P_SeizeDay_FeedItem_Description.htm" />
+        <HelpTOCNode Title="Guid Property " Url="html/P_SeizeDay_FeedItem_Guid.htm" />
+        <HelpTOCNode Title="Link Property " Url="html/P_SeizeDay_FeedItem_Link.htm" />
+        <HelpTOCNode Title="Published Property " Url="html/P_SeizeDay_FeedItem_Published.htm" />
+        <HelpTOCNode Title="Title Property " Url="html/P_SeizeDay_FeedItem_Title.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="26ab7b34-6a2e-438b-9e40-585e1d9affea" Title="ItemViewModel Class" Url="html/T_SeizeDay_ItemViewModel.htm">
+      <HelpTOCNode Title="ItemViewModel Members" Url="html/AllMembers_T_SeizeDay_ItemViewModel.htm" />
+      <HelpTOCNode Title="ItemViewModel Constructor " Url="html/M_SeizeDay_ItemViewModel__ctor.htm" />
+      <HelpTOCNode Id="806d447a-5981-41f0-ae48-52028a9b67d7" Title="ItemViewModel Fields" Url="html/Fields_T_SeizeDay_ItemViewModel.htm">
+        <HelpTOCNode Title="_lineOne Field" Url="html/F_SeizeDay_ItemViewModel__lineOne.htm" />
+        <HelpTOCNode Title="_lineThree Field" Url="html/F_SeizeDay_ItemViewModel__lineThree.htm" />
+        <HelpTOCNode Title="_lineTwo Field" Url="html/F_SeizeDay_ItemViewModel__lineTwo.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="565450ec-4cc8-4094-a3ad-75c436dfe33d" Title="ItemViewModel Methods" Url="html/Methods_T_SeizeDay_ItemViewModel.htm">
+        <HelpTOCNode Title="NotifyPropertyChanged Method " Url="html/M_SeizeDay_ItemViewModel_NotifyPropertyChanged.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="5ea52c4a-b35e-4c3b-9288-001e1f8b824c" Title="ItemViewModel Properties" Url="html/Properties_T_SeizeDay_ItemViewModel.htm">
+        <HelpTOCNode Title="LineOne Property " Url="html/P_SeizeDay_ItemViewModel_LineOne.htm" />
+        <HelpTOCNode Title="LineThree Property " Url="html/P_SeizeDay_ItemViewModel_LineThree.htm" />
+        <HelpTOCNode Title="LineTwo Property " Url="html/P_SeizeDay_ItemViewModel_LineTwo.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="7674b669-b340-4dd8-a50d-bf7cd4201523" Title="ItemViewModel Events" Url="html/Events_T_SeizeDay_ItemViewModel.htm">
+        <HelpTOCNode Title="PropertyChanged Event" Url="html/E_SeizeDay_ItemViewModel_PropertyChanged.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="a519fb5d-9f30-42b0-abb5-6cbe321bc1bb" Title="MainPage Class" Url="html/T_SeizeDay_MainPage.htm">
+      <HelpTOCNode Title="MainPage Members" Url="html/AllMembers_T_SeizeDay_MainPage.htm" />
+      <HelpTOCNode Title="MainPage Constructor " Url="html/M_SeizeDay_MainPage__ctor.htm" />
+      <HelpTOCNode Id="f49560fa-787c-49f4-beee-6fe9509d6f4e" Title="MainPage Fields" Url="html/Fields_T_SeizeDay_MainPage.htm">
+        <HelpTOCNode Title="_componentItems Field" Url="html/F_SeizeDay_MainPage__componentItems.htm" />
+        <HelpTOCNode Title="_contentLoaded Field" Url="html/F_SeizeDay_MainPage__contentLoaded.htm" />
+        <HelpTOCNode Title="_timeItems Field" Url="html/F_SeizeDay_MainPage__timeItems.htm" />
+        <HelpTOCNode Title="alarmList Field" Url="html/F_SeizeDay_MainPage_alarmList.htm" />
+        <HelpTOCNode Title="arrow1 Field" Url="html/F_SeizeDay_MainPage_arrow1.htm" />
+        <HelpTOCNode Title="arrow2 Field" Url="html/F_SeizeDay_MainPage_arrow2.htm" />
+        <HelpTOCNode Title="btnAddAlarm Field" Url="html/F_SeizeDay_MainPage_btnAddAlarm.htm" />
+        <HelpTOCNode Title="btnAddComponent Field" Url="html/F_SeizeDay_MainPage_btnAddComponent.htm" />
+        <HelpTOCNode Title="btndeleteAlarm Field" Url="html/F_SeizeDay_MainPage_btndeleteAlarm.htm" />
+        <HelpTOCNode Title="btndeleteComponent Field" Url="html/F_SeizeDay_MainPage_btndeleteComponent.htm" />
+        <HelpTOCNode Title="ClockFaceEllipse Field" Url="html/F_SeizeDay_MainPage_ClockFaceEllipse.htm" />
+        <HelpTOCNode Title="ClockHandsCanvas Field" Url="html/F_SeizeDay_MainPage_ClockHandsCanvas.htm" />
+        <HelpTOCNode Title="ClockStoryboard Field" Url="html/F_SeizeDay_MainPage_ClockStoryboard.htm" />
+        <HelpTOCNode Title="ComponentDB Field" Url="html/F_SeizeDay_MainPage_ComponentDB.htm" />
+        <HelpTOCNode Title="ContentGrid Field" Url="html/F_SeizeDay_MainPage_ContentGrid.htm" />
+        <HelpTOCNode Title="FirstListBox Field" Url="html/F_SeizeDay_MainPage_FirstListBox.htm" />
+        <HelpTOCNode Title="HourAnimation Field" Url="html/F_SeizeDay_MainPage_HourAnimation.htm" />
+        <HelpTOCNode Title="HourHandTransform Field" Url="html/F_SeizeDay_MainPage_HourHandTransform.htm" />
+        <HelpTOCNode Title="itemComponentToDelete Field" Url="html/F_SeizeDay_MainPage_itemComponentToDelete.htm" />
+        <HelpTOCNode Title="itemTimeToDelete Field" Url="html/F_SeizeDay_MainPage_itemTimeToDelete.htm" />
+        <HelpTOCNode Title="LayoutRoot Field" Url="html/F_SeizeDay_MainPage_LayoutRoot.htm" />
+        <HelpTOCNode Title="MinuteAnimation Field" Url="html/F_SeizeDay_MainPage_MinuteAnimation.htm" />
+        <HelpTOCNode Title="MinuteHandTransform Field" Url="html/F_SeizeDay_MainPage_MinuteHandTransform.htm" />
+        <HelpTOCNode Title="myProgressBar Field" Url="html/F_SeizeDay_MainPage_myProgressBar.htm" />
+        <HelpTOCNode Title="SecondAnimation Field" Url="html/F_SeizeDay_MainPage_SecondAnimation.htm" />
+        <HelpTOCNode Title="SecondHandTransform Field" Url="html/F_SeizeDay_MainPage_SecondHandTransform.htm" />
+        <HelpTOCNode Title="text1 Field" Url="html/F_SeizeDay_MainPage_text1.htm" />
+        <HelpTOCNode Title="text2 Field" Url="html/F_SeizeDay_MainPage_text2.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="a5f0bdfe-270f-4d3b-90fb-11f6cf36d345" Title="MainPage Methods" Url="html/Methods_T_SeizeDay_MainPage.htm">
+        <HelpTOCNode Title="AddComponent_Click Method " Url="html/M_SeizeDay_MainPage_AddComponent_Click.htm" />
+        <HelpTOCNode Title="ButtonAddAlarm_Click Method " Url="html/M_SeizeDay_MainPage_ButtonAddAlarm_Click.htm" />
+        <HelpTOCNode Title="ButtonDeleteAlarm_Click Method " Url="html/M_SeizeDay_MainPage_ButtonDeleteAlarm_Click.htm" />
+        <HelpTOCNode Title="CheckAddedElements Method " Url="html/M_SeizeDay_MainPage_CheckAddedElements.htm" />
+        <HelpTOCNode Title="Clock_Loaded Method " Url="html/M_SeizeDay_MainPage_Clock_Loaded.htm" />
+        <HelpTOCNode Title="DeleteComponent_Click Method " Url="html/M_SeizeDay_MainPage_DeleteComponent_Click.htm" />
+        <HelpTOCNode Title="DoubleTap_action Method " Url="html/M_SeizeDay_MainPage_DoubleTap_action.htm" />
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/M_SeizeDay_MainPage_InitializeComponent.htm" />
+        <HelpTOCNode Title="listBox_SelectionChanged Method " Url="html/M_SeizeDay_MainPage_listBox_SelectionChanged.htm" />
+        <HelpTOCNode Title="listBoxComponent_SelectionChanged Method " Url="html/M_SeizeDay_MainPage_listBoxComponent_SelectionChanged.htm" />
+        <HelpTOCNode Title="MainPage_Loaded Method " Url="html/M_SeizeDay_MainPage_MainPage_Loaded.htm" />
+        <HelpTOCNode Title="NotifyPropertyChanged Method " Url="html/M_SeizeDay_MainPage_NotifyPropertyChanged.htm" />
+        <HelpTOCNode Title="OnNavigatedFrom Method " Url="html/M_SeizeDay_MainPage_OnNavigatedFrom.htm" />
+        <HelpTOCNode Title="OnNavigatedTo Method " Url="html/M_SeizeDay_MainPage_OnNavigatedTo.htm" />
+        <HelpTOCNode Title="ValidateDate Method " Url="html/M_SeizeDay_MainPage_ValidateDate.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="8fd426dc-0eac-4c18-a1de-e823d3db5cce" Title="MainPage Properties" Url="html/Properties_T_SeizeDay_MainPage.htm">
+        <HelpTOCNode Title="ComponentItems Property " Url="html/P_SeizeDay_MainPage_ComponentItems.htm" />
+        <HelpTOCNode Title="TimeItems Property " Url="html/P_SeizeDay_MainPage_TimeItems.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="40b704f3-0410-4833-93cc-59299e7e9c87" Title="MainPage Events" Url="html/Events_T_SeizeDay_MainPage.htm">
+        <HelpTOCNode Title="PropertyChanged Event" Url="html/E_SeizeDay_MainPage_PropertyChanged.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="3e522ab9-c36a-4fd1-ad32-3ce60f69f6f8" Title="MainViewModel Class" Url="html/T_SeizeDay_MainViewModel.htm">
+      <HelpTOCNode Title="MainViewModel Members" Url="html/AllMembers_T_SeizeDay_MainViewModel.htm" />
+      <HelpTOCNode Title="MainViewModel Constructor " Url="html/M_SeizeDay_MainViewModel__ctor.htm" />
+      <HelpTOCNode Id="d0249e8f-6725-4f69-a88d-34765a7aa371" Title="MainViewModel Methods" Url="html/Methods_T_SeizeDay_MainViewModel.htm">
+        <HelpTOCNode Title="AddComponent Method " Url="html/M_SeizeDay_MainViewModel_AddComponent.htm" />
+        <HelpTOCNode Title="LoadData Method " Url="html/M_SeizeDay_MainViewModel_LoadData.htm" />
+        <HelpTOCNode Title="NotifyPropertyChanged Method " Url="html/M_SeizeDay_MainViewModel_NotifyPropertyChanged.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="00d8d10e-283a-4f95-8f55-2d5baad4a167" Title="MainViewModel Properties" Url="html/Properties_T_SeizeDay_MainViewModel.htm">
+        <HelpTOCNode Title="IsDataLoaded Property " Url="html/P_SeizeDay_MainViewModel_IsDataLoaded.htm" />
+        <HelpTOCNode Title="Items Property " Url="html/P_SeizeDay_MainViewModel_Items.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="3c602a6a-4f1e-4abf-95e2-2c46aa69f89b" Title="MainViewModel Events" Url="html/Events_T_SeizeDay_MainViewModel.htm">
+        <HelpTOCNode Title="PropertyChanged Event" Url="html/E_SeizeDay_MainViewModel_PropertyChanged.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="08ee0175-278d-41eb-8fc2-e4fbe6757a0b" Title="NewsPage Class" Url="html/T_SeizeDay_NewsPage.htm">
+      <HelpTOCNode Title="NewsPage Members" Url="html/AllMembers_T_SeizeDay_NewsPage.htm" />
+      <HelpTOCNode Title="NewsPage Constructor " Url="html/M_SeizeDay_NewsPage__ctor.htm" />
+      <HelpTOCNode Id="5eb4a83d-ce0c-47cd-b9df-66899b0d4d56" Title="NewsPage Fields" Url="html/Fields_T_SeizeDay_NewsPage.htm">
+        <HelpTOCNode Title="_componentItems Field" Url="html/F_SeizeDay_NewsPage__componentItems.htm" />
+        <HelpTOCNode Title="_contentLoaded Field" Url="html/F_SeizeDay_NewsPage__contentLoaded.htm" />
+        <HelpTOCNode Title="ComponentDB Field" Url="html/F_SeizeDay_NewsPage_ComponentDB.htm" />
+        <HelpTOCNode Title="ContentPanel Field" Url="html/F_SeizeDay_NewsPage_ContentPanel.htm" />
+        <HelpTOCNode Title="Future Field" Url="html/F_SeizeDay_NewsPage_Future.htm" />
+        <HelpTOCNode Title="Health Field" Url="html/F_SeizeDay_NewsPage_Health.htm" />
+        <HelpTOCNode Title="History Field" Url="html/F_SeizeDay_NewsPage_History.htm" />
+        <HelpTOCNode Title="LayoutRoot Field" Url="html/F_SeizeDay_NewsPage_LayoutRoot.htm" />
+        <HelpTOCNode Title="Nature Field" Url="html/F_SeizeDay_NewsPage_Nature.htm" />
+        <HelpTOCNode Title="Travel Field" Url="html/F_SeizeDay_NewsPage_Travel.htm" />
+        <HelpTOCNode Title="World Field" Url="html/F_SeizeDay_NewsPage_World.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="643c55b6-d232-4353-8991-168c957fa8b5" Title="NewsPage Methods" Url="html/Methods_T_SeizeDay_NewsPage.htm">
+        <HelpTOCNode Title="Grid_Tap_Future Method " Url="html/M_SeizeDay_NewsPage_Grid_Tap_Future.htm" />
+        <HelpTOCNode Title="Grid_Tap_Health Method " Url="html/M_SeizeDay_NewsPage_Grid_Tap_Health.htm" />
+        <HelpTOCNode Title="Grid_Tap_History Method " Url="html/M_SeizeDay_NewsPage_Grid_Tap_History.htm" />
+        <HelpTOCNode Title="Grid_Tap_Nature Method " Url="html/M_SeizeDay_NewsPage_Grid_Tap_Nature.htm" />
+        <HelpTOCNode Title="Grid_Tap_Travel Method " Url="html/M_SeizeDay_NewsPage_Grid_Tap_Travel.htm" />
+        <HelpTOCNode Title="Grid_Tap_World Method " Url="html/M_SeizeDay_NewsPage_Grid_Tap_World.htm" />
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/M_SeizeDay_NewsPage_InitializeComponent.htm" />
+        <HelpTOCNode Title="NotifyPropertyChanged Method " Url="html/M_SeizeDay_NewsPage_NotifyPropertyChanged.htm" />
+        <HelpTOCNode Title="OnNavigatedTo Method " Url="html/M_SeizeDay_NewsPage_OnNavigatedTo.htm" />
+        <HelpTOCNode Title="SaveChosen Method " Url="html/M_SeizeDay_NewsPage_SaveChosen.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="dc0480ba-b0b7-406d-bb80-53dcf33d3124" Title="NewsPage Properties" Url="html/Properties_T_SeizeDay_NewsPage.htm">
+        <HelpTOCNode Title="ComponentItems Property " Url="html/P_SeizeDay_NewsPage_ComponentItems.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="35b9b9f5-902b-4338-8e24-e02f58e6602f" Title="NewsPage Events" Url="html/Events_T_SeizeDay_NewsPage.htm">
+        <HelpTOCNode Title="PropertyChanged Event" Url="html/E_SeizeDay_NewsPage_PropertyChanged.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="eadceefd-f8ae-40fd-849e-ea86fcb0755b" Title="ShowSeizeDay Class" Url="html/T_SeizeDay_ShowSeizeDay.htm">
+      <HelpTOCNode Title="ShowSeizeDay Members" Url="html/AllMembers_T_SeizeDay_ShowSeizeDay.htm" />
+      <HelpTOCNode Title="ShowSeizeDay Constructor " Url="html/M_SeizeDay_ShowSeizeDay__ctor.htm" />
+      <HelpTOCNode Id="a9357485-3e6f-4cee-830d-9ac2874f0265" Title="ShowSeizeDay Fields" Url="html/Fields_T_SeizeDay_ShowSeizeDay.htm">
+        <HelpTOCNode Title="_componentItems Field" Url="html/F_SeizeDay_ShowSeizeDay__componentItems.htm" />
+        <HelpTOCNode Title="_contentLoaded Field" Url="html/F_SeizeDay_ShowSeizeDay__contentLoaded.htm" />
+        <HelpTOCNode Title="_timeItems Field" Url="html/F_SeizeDay_ShowSeizeDay__timeItems.htm" />
+        <HelpTOCNode Title="_toDoItems Field" Url="html/F_SeizeDay_ShowSeizeDay__toDoItems.htm" />
+        <HelpTOCNode Title="Aphorism Field" Url="html/F_SeizeDay_ShowSeizeDay_Aphorism.htm" />
+        <HelpTOCNode Title="AphorismList Field" Url="html/F_SeizeDay_ShowSeizeDay_AphorismList.htm" />
+        <HelpTOCNode Title="ClockFaceEllipse Field" Url="html/F_SeizeDay_ShowSeizeDay_ClockFaceEllipse.htm" />
+        <HelpTOCNode Title="ClockHandsCanvas Field" Url="html/F_SeizeDay_ShowSeizeDay_ClockHandsCanvas.htm" />
+        <HelpTOCNode Title="ClockStoryboard Field" Url="html/F_SeizeDay_ShowSeizeDay_ClockStoryboard.htm" />
+        <HelpTOCNode Title="ComponentDB Field" Url="html/F_SeizeDay_ShowSeizeDay_ComponentDB.htm" />
+        <HelpTOCNode Title="ContentGrid Field" Url="html/F_SeizeDay_ShowSeizeDay_ContentGrid.htm" />
+        <HelpTOCNode Title="ContentPanel Field" Url="html/F_SeizeDay_ShowSeizeDay_ContentPanel.htm" />
+        <HelpTOCNode Title="HourAnimation Field" Url="html/F_SeizeDay_ShowSeizeDay_HourAnimation.htm" />
+        <HelpTOCNode Title="HourHandTransform Field" Url="html/F_SeizeDay_ShowSeizeDay_HourHandTransform.htm" />
+        <HelpTOCNode Title="LayoutRoot Field" Url="html/F_SeizeDay_ShowSeizeDay_LayoutRoot.htm" />
+        <HelpTOCNode Title="listBoxc Field" Url="html/F_SeizeDay_ShowSeizeDay_listBoxc.htm" />
+        <HelpTOCNode Title="ListToDo Field" Url="html/F_SeizeDay_ShowSeizeDay_ListToDo.htm" />
+        <HelpTOCNode Title="MinuteAnimation Field" Url="html/F_SeizeDay_ShowSeizeDay_MinuteAnimation.htm" />
+        <HelpTOCNode Title="MinuteHandTransform Field" Url="html/F_SeizeDay_ShowSeizeDay_MinuteHandTransform.htm" />
+        <HelpTOCNode Title="myProgressBar Field" Url="html/F_SeizeDay_ShowSeizeDay_myProgressBar.htm" />
+        <HelpTOCNode Title="News Field" Url="html/F_SeizeDay_ShowSeizeDay_News.htm" />
+        <HelpTOCNode Title="NewsList Field" Url="html/F_SeizeDay_ShowSeizeDay_NewsList.htm" />
+        <HelpTOCNode Title="SecondAnimation Field" Url="html/F_SeizeDay_ShowSeizeDay_SecondAnimation.htm" />
+        <HelpTOCNode Title="SecondHandTransform Field" Url="html/F_SeizeDay_ShowSeizeDay_SecondHandTransform.htm" />
+        <HelpTOCNode Title="toDoItemsListBox Field" Url="html/F_SeizeDay_ShowSeizeDay_toDoItemsListBox.htm" />
+        <HelpTOCNode Title="warning Field" Url="html/F_SeizeDay_ShowSeizeDay_warning.htm" />
+        <HelpTOCNode Title="Weather Field" Url="html/F_SeizeDay_ShowSeizeDay_Weather.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="9a9c6f55-bec2-4d85-8172-174ec36dbabc" Title="ShowSeizeDay Methods" Url="html/Methods_T_SeizeDay_ShowSeizeDay.htm">
+        <HelpTOCNode Title="AphorismComponent Method " Url="html/M_SeizeDay_ShowSeizeDay_AphorismComponent.htm" />
+        <HelpTOCNode Title="Clock_Loaded Method " Url="html/M_SeizeDay_ShowSeizeDay_Clock_Loaded.htm" />
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/M_SeizeDay_ShowSeizeDay_InitializeComponent.htm" />
+        <HelpTOCNode Title="ListComponent Method " Url="html/M_SeizeDay_ShowSeizeDay_ListComponent.htm" />
+        <HelpTOCNode Title="LoadComponents Method " Url="html/M_SeizeDay_ShowSeizeDay_LoadComponents.htm" />
+        <HelpTOCNode Title="MainPage_Loaded Method " Url="html/M_SeizeDay_ShowSeizeDay_MainPage_Loaded.htm" />
+        <HelpTOCNode Title="NewsComponent Method " Url="html/M_SeizeDay_ShowSeizeDay_NewsComponent.htm" />
+        <HelpTOCNode Title="NotifyPropertyChanged Method " Url="html/M_SeizeDay_ShowSeizeDay_NotifyPropertyChanged.htm" />
+        <HelpTOCNode Title="OnNavigatedFrom Method " Url="html/M_SeizeDay_ShowSeizeDay_OnNavigatedFrom.htm" />
+        <HelpTOCNode Title="ShowError Method " Url="html/M_SeizeDay_ShowSeizeDay_ShowError.htm" />
+        <HelpTOCNode Title="ValidateDate Method " Url="html/M_SeizeDay_ShowSeizeDay_ValidateDate.htm" />
+        <HelpTOCNode Title="WeatherComponent Method " Url="html/M_SeizeDay_ShowSeizeDay_WeatherComponent.htm" />
+        <HelpTOCNode Title="webclient_DownloadStringCompleted_Aphorism Method " Url="html/M_SeizeDay_ShowSeizeDay_webclient_DownloadStringCompleted_Aphorism.htm" />
+        <HelpTOCNode Title="webclient_DownloadStringCompleted_Feed Method " Url="html/M_SeizeDay_ShowSeizeDay_webclient_DownloadStringCompleted_Feed.htm" />
+        <HelpTOCNode Title="webclient_DownloadStringCompleted_Weather Method " Url="html/M_SeizeDay_ShowSeizeDay_webclient_DownloadStringCompleted_Weather.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="0a6207fe-b0c8-4dc0-bf46-b352993bc332" Title="ShowSeizeDay Properties" Url="html/Properties_T_SeizeDay_ShowSeizeDay.htm">
+        <HelpTOCNode Title="ComponentItems Property " Url="html/P_SeizeDay_ShowSeizeDay_ComponentItems.htm" />
+        <HelpTOCNode Title="TimeItems Property " Url="html/P_SeizeDay_ShowSeizeDay_TimeItems.htm" />
+        <HelpTOCNode Title="ToDoItems Property " Url="html/P_SeizeDay_ShowSeizeDay_ToDoItems.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="9b493361-6765-4578-b587-484d016f4e40" Title="ShowSeizeDay Events" Url="html/Events_T_SeizeDay_ShowSeizeDay.htm">
+        <HelpTOCNode Title="PropertyChanged Event" Url="html/E_SeizeDay_ShowSeizeDay_PropertyChanged.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="07e31f4c-02a5-48d4-a469-35800654823c" Title="SoundCollectionPage Class" Url="html/T_SeizeDay_SoundCollectionPage.htm">
+      <HelpTOCNode Title="SoundCollectionPage Members" Url="html/AllMembers_T_SeizeDay_SoundCollectionPage.htm" />
+      <HelpTOCNode Title="SoundCollectionPage Constructor " Url="html/M_SeizeDay_SoundCollectionPage__ctor.htm" />
+      <HelpTOCNode Id="47d4cec4-1a72-4940-a49c-3a4376ea31a9" Title="SoundCollectionPage Fields" Url="html/Fields_T_SeizeDay_SoundCollectionPage.htm">
+        <HelpTOCNode Title="_contentLoaded Field" Url="html/F_SeizeDay_SoundCollectionPage__contentLoaded.htm" />
+        <HelpTOCNode Title="baroqueloop Field" Url="html/F_SeizeDay_SoundCollectionPage_baroqueloop.htm" />
+        <HelpTOCNode Title="beyonthepain Field" Url="html/F_SeizeDay_SoundCollectionPage_beyonthepain.htm" />
+        <HelpTOCNode Title="ContentPanel Field" Url="html/F_SeizeDay_SoundCollectionPage_ContentPanel.htm" />
+        <HelpTOCNode Title="inbetween Field" Url="html/F_SeizeDay_SoundCollectionPage_inbetween.htm" />
+        <HelpTOCNode Title="LayoutRoot Field" Url="html/F_SeizeDay_SoundCollectionPage_LayoutRoot.htm" />
+        <HelpTOCNode Title="sensitivewalk Field" Url="html/F_SeizeDay_SoundCollectionPage_sensitivewalk.htm" />
+        <HelpTOCNode Title="spanishmusic Field" Url="html/F_SeizeDay_SoundCollectionPage_spanishmusic.htm" />
+        <HelpTOCNode Title="ukrainwarship Field" Url="html/F_SeizeDay_SoundCollectionPage_ukrainwarship.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="7b52ce99-3633-40ba-a8e7-8707c808ba87" Title="SoundCollectionPage Methods" Url="html/Methods_T_SeizeDay_SoundCollectionPage.htm">
+        <HelpTOCNode Title="Grid_Tap_baroqueloop Method " Url="html/M_SeizeDay_SoundCollectionPage_Grid_Tap_baroqueloop.htm" />
+        <HelpTOCNode Title="Grid_Tap_beyonthepain Method " Url="html/M_SeizeDay_SoundCollectionPage_Grid_Tap_beyonthepain.htm" />
+        <HelpTOCNode Title="Grid_Tap_inbetween Method " Url="html/M_SeizeDay_SoundCollectionPage_Grid_Tap_inbetween.htm" />
+        <HelpTOCNode Title="Grid_Tap_sensitivewalk Method " Url="html/M_SeizeDay_SoundCollectionPage_Grid_Tap_sensitivewalk.htm" />
+        <HelpTOCNode Title="Grid_Tap_spanishmusic Method " Url="html/M_SeizeDay_SoundCollectionPage_Grid_Tap_spanishmusic.htm" />
+        <HelpTOCNode Title="Grid_Tap_ukrainwarship Method " Url="html/M_SeizeDay_SoundCollectionPage_Grid_Tap_ukrainwarship.htm" />
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/M_SeizeDay_SoundCollectionPage_InitializeComponent.htm" />
+        <HelpTOCNode Title="OnNavigatedTo Method " Url="html/M_SeizeDay_SoundCollectionPage_OnNavigatedTo.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="9f956c28-f6a1-4c10-b758-50f00369d0fd" Title="ToDoPage Class" Url="html/T_SeizeDay_ToDoPage.htm">
+      <HelpTOCNode Title="ToDoPage Members" Url="html/AllMembers_T_SeizeDay_ToDoPage.htm" />
+      <HelpTOCNode Title="ToDoPage Constructor " Url="html/M_SeizeDay_ToDoPage__ctor.htm" />
+      <HelpTOCNode Id="57a91d9b-03a6-4302-ad25-b1dac7544f07" Title="ToDoPage Fields" Url="html/Fields_T_SeizeDay_ToDoPage.htm">
+        <HelpTOCNode Title="_contentLoaded Field" Url="html/F_SeizeDay_ToDoPage__contentLoaded.htm" />
+        <HelpTOCNode Title="_toDoItems Field" Url="html/F_SeizeDay_ToDoPage__toDoItems.htm" />
+        <HelpTOCNode Title="ApplicationTitle Field" Url="html/F_SeizeDay_ToDoPage_ApplicationTitle.htm" />
+        <HelpTOCNode Title="btnSaveAlarm Field" Url="html/F_SeizeDay_ToDoPage_btnSaveAlarm.htm" />
+        <HelpTOCNode Title="ComponentDB Field" Url="html/F_SeizeDay_ToDoPage_ComponentDB.htm" />
+        <HelpTOCNode Title="ContentPanel Field" Url="html/F_SeizeDay_ToDoPage_ContentPanel.htm" />
+        <HelpTOCNode Title="LayoutRoot Field" Url="html/F_SeizeDay_ToDoPage_LayoutRoot.htm" />
+        <HelpTOCNode Title="newToDoAddButton Field" Url="html/F_SeizeDay_ToDoPage_newToDoAddButton.htm" />
+        <HelpTOCNode Title="newToDoTextBox Field" Url="html/F_SeizeDay_ToDoPage_newToDoTextBox.htm" />
+        <HelpTOCNode Title="PageTitle Field" Url="html/F_SeizeDay_ToDoPage_PageTitle.htm" />
+        <HelpTOCNode Title="TitlePanel Field" Url="html/F_SeizeDay_ToDoPage_TitlePanel.htm" />
+        <HelpTOCNode Title="toDoItemsListBox Field" Url="html/F_SeizeDay_ToDoPage_toDoItemsListBox.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="50303d5f-1c91-4c85-93a7-e474278ce517" Title="ToDoPage Methods" Url="html/Methods_T_SeizeDay_ToDoPage.htm">
+        <HelpTOCNode Title="deleteTaskButton_Click Method " Url="html/M_SeizeDay_ToDoPage_deleteTaskButton_Click.htm" />
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/M_SeizeDay_ToDoPage_InitializeComponent.htm" />
+        <HelpTOCNode Title="newToDoAddButton_Click Method " Url="html/M_SeizeDay_ToDoPage_newToDoAddButton_Click.htm" />
+        <HelpTOCNode Title="newToDoTextBox_GotFocus Method " Url="html/M_SeizeDay_ToDoPage_newToDoTextBox_GotFocus.htm" />
+        <HelpTOCNode Title="NotifyPropertyChanged Method " Url="html/M_SeizeDay_ToDoPage_NotifyPropertyChanged.htm" />
+        <HelpTOCNode Title="NotifyPropertyChanging Method " Url="html/M_SeizeDay_ToDoPage_NotifyPropertyChanging.htm" />
+        <HelpTOCNode Title="OnNavigatedFrom Method " Url="html/M_SeizeDay_ToDoPage_OnNavigatedFrom.htm" />
+        <HelpTOCNode Title="OnNavigatedTo Method " Url="html/M_SeizeDay_ToDoPage_OnNavigatedTo.htm" />
+        <HelpTOCNode Title="SaveButton_Click Method " Url="html/M_SeizeDay_ToDoPage_SaveButton_Click.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="29e4a1b1-94a2-41d6-96b0-b50eca3f1105" Title="ToDoPage Properties" Url="html/Properties_T_SeizeDay_ToDoPage.htm">
+        <HelpTOCNode Title="ToDoItems Property " Url="html/P_SeizeDay_ToDoPage_ToDoItems.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="f1424fb3-167c-4106-b848-784da983dc32" Title="ToDoPage Events" Url="html/Events_T_SeizeDay_ToDoPage.htm">
+        <HelpTOCNode Title="PropertyChanged Event" Url="html/E_SeizeDay_ToDoPage_PropertyChanged.htm" />
+        <HelpTOCNode Title="PropertyChanging Event" Url="html/E_SeizeDay_ToDoPage_PropertyChanging.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="6e3cfcae-ce45-4605-a973-5d8604910c6a" Title="WeatherInfo Class" Url="html/T_SeizeDay_WeatherInfo.htm">
+      <HelpTOCNode Title="WeatherInfo Members" Url="html/AllMembers_T_SeizeDay_WeatherInfo.htm" />
+      <HelpTOCNode Title="WeatherInfo Constructor " Url="html/M_SeizeDay_WeatherInfo__ctor.htm" />
+      <HelpTOCNode Id="7ce7975f-83fb-406e-a7e6-949062c8706c" Title="WeatherInfo Properties" Url="html/Properties_T_SeizeDay_WeatherInfo.htm">
+        <HelpTOCNode Title="condition Property " Url="html/P_SeizeDay_WeatherInfo_condition.htm" />
+        <HelpTOCNode Title="day_of_week Property " Url="html/P_SeizeDay_WeatherInfo_day_of_week.htm" />
+        <HelpTOCNode Title="high Property " Url="html/P_SeizeDay_WeatherInfo_high.htm" />
+        <HelpTOCNode Title="icon Property " Url="html/P_SeizeDay_WeatherInfo_icon.htm" />
+        <HelpTOCNode Title="low Property " Url="html/P_SeizeDay_WeatherInfo_low.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="1b0e8a7e-3f99-4173-909d-1f8580ccff25" Title="WeatherInfoCurrent Class" Url="html/T_SeizeDay_WeatherInfoCurrent.htm">
+      <HelpTOCNode Title="WeatherInfoCurrent Members" Url="html/AllMembers_T_SeizeDay_WeatherInfoCurrent.htm" />
+      <HelpTOCNode Title="WeatherInfoCurrent Constructor " Url="html/M_SeizeDay_WeatherInfoCurrent__ctor.htm" />
+      <HelpTOCNode Id="dd575e28-c0c6-4198-baa7-d5b5c8fa53aa" Title="WeatherInfoCurrent Properties" Url="html/Properties_T_SeizeDay_WeatherInfoCurrent.htm">
+        <HelpTOCNode Title="condition Property " Url="html/P_SeizeDay_WeatherInfoCurrent_condition.htm" />
+        <HelpTOCNode Title="icon Property " Url="html/P_SeizeDay_WeatherInfoCurrent_icon.htm" />
+        <HelpTOCNode Title="observation_time Property " Url="html/P_SeizeDay_WeatherInfoCurrent_observation_time.htm" />
+        <HelpTOCNode Title="temp_C Property " Url="html/P_SeizeDay_WeatherInfoCurrent_temp_C.htm" />
+        <HelpTOCNode Title="temp_F Property " Url="html/P_SeizeDay_WeatherInfoCurrent_temp_F.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="e6f2f895-efbd-4382-9c37-3d8d62660d5b" Title="WeatherSettings Class" Url="html/T_SeizeDay_WeatherSettings.htm">
+      <HelpTOCNode Title="WeatherSettings Members" Url="html/AllMembers_T_SeizeDay_WeatherSettings.htm" />
+      <HelpTOCNode Title="WeatherSettings Constructor " Url="html/M_SeizeDay_WeatherSettings__ctor.htm" />
+      <HelpTOCNode Id="cac37fbb-f8e6-4b90-a5f6-df126feef7b6" Title="WeatherSettings Fields" Url="html/Fields_T_SeizeDay_WeatherSettings.htm">
+        <HelpTOCNode Title="_componentItems Field" Url="html/F_SeizeDay_WeatherSettings__componentItems.htm" />
+        <HelpTOCNode Title="_contentLoaded Field" Url="html/F_SeizeDay_WeatherSettings__contentLoaded.htm" />
+        <HelpTOCNode Title="ApplicationTitle Field" Url="html/F_SeizeDay_WeatherSettings_ApplicationTitle.htm" />
+        <HelpTOCNode Title="btnSaveLocation Field" Url="html/F_SeizeDay_WeatherSettings_btnSaveLocation.htm" />
+        <HelpTOCNode Title="cbxLocationAuto Field" Url="html/F_SeizeDay_WeatherSettings_cbxLocationAuto.htm" />
+        <HelpTOCNode Title="cbxLocationMan Field" Url="html/F_SeizeDay_WeatherSettings_cbxLocationMan.htm" />
+        <HelpTOCNode Title="ComponentDB Field" Url="html/F_SeizeDay_WeatherSettings_ComponentDB.htm" />
+        <HelpTOCNode Title="ContentPanel Field" Url="html/F_SeizeDay_WeatherSettings_ContentPanel.htm" />
+        <HelpTOCNode Title="LayoutRoot Field" Url="html/F_SeizeDay_WeatherSettings_LayoutRoot.htm" />
+        <HelpTOCNode Title="listBoxc Field" Url="html/F_SeizeDay_WeatherSettings_listBoxc.htm" />
+        <HelpTOCNode Title="Options Field" Url="html/F_SeizeDay_WeatherSettings_Options.htm" />
+        <HelpTOCNode Title="PageTitle Field" Url="html/F_SeizeDay_WeatherSettings_PageTitle.htm" />
+        <HelpTOCNode Title="tbxCity Field" Url="html/F_SeizeDay_WeatherSettings_tbxCity.htm" />
+        <HelpTOCNode Title="tbxCountry Field" Url="html/F_SeizeDay_WeatherSettings_tbxCountry.htm" />
+        <HelpTOCNode Title="textBlock1 Field" Url="html/F_SeizeDay_WeatherSettings_textBlock1.htm" />
+        <HelpTOCNode Title="textBlock2 Field" Url="html/F_SeizeDay_WeatherSettings_textBlock2.htm" />
+        <HelpTOCNode Title="textBlock3 Field" Url="html/F_SeizeDay_WeatherSettings_textBlock3.htm" />
+        <HelpTOCNode Title="textBlock4 Field" Url="html/F_SeizeDay_WeatherSettings_textBlock4.htm" />
+        <HelpTOCNode Title="TitlePanel Field" Url="html/F_SeizeDay_WeatherSettings_TitlePanel.htm" />
+        <HelpTOCNode Title="Weather Field" Url="html/F_SeizeDay_WeatherSettings_Weather.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="c4c3065c-325e-4594-b2d2-4a382adcf965" Title="WeatherSettings Methods" Url="html/Methods_T_SeizeDay_WeatherSettings.htm">
+        <HelpTOCNode Title="btnSaveLocation_Click Method " Url="html/M_SeizeDay_WeatherSettings_btnSaveLocation_Click.htm" />
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/M_SeizeDay_WeatherSettings_InitializeComponent.htm" />
+        <HelpTOCNode Title="NotifyPropertyChanged Method " Url="html/M_SeizeDay_WeatherSettings_NotifyPropertyChanged.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="9352d0a6-4a54-4f0e-9b59-96507b575ffa" Title="WeatherSettings Properties" Url="html/Properties_T_SeizeDay_WeatherSettings.htm">
+        <HelpTOCNode Title="ComponentItems Property " Url="html/P_SeizeDay_WeatherSettings_ComponentItems.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="73710ca0-8da6-479a-acbf-deb8b214bc13" Title="WeatherSettings Events" Url="html/Events_T_SeizeDay_WeatherSettings.htm">
+        <HelpTOCNode Title="PropertyChanged Event" Url="html/E_SeizeDay_WeatherSettings_PropertyChanged.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="cd6f44a1-5712-4994-ba7a-9d92fd23dbca" Title="SeizeDay.ViewModels Namespace" Url="html/N_SeizeDay_ViewModels.htm">
+    <HelpTOCNode Id="45ecc3ec-3f21-4987-90bf-49255ecfc1f8" Title="Component Class" Url="html/T_SeizeDay_ViewModels_Component.htm">
+      <HelpTOCNode Title="Component Members" Url="html/AllMembers_T_SeizeDay_ViewModels_Component.htm" />
+      <HelpTOCNode Title="Component Constructor " Url="html/M_SeizeDay_ViewModels_Component__ctor.htm" />
+      <HelpTOCNode Title="Component Constructor " Url="html/M_SeizeDay_ViewModels_Component__cctor.htm" />
+      <HelpTOCNode Id="0ad5ec6b-ca72-47ce-8620-913e627fa84d" Title="Component Fields" Url="html/Fields_T_SeizeDay_ViewModels_Component.htm">
+        <HelpTOCNode Title="ComponentItems Field" Url="html/F_SeizeDay_ViewModels_Component_ComponentItems.htm" />
+        <HelpTOCNode Title="DBConnectionString Field" Url="html/F_SeizeDay_ViewModels_Component_DBConnectionString.htm" />
+        <HelpTOCNode Title="TimeItems Field" Url="html/F_SeizeDay_ViewModels_Component_TimeItems.htm" />
+        <HelpTOCNode Title="ToDoItems Field" Url="html/F_SeizeDay_ViewModels_Component_ToDoItems.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="53208d60-20a1-44b3-81b8-8c8f53037a45" Title="ComponentItem Class" Url="html/T_SeizeDay_ViewModels_ComponentItem.htm">
+      <HelpTOCNode Title="ComponentItem Members" Url="html/AllMembers_T_SeizeDay_ViewModels_ComponentItem.htm" />
+      <HelpTOCNode Title="ComponentItem Constructor " Url="html/M_SeizeDay_ViewModels_ComponentItem__ctor.htm" />
+      <HelpTOCNode Id="c621499e-b69a-452c-bdec-d8c84b6a97c0" Title="ComponentItem Fields" Url="html/Fields_T_SeizeDay_ViewModels_ComponentItem.htm">
+        <HelpTOCNode Title="_componentItemId Field" Url="html/F_SeizeDay_ViewModels_ComponentItem__componentItemId.htm" />
+        <HelpTOCNode Title="_data Field" Url="html/F_SeizeDay_ViewModels_ComponentItem__data.htm" />
+        <HelpTOCNode Title="_itemName Field" Url="html/F_SeizeDay_ViewModels_ComponentItem__itemName.htm" />
+        <HelpTOCNode Title="_version Field" Url="html/F_SeizeDay_ViewModels_ComponentItem__version.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="3c1f7b21-3139-48ba-a748-b8f21ec4f0db" Title="ComponentItem Methods" Url="html/Methods_T_SeizeDay_ViewModels_ComponentItem.htm">
+        <HelpTOCNode Title="NotifyPropertyChanged Method " Url="html/M_SeizeDay_ViewModels_ComponentItem_NotifyPropertyChanged.htm" />
+        <HelpTOCNode Title="NotifyPropertyChanging Method " Url="html/M_SeizeDay_ViewModels_ComponentItem_NotifyPropertyChanging.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="472f200f-50e5-412e-9914-3f52e71fac29" Title="ComponentItem Properties" Url="html/Properties_T_SeizeDay_ViewModels_ComponentItem.htm">
+        <HelpTOCNode Title="Data Property " Url="html/P_SeizeDay_ViewModels_ComponentItem_Data.htm" />
+        <HelpTOCNode Title="ItemId Property " Url="html/P_SeizeDay_ViewModels_ComponentItem_ItemId.htm" />
+        <HelpTOCNode Title="ItemName Property " Url="html/P_SeizeDay_ViewModels_ComponentItem_ItemName.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="0a9adea2-c66d-40a5-a00a-29220c1a1908" Title="ComponentItem Events" Url="html/Events_T_SeizeDay_ViewModels_ComponentItem.htm">
+        <HelpTOCNode Title="PropertyChanged Event" Url="html/E_SeizeDay_ViewModels_ComponentItem_PropertyChanged.htm" />
+        <HelpTOCNode Title="PropertyChanging Event" Url="html/E_SeizeDay_ViewModels_ComponentItem_PropertyChanging.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f3fde6b2-a56d-41f9-b880-f2088ccf9c8b" Title="Maintenance Class" Url="html/T_SeizeDay_ViewModels_Maintenance.htm">
+      <HelpTOCNode Title="Maintenance Members" Url="html/AllMembers_T_SeizeDay_ViewModels_Maintenance.htm" />
+      <HelpTOCNode Id="607505a5-58c1-42ff-9a39-253716a33534" Title="Maintenance Methods" Url="html/Methods_T_SeizeDay_ViewModels_Maintenance.htm">
+        <HelpTOCNode Title="toDate Method " Url="html/M_SeizeDay_ViewModels_Maintenance_toDate.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f95b7493-a960-4a18-8816-22bc00433b50" Title="TimeItem Class" Url="html/T_SeizeDay_ViewModels_TimeItem.htm">
+      <HelpTOCNode Title="TimeItem Members" Url="html/AllMembers_T_SeizeDay_ViewModels_TimeItem.htm" />
+      <HelpTOCNode Title="TimeItem Constructor " Url="html/M_SeizeDay_ViewModels_TimeItem__ctor.htm" />
+      <HelpTOCNode Id="499c5e8b-f420-4f59-89f2-6441e2b4687c" Title="TimeItem Fields" Url="html/Fields_T_SeizeDay_ViewModels_TimeItem.htm">
+        <HelpTOCNode Title="_dateField Field" Url="html/F_SeizeDay_ViewModels_TimeItem__dateField.htm" />
+        <HelpTOCNode Title="_itemAlarmName Field" Url="html/F_SeizeDay_ViewModels_TimeItem__itemAlarmName.htm" />
+        <HelpTOCNode Title="_itemReminderName Field" Url="html/F_SeizeDay_ViewModels_TimeItem__itemReminderName.htm" />
+        <HelpTOCNode Title="_timeItemId Field" Url="html/F_SeizeDay_ViewModels_TimeItem__timeItemId.htm" />
+        <HelpTOCNode Title="_version Field" Url="html/F_SeizeDay_ViewModels_TimeItem__version.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="8c379e91-b4c3-4e0d-a7f7-febf2ccecb6c" Title="TimeItem Methods" Url="html/Methods_T_SeizeDay_ViewModels_TimeItem.htm">
+        <HelpTOCNode Title="NotifyPropertyChanged Method " Url="html/M_SeizeDay_ViewModels_TimeItem_NotifyPropertyChanged.htm" />
+        <HelpTOCNode Title="NotifyPropertyChanging Method " Url="html/M_SeizeDay_ViewModels_TimeItem_NotifyPropertyChanging.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="f5a55ada-b6fc-4011-9faf-69d6dc139a66" Title="TimeItem Properties" Url="html/Properties_T_SeizeDay_ViewModels_TimeItem.htm">
+        <HelpTOCNode Title="DateField Property " Url="html/P_SeizeDay_ViewModels_TimeItem_DateField.htm" />
+        <HelpTOCNode Title="ItemAlarmName Property " Url="html/P_SeizeDay_ViewModels_TimeItem_ItemAlarmName.htm" />
+        <HelpTOCNode Title="ItemReminderName Property " Url="html/P_SeizeDay_ViewModels_TimeItem_ItemReminderName.htm" />
+        <HelpTOCNode Title="ToDoItemId Property " Url="html/P_SeizeDay_ViewModels_TimeItem_ToDoItemId.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="d0084d04-5f92-493a-a299-4de63a9b4d35" Title="TimeItem Events" Url="html/Events_T_SeizeDay_ViewModels_TimeItem.htm">
+        <HelpTOCNode Title="PropertyChanged Event" Url="html/E_SeizeDay_ViewModels_TimeItem_PropertyChanged.htm" />
+        <HelpTOCNode Title="PropertyChanging Event" Url="html/E_SeizeDay_ViewModels_TimeItem_PropertyChanging.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="ab289dd1-d4fb-4e47-b649-9e6d18fd5000" Title="ToDoItem Class" Url="html/T_SeizeDay_ViewModels_ToDoItem.htm">
+      <HelpTOCNode Title="ToDoItem Members" Url="html/AllMembers_T_SeizeDay_ViewModels_ToDoItem.htm" />
+      <HelpTOCNode Title="ToDoItem Constructor " Url="html/M_SeizeDay_ViewModels_ToDoItem__ctor.htm" />
+      <HelpTOCNode Id="25e8d54a-d1ce-43c4-9fd8-8049121eac4d" Title="ToDoItem Fields" Url="html/Fields_T_SeizeDay_ViewModels_ToDoItem.htm">
+        <HelpTOCNode Title="_componentItemId Field" Url="html/F_SeizeDay_ViewModels_ToDoItem__componentItemId.htm" />
+        <HelpTOCNode Title="_isComplete Field" Url="html/F_SeizeDay_ViewModels_ToDoItem__isComplete.htm" />
+        <HelpTOCNode Title="_itemName Field" Url="html/F_SeizeDay_ViewModels_ToDoItem__itemName.htm" />
+        <HelpTOCNode Title="_version Field" Url="html/F_SeizeDay_ViewModels_ToDoItem__version.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="6f9a04f0-f57f-477e-afd7-ec12fc986d1b" Title="ToDoItem Methods" Url="html/Methods_T_SeizeDay_ViewModels_ToDoItem.htm">
+        <HelpTOCNode Title="NotifyPropertyChanged Method " Url="html/M_SeizeDay_ViewModels_ToDoItem_NotifyPropertyChanged.htm" />
+        <HelpTOCNode Title="NotifyPropertyChanging Method " Url="html/M_SeizeDay_ViewModels_ToDoItem_NotifyPropertyChanging.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="1eb80d21-3d2e-494c-aba5-d53013531975" Title="ToDoItem Properties" Url="html/Properties_T_SeizeDay_ViewModels_ToDoItem.htm">
+        <HelpTOCNode Title="IsComplete Property " Url="html/P_SeizeDay_ViewModels_ToDoItem_IsComplete.htm" />
+        <HelpTOCNode Title="ItemName Property " Url="html/P_SeizeDay_ViewModels_ToDoItem_ItemName.htm" />
+        <HelpTOCNode Title="ToDoItemId Property " Url="html/P_SeizeDay_ViewModels_ToDoItem_ToDoItemId.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="a8270fcb-5c88-42d9-b0f9-83425a374808" Title="ToDoItem Events" Url="html/Events_T_SeizeDay_ViewModels_ToDoItem.htm">
+        <HelpTOCNode Title="PropertyChanged Event" Url="html/E_SeizeDay_ViewModels_ToDoItem_PropertyChanged.htm" />
+        <HelpTOCNode Title="PropertyChanging Event" Url="html/E_SeizeDay_ViewModels_ToDoItem_PropertyChanging.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

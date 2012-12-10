@@ -1,0 +1,1456 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+<title>A Sandcastle Documented Class Library - Table of Content</title>
+<link rel="stylesheet" href="TOC.css">
+<link rel="shortcut icon" href="favicon.ico"/>
+<script type="text/javascript" src="TOC.js"></script>
+</head>
+
+<body onload="javascript: Initialize('.aspx');" onresize="javascript: ResizeTree();">
+<form id="IndexForm" runat="server">
+
+<div id="TOCDiv" class="TOCDiv">
+
+<div id="divSearchOpts" class="SearchOpts" style="height: 100px; display: none;">
+<img class="TOCLink" onclick="javascript: ShowHideSearch(false);"
+    src="CloseSearch.png" height="16" width="16" alt="Hide search" style="float: right;"/>
+Keyword(s) for which to search:
+<input id="txtSearchText" type="text" style="width: 100%;"
+  onkeypress="javascript: return OnSearchTextKeyPress(event);" /><br />
+<input id="chkSortByTitle" type="checkbox" /><label for="chkSortByTitle">&nbsp;Sort results by title</label><br />
+<input type="button" value="Search" onclick="javascript: return PerformSearch();" />
+</div>
+
+<div id="divIndexOpts" class="IndexOpts" style="height: 25px; display: none;">
+<img class="TOCLink" onclick="javascript: ShowHideIndex(false);"
+    src="CloseSearch.png" height="17" width="17" alt="Hide index" style="float: right;"/>
+Keyword Index
+</div>
+
+<div id="divNavOpts" class="NavOpts" style="height: 20px;">
+    <img class="TOCLink" onclick="javascript: SyncTOC();" src="SyncTOC.gif"
+        height="16" width="16" alt="Sync to TOC"/>
+    <img class="TOCLink" onclick="javascript: ExpandOrCollapseAll(true);"
+        src="ExpandAll.bmp" height="16" width="16" alt="Expand all "/>
+    <img class="TOCLink" onclick="javascript: ExpandOrCollapseAll(false);"
+        src="CollapseAll.bmp" height="16" width="16" alt="Collapse all" />
+    <a href="#" title="Click to obtain a direct link to the displayed topic"
+        style="margin-left: 10px; vertical-align: top;"
+        onclick="javascript: ShowDirectLink();">Direct Link</a>
+</div>
+
+<div class="Tree" id="divSearchResults" style="display: none;"
+    onselectstart="javascript: return false;">
+</div>
+
+<div class="Tree" id="divIndexResults" style="display: none;"
+    onselectstart="javascript: return false;">
+</div>
+
+<div class="Tree" id="divTree" onselectstart="javascript: return false;">
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/N_AlarmAlarm.htm" target="TopicContent">AlarmAlarm Namespace</a>
+<div class="Hidden">
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T_AlarmAlarm_AddAlarm.htm" target="TopicContent">AddAlarm Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers_T_AlarmAlarm_AddAlarm.htm" target="TopicContent">AddAlarm Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_AlarmAlarm_AddAlarm__ctor.htm" target="TopicContent">AddAlarm Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields_T_AlarmAlarm_AddAlarm.htm" target="TopicContent">AddAlarm Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_AlarmAlarm_AddAlarm__contentLoaded.htm" target="TopicContent">_contentLoaded Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_AlarmAlarm_AddAlarm_alarmSound.htm" target="TopicContent">alarmSound Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_AlarmAlarm_AddAlarm_ApplicationTitle.htm" target="TopicContent">ApplicationTitle Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_AlarmAlarm_AddAlarm_beginTimeLabel.htm" target="TopicContent">beginTimeLabel Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_AlarmAlarm_AddAlarm_btnSaveAlarm.htm" target="TopicContent">btnSaveAlarm Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_AlarmAlarm_AddAlarm_btnSoundAlarm.htm" target="TopicContent">btnSoundAlarm Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_AlarmAlarm_AddAlarm_ContentPanel.htm" target="TopicContent">ContentPanel Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_AlarmAlarm_AddAlarm_LayoutRoot.htm" target="TopicContent">LayoutRoot Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_AlarmAlarm_AddAlarm_PageTitle.htm" target="TopicContent">PageTitle Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_AlarmAlarm_AddAlarm_timePicker.htm" target="TopicContent">timePicker Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_AlarmAlarm_AddAlarm_TitlePanel.htm" target="TopicContent">TitlePanel Field</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods_T_AlarmAlarm_AddAlarm.htm" target="TopicContent">AddAlarm Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_AlarmAlarm_AddAlarm_ChooseSoundButton_Click.htm" target="TopicContent">ChooseSoundButton_Click Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_AlarmAlarm_AddAlarm_InitializeComponent.htm" target="TopicContent">InitializeComponent Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_AlarmAlarm_AddAlarm_OnNavigatedTo.htm" target="TopicContent">OnNavigatedTo Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_AlarmAlarm_AddAlarm_SaveButton_Click.htm" target="TopicContent">SaveButton_Click Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/N_SeizeDay.htm" target="TopicContent">SeizeDay Namespace</a>
+<div class="Hidden">
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T_SeizeDay_App.htm" target="TopicContent">App Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers_T_SeizeDay_App.htm" target="TopicContent">App Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_App__ctor.htm" target="TopicContent">App Constructor </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_App__cctor.htm" target="TopicContent">App Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields_T_SeizeDay_App.htm" target="TopicContent">App Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_App__contentLoaded.htm" target="TopicContent">_contentLoaded Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_App_phoneApplicationInitialized.htm" target="TopicContent">phoneApplicationInitialized Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_App_viewModel.htm" target="TopicContent">viewModel Field</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods_T_SeizeDay_App.htm" target="TopicContent">App Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_App_Application_Activated.htm" target="TopicContent">Application_Activated Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_App_Application_Closing.htm" target="TopicContent">Application_Closing Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_App_Application_Deactivated.htm" target="TopicContent">Application_Deactivated Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_App_Application_Launching.htm" target="TopicContent">Application_Launching Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_App_Application_UnhandledException.htm" target="TopicContent">Application_UnhandledException Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_App_CompleteInitializePhoneApplication.htm" target="TopicContent">CompleteInitializePhoneApplication Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_App_InitializeComponent.htm" target="TopicContent">InitializeComponent Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_App_InitializePhoneApplication.htm" target="TopicContent">InitializePhoneApplication Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_App_RootFrame_NavigationFailed.htm" target="TopicContent">RootFrame_NavigationFailed Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties_T_SeizeDay_App.htm" target="TopicContent">App Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_App_RootFrame.htm" target="TopicContent">RootFrame Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_App_ViewModel.htm" target="TopicContent">ViewModel Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T_SeizeDay_ComponentPage.htm" target="TopicContent">ComponentPage Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers_T_SeizeDay_ComponentPage.htm" target="TopicContent">ComponentPage Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ComponentPage__ctor.htm" target="TopicContent">ComponentPage Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields_T_SeizeDay_ComponentPage.htm" target="TopicContent">ComponentPage Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ComponentPage__contentLoaded.htm" target="TopicContent">_contentLoaded Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ComponentPage_Aphorism.htm" target="TopicContent">Aphorism Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ComponentPage_ContentPanel.htm" target="TopicContent">ContentPanel Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ComponentPage_LayoutRoot.htm" target="TopicContent">LayoutRoot Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ComponentPage_ListToDo.htm" target="TopicContent">ListToDo Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ComponentPage_News.htm" target="TopicContent">News Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ComponentPage_Weather.htm" target="TopicContent">Weather Field</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods_T_SeizeDay_ComponentPage.htm" target="TopicContent">ComponentPage Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ComponentPage_Grid_Tap_Aphorism.htm" target="TopicContent">Grid_Tap_Aphorism Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ComponentPage_Grid_Tap_ListToDo.htm" target="TopicContent">Grid_Tap_ListToDo Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ComponentPage_Grid_Tap_News.htm" target="TopicContent">Grid_Tap_News Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ComponentPage_Grid_Tap_Weather.htm" target="TopicContent">Grid_Tap_Weather Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ComponentPage_InitializeComponent.htm" target="TopicContent">InitializeComponent Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ComponentPage_OnNavigatedTo.htm" target="TopicContent">OnNavigatedTo Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T_SeizeDay_FeedItem.htm" target="TopicContent">FeedItem Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers_T_SeizeDay_FeedItem.htm" target="TopicContent">FeedItem Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_FeedItem__ctor.htm" target="TopicContent">FeedItem Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields_T_SeizeDay_FeedItem.htm" target="TopicContent">FeedItem Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_FeedItem__description.htm" target="TopicContent">_description Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_FeedItem__guid.htm" target="TopicContent">_guid Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_FeedItem__link.htm" target="TopicContent">_link Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_FeedItem__published.htm" target="TopicContent">_published Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_FeedItem__title.htm" target="TopicContent">_title Field</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties_T_SeizeDay_FeedItem.htm" target="TopicContent">FeedItem Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_FeedItem_Description.htm" target="TopicContent">Description Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_FeedItem_Guid.htm" target="TopicContent">Guid Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_FeedItem_Link.htm" target="TopicContent">Link Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_FeedItem_Published.htm" target="TopicContent">Published Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_FeedItem_Title.htm" target="TopicContent">Title Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T_SeizeDay_ItemViewModel.htm" target="TopicContent">ItemViewModel Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers_T_SeizeDay_ItemViewModel.htm" target="TopicContent">ItemViewModel Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ItemViewModel__ctor.htm" target="TopicContent">ItemViewModel Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields_T_SeizeDay_ItemViewModel.htm" target="TopicContent">ItemViewModel Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ItemViewModel__lineOne.htm" target="TopicContent">_lineOne Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ItemViewModel__lineThree.htm" target="TopicContent">_lineThree Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ItemViewModel__lineTwo.htm" target="TopicContent">_lineTwo Field</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods_T_SeizeDay_ItemViewModel.htm" target="TopicContent">ItemViewModel Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ItemViewModel_NotifyPropertyChanged.htm" target="TopicContent">NotifyPropertyChanged Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties_T_SeizeDay_ItemViewModel.htm" target="TopicContent">ItemViewModel Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_ItemViewModel_LineOne.htm" target="TopicContent">LineOne Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_ItemViewModel_LineThree.htm" target="TopicContent">LineThree Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_ItemViewModel_LineTwo.htm" target="TopicContent">LineTwo Property </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Events_T_SeizeDay_ItemViewModel.htm" target="TopicContent">ItemViewModel Events</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/E_SeizeDay_ItemViewModel_PropertyChanged.htm" target="TopicContent">PropertyChanged Event</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T_SeizeDay_MainPage.htm" target="TopicContent">MainPage Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers_T_SeizeDay_MainPage.htm" target="TopicContent">MainPage Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_MainPage__ctor.htm" target="TopicContent">MainPage Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields_T_SeizeDay_MainPage.htm" target="TopicContent">MainPage Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_MainPage__componentItems.htm" target="TopicContent">_componentItems Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_MainPage__contentLoaded.htm" target="TopicContent">_contentLoaded Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_MainPage__timeItems.htm" target="TopicContent">_timeItems Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_MainPage_alarmList.htm" target="TopicContent">alarmList Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_MainPage_arrow1.htm" target="TopicContent">arrow1 Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_MainPage_arrow2.htm" target="TopicContent">arrow2 Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_MainPage_btnAddAlarm.htm" target="TopicContent">btnAddAlarm Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_MainPage_btnAddComponent.htm" target="TopicContent">btnAddComponent Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_MainPage_btndeleteAlarm.htm" target="TopicContent">btndeleteAlarm Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_MainPage_btndeleteComponent.htm" target="TopicContent">btndeleteComponent Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_MainPage_ClockFaceEllipse.htm" target="TopicContent">ClockFaceEllipse Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_MainPage_ClockHandsCanvas.htm" target="TopicContent">ClockHandsCanvas Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_MainPage_ClockStoryboard.htm" target="TopicContent">ClockStoryboard Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_MainPage_ComponentDB.htm" target="TopicContent">ComponentDB Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_MainPage_ContentGrid.htm" target="TopicContent">ContentGrid Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_MainPage_FirstListBox.htm" target="TopicContent">FirstListBox Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_MainPage_HourAnimation.htm" target="TopicContent">HourAnimation Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_MainPage_HourHandTransform.htm" target="TopicContent">HourHandTransform Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_MainPage_itemComponentToDelete.htm" target="TopicContent">itemComponentToDelete Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_MainPage_itemTimeToDelete.htm" target="TopicContent">itemTimeToDelete Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_MainPage_LayoutRoot.htm" target="TopicContent">LayoutRoot Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_MainPage_MinuteAnimation.htm" target="TopicContent">MinuteAnimation Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_MainPage_MinuteHandTransform.htm" target="TopicContent">MinuteHandTransform Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_MainPage_myProgressBar.htm" target="TopicContent">myProgressBar Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_MainPage_SecondAnimation.htm" target="TopicContent">SecondAnimation Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_MainPage_SecondHandTransform.htm" target="TopicContent">SecondHandTransform Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_MainPage_text1.htm" target="TopicContent">text1 Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_MainPage_text2.htm" target="TopicContent">text2 Field</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods_T_SeizeDay_MainPage.htm" target="TopicContent">MainPage Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_MainPage_AddComponent_Click.htm" target="TopicContent">AddComponent_Click Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_MainPage_ButtonAddAlarm_Click.htm" target="TopicContent">ButtonAddAlarm_Click Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_MainPage_ButtonDeleteAlarm_Click.htm" target="TopicContent">ButtonDeleteAlarm_Click Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_MainPage_CheckAddedElements.htm" target="TopicContent">CheckAddedElements Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_MainPage_Clock_Loaded.htm" target="TopicContent">Clock_Loaded Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_MainPage_DeleteComponent_Click.htm" target="TopicContent">DeleteComponent_Click Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_MainPage_DoubleTap_action.htm" target="TopicContent">DoubleTap_action Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_MainPage_InitializeComponent.htm" target="TopicContent">InitializeComponent Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_MainPage_listBox_SelectionChanged.htm" target="TopicContent">listBox_SelectionChanged Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_MainPage_listBoxComponent_SelectionChanged.htm" target="TopicContent">listBoxComponent_SelectionChanged Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_MainPage_MainPage_Loaded.htm" target="TopicContent">MainPage_Loaded Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_MainPage_NotifyPropertyChanged.htm" target="TopicContent">NotifyPropertyChanged Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_MainPage_OnNavigatedFrom.htm" target="TopicContent">OnNavigatedFrom Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_MainPage_OnNavigatedTo.htm" target="TopicContent">OnNavigatedTo Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_MainPage_ValidateDate.htm" target="TopicContent">ValidateDate Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties_T_SeizeDay_MainPage.htm" target="TopicContent">MainPage Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_MainPage_ComponentItems.htm" target="TopicContent">ComponentItems Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_MainPage_TimeItems.htm" target="TopicContent">TimeItems Property </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Events_T_SeizeDay_MainPage.htm" target="TopicContent">MainPage Events</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/E_SeizeDay_MainPage_PropertyChanged.htm" target="TopicContent">PropertyChanged Event</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T_SeizeDay_MainViewModel.htm" target="TopicContent">MainViewModel Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers_T_SeizeDay_MainViewModel.htm" target="TopicContent">MainViewModel Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_MainViewModel__ctor.htm" target="TopicContent">MainViewModel Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods_T_SeizeDay_MainViewModel.htm" target="TopicContent">MainViewModel Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_MainViewModel_AddComponent.htm" target="TopicContent">AddComponent Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_MainViewModel_LoadData.htm" target="TopicContent">LoadData Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_MainViewModel_NotifyPropertyChanged.htm" target="TopicContent">NotifyPropertyChanged Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties_T_SeizeDay_MainViewModel.htm" target="TopicContent">MainViewModel Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_MainViewModel_IsDataLoaded.htm" target="TopicContent">IsDataLoaded Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_MainViewModel_Items.htm" target="TopicContent">Items Property </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Events_T_SeizeDay_MainViewModel.htm" target="TopicContent">MainViewModel Events</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/E_SeizeDay_MainViewModel_PropertyChanged.htm" target="TopicContent">PropertyChanged Event</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T_SeizeDay_NewsPage.htm" target="TopicContent">NewsPage Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers_T_SeizeDay_NewsPage.htm" target="TopicContent">NewsPage Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_NewsPage__ctor.htm" target="TopicContent">NewsPage Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields_T_SeizeDay_NewsPage.htm" target="TopicContent">NewsPage Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_NewsPage__componentItems.htm" target="TopicContent">_componentItems Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_NewsPage__contentLoaded.htm" target="TopicContent">_contentLoaded Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_NewsPage_ComponentDB.htm" target="TopicContent">ComponentDB Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_NewsPage_ContentPanel.htm" target="TopicContent">ContentPanel Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_NewsPage_Future.htm" target="TopicContent">Future Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_NewsPage_Health.htm" target="TopicContent">Health Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_NewsPage_History.htm" target="TopicContent">History Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_NewsPage_LayoutRoot.htm" target="TopicContent">LayoutRoot Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_NewsPage_Nature.htm" target="TopicContent">Nature Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_NewsPage_Travel.htm" target="TopicContent">Travel Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_NewsPage_World.htm" target="TopicContent">World Field</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods_T_SeizeDay_NewsPage.htm" target="TopicContent">NewsPage Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_NewsPage_Grid_Tap_Future.htm" target="TopicContent">Grid_Tap_Future Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_NewsPage_Grid_Tap_Health.htm" target="TopicContent">Grid_Tap_Health Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_NewsPage_Grid_Tap_History.htm" target="TopicContent">Grid_Tap_History Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_NewsPage_Grid_Tap_Nature.htm" target="TopicContent">Grid_Tap_Nature Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_NewsPage_Grid_Tap_Travel.htm" target="TopicContent">Grid_Tap_Travel Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_NewsPage_Grid_Tap_World.htm" target="TopicContent">Grid_Tap_World Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_NewsPage_InitializeComponent.htm" target="TopicContent">InitializeComponent Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_NewsPage_NotifyPropertyChanged.htm" target="TopicContent">NotifyPropertyChanged Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_NewsPage_OnNavigatedTo.htm" target="TopicContent">OnNavigatedTo Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_NewsPage_SaveChosen.htm" target="TopicContent">SaveChosen Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties_T_SeizeDay_NewsPage.htm" target="TopicContent">NewsPage Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_NewsPage_ComponentItems.htm" target="TopicContent">ComponentItems Property </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Events_T_SeizeDay_NewsPage.htm" target="TopicContent">NewsPage Events</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/E_SeizeDay_NewsPage_PropertyChanged.htm" target="TopicContent">PropertyChanged Event</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T_SeizeDay_ShowSeizeDay.htm" target="TopicContent">ShowSeizeDay Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers_T_SeizeDay_ShowSeizeDay.htm" target="TopicContent">ShowSeizeDay Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ShowSeizeDay__ctor.htm" target="TopicContent">ShowSeizeDay Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields_T_SeizeDay_ShowSeizeDay.htm" target="TopicContent">ShowSeizeDay Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ShowSeizeDay__componentItems.htm" target="TopicContent">_componentItems Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ShowSeizeDay__contentLoaded.htm" target="TopicContent">_contentLoaded Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ShowSeizeDay__timeItems.htm" target="TopicContent">_timeItems Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ShowSeizeDay__toDoItems.htm" target="TopicContent">_toDoItems Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ShowSeizeDay_Aphorism.htm" target="TopicContent">Aphorism Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ShowSeizeDay_AphorismList.htm" target="TopicContent">AphorismList Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ShowSeizeDay_ClockFaceEllipse.htm" target="TopicContent">ClockFaceEllipse Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ShowSeizeDay_ClockHandsCanvas.htm" target="TopicContent">ClockHandsCanvas Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ShowSeizeDay_ClockStoryboard.htm" target="TopicContent">ClockStoryboard Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ShowSeizeDay_ComponentDB.htm" target="TopicContent">ComponentDB Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ShowSeizeDay_ContentGrid.htm" target="TopicContent">ContentGrid Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ShowSeizeDay_ContentPanel.htm" target="TopicContent">ContentPanel Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ShowSeizeDay_HourAnimation.htm" target="TopicContent">HourAnimation Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ShowSeizeDay_HourHandTransform.htm" target="TopicContent">HourHandTransform Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ShowSeizeDay_LayoutRoot.htm" target="TopicContent">LayoutRoot Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ShowSeizeDay_listBoxc.htm" target="TopicContent">listBoxc Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ShowSeizeDay_ListToDo.htm" target="TopicContent">ListToDo Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ShowSeizeDay_MinuteAnimation.htm" target="TopicContent">MinuteAnimation Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ShowSeizeDay_MinuteHandTransform.htm" target="TopicContent">MinuteHandTransform Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ShowSeizeDay_myProgressBar.htm" target="TopicContent">myProgressBar Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ShowSeizeDay_News.htm" target="TopicContent">News Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ShowSeizeDay_NewsList.htm" target="TopicContent">NewsList Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ShowSeizeDay_SecondAnimation.htm" target="TopicContent">SecondAnimation Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ShowSeizeDay_SecondHandTransform.htm" target="TopicContent">SecondHandTransform Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ShowSeizeDay_toDoItemsListBox.htm" target="TopicContent">toDoItemsListBox Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ShowSeizeDay_warning.htm" target="TopicContent">warning Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ShowSeizeDay_Weather.htm" target="TopicContent">Weather Field</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods_T_SeizeDay_ShowSeizeDay.htm" target="TopicContent">ShowSeizeDay Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ShowSeizeDay_AphorismComponent.htm" target="TopicContent">AphorismComponent Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ShowSeizeDay_Clock_Loaded.htm" target="TopicContent">Clock_Loaded Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ShowSeizeDay_InitializeComponent.htm" target="TopicContent">InitializeComponent Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ShowSeizeDay_ListComponent.htm" target="TopicContent">ListComponent Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ShowSeizeDay_LoadComponents.htm" target="TopicContent">LoadComponents Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ShowSeizeDay_MainPage_Loaded.htm" target="TopicContent">MainPage_Loaded Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ShowSeizeDay_NewsComponent.htm" target="TopicContent">NewsComponent Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ShowSeizeDay_NotifyPropertyChanged.htm" target="TopicContent">NotifyPropertyChanged Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ShowSeizeDay_OnNavigatedFrom.htm" target="TopicContent">OnNavigatedFrom Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ShowSeizeDay_ShowError.htm" target="TopicContent">ShowError Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ShowSeizeDay_ValidateDate.htm" target="TopicContent">ValidateDate Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ShowSeizeDay_WeatherComponent.htm" target="TopicContent">WeatherComponent Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ShowSeizeDay_webclient_DownloadStringCompleted_Aphorism.htm" target="TopicContent">webclient_DownloadStringCompleted_Aphorism Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ShowSeizeDay_webclient_DownloadStringCompleted_Feed.htm" target="TopicContent">webclient_DownloadStringCompleted_Feed Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ShowSeizeDay_webclient_DownloadStringCompleted_Weather.htm" target="TopicContent">webclient_DownloadStringCompleted_Weather Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties_T_SeizeDay_ShowSeizeDay.htm" target="TopicContent">ShowSeizeDay Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_ShowSeizeDay_ComponentItems.htm" target="TopicContent">ComponentItems Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_ShowSeizeDay_TimeItems.htm" target="TopicContent">TimeItems Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_ShowSeizeDay_ToDoItems.htm" target="TopicContent">ToDoItems Property </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Events_T_SeizeDay_ShowSeizeDay.htm" target="TopicContent">ShowSeizeDay Events</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/E_SeizeDay_ShowSeizeDay_PropertyChanged.htm" target="TopicContent">PropertyChanged Event</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T_SeizeDay_SoundCollectionPage.htm" target="TopicContent">SoundCollectionPage Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers_T_SeizeDay_SoundCollectionPage.htm" target="TopicContent">SoundCollectionPage Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_SoundCollectionPage__ctor.htm" target="TopicContent">SoundCollectionPage Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields_T_SeizeDay_SoundCollectionPage.htm" target="TopicContent">SoundCollectionPage Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_SoundCollectionPage__contentLoaded.htm" target="TopicContent">_contentLoaded Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_SoundCollectionPage_baroqueloop.htm" target="TopicContent">baroqueloop Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_SoundCollectionPage_beyonthepain.htm" target="TopicContent">beyonthepain Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_SoundCollectionPage_ContentPanel.htm" target="TopicContent">ContentPanel Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_SoundCollectionPage_inbetween.htm" target="TopicContent">inbetween Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_SoundCollectionPage_LayoutRoot.htm" target="TopicContent">LayoutRoot Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_SoundCollectionPage_sensitivewalk.htm" target="TopicContent">sensitivewalk Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_SoundCollectionPage_spanishmusic.htm" target="TopicContent">spanishmusic Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_SoundCollectionPage_ukrainwarship.htm" target="TopicContent">ukrainwarship Field</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods_T_SeizeDay_SoundCollectionPage.htm" target="TopicContent">SoundCollectionPage Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_SoundCollectionPage_Grid_Tap_baroqueloop.htm" target="TopicContent">Grid_Tap_baroqueloop Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_SoundCollectionPage_Grid_Tap_beyonthepain.htm" target="TopicContent">Grid_Tap_beyonthepain Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_SoundCollectionPage_Grid_Tap_inbetween.htm" target="TopicContent">Grid_Tap_inbetween Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_SoundCollectionPage_Grid_Tap_sensitivewalk.htm" target="TopicContent">Grid_Tap_sensitivewalk Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_SoundCollectionPage_Grid_Tap_spanishmusic.htm" target="TopicContent">Grid_Tap_spanishmusic Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_SoundCollectionPage_Grid_Tap_ukrainwarship.htm" target="TopicContent">Grid_Tap_ukrainwarship Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_SoundCollectionPage_InitializeComponent.htm" target="TopicContent">InitializeComponent Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_SoundCollectionPage_OnNavigatedTo.htm" target="TopicContent">OnNavigatedTo Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T_SeizeDay_ToDoPage.htm" target="TopicContent">ToDoPage Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers_T_SeizeDay_ToDoPage.htm" target="TopicContent">ToDoPage Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ToDoPage__ctor.htm" target="TopicContent">ToDoPage Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields_T_SeizeDay_ToDoPage.htm" target="TopicContent">ToDoPage Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ToDoPage__contentLoaded.htm" target="TopicContent">_contentLoaded Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ToDoPage__toDoItems.htm" target="TopicContent">_toDoItems Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ToDoPage_ApplicationTitle.htm" target="TopicContent">ApplicationTitle Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ToDoPage_btnSaveAlarm.htm" target="TopicContent">btnSaveAlarm Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ToDoPage_ComponentDB.htm" target="TopicContent">ComponentDB Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ToDoPage_ContentPanel.htm" target="TopicContent">ContentPanel Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ToDoPage_LayoutRoot.htm" target="TopicContent">LayoutRoot Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ToDoPage_newToDoAddButton.htm" target="TopicContent">newToDoAddButton Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ToDoPage_newToDoTextBox.htm" target="TopicContent">newToDoTextBox Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ToDoPage_PageTitle.htm" target="TopicContent">PageTitle Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ToDoPage_TitlePanel.htm" target="TopicContent">TitlePanel Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ToDoPage_toDoItemsListBox.htm" target="TopicContent">toDoItemsListBox Field</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods_T_SeizeDay_ToDoPage.htm" target="TopicContent">ToDoPage Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ToDoPage_deleteTaskButton_Click.htm" target="TopicContent">deleteTaskButton_Click Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ToDoPage_InitializeComponent.htm" target="TopicContent">InitializeComponent Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ToDoPage_newToDoAddButton_Click.htm" target="TopicContent">newToDoAddButton_Click Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ToDoPage_newToDoTextBox_GotFocus.htm" target="TopicContent">newToDoTextBox_GotFocus Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ToDoPage_NotifyPropertyChanged.htm" target="TopicContent">NotifyPropertyChanged Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ToDoPage_NotifyPropertyChanging.htm" target="TopicContent">NotifyPropertyChanging Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ToDoPage_OnNavigatedFrom.htm" target="TopicContent">OnNavigatedFrom Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ToDoPage_OnNavigatedTo.htm" target="TopicContent">OnNavigatedTo Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ToDoPage_SaveButton_Click.htm" target="TopicContent">SaveButton_Click Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties_T_SeizeDay_ToDoPage.htm" target="TopicContent">ToDoPage Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_ToDoPage_ToDoItems.htm" target="TopicContent">ToDoItems Property </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Events_T_SeizeDay_ToDoPage.htm" target="TopicContent">ToDoPage Events</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/E_SeizeDay_ToDoPage_PropertyChanged.htm" target="TopicContent">PropertyChanged Event</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/E_SeizeDay_ToDoPage_PropertyChanging.htm" target="TopicContent">PropertyChanging Event</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T_SeizeDay_WeatherInfo.htm" target="TopicContent">WeatherInfo Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers_T_SeizeDay_WeatherInfo.htm" target="TopicContent">WeatherInfo Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_WeatherInfo__ctor.htm" target="TopicContent">WeatherInfo Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties_T_SeizeDay_WeatherInfo.htm" target="TopicContent">WeatherInfo Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_WeatherInfo_condition.htm" target="TopicContent">condition Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_WeatherInfo_day_of_week.htm" target="TopicContent">day_of_week Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_WeatherInfo_high.htm" target="TopicContent">high Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_WeatherInfo_icon.htm" target="TopicContent">icon Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_WeatherInfo_low.htm" target="TopicContent">low Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T_SeizeDay_WeatherInfoCurrent.htm" target="TopicContent">WeatherInfoCurrent Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers_T_SeizeDay_WeatherInfoCurrent.htm" target="TopicContent">WeatherInfoCurrent Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_WeatherInfoCurrent__ctor.htm" target="TopicContent">WeatherInfoCurrent Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties_T_SeizeDay_WeatherInfoCurrent.htm" target="TopicContent">WeatherInfoCurrent Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_WeatherInfoCurrent_condition.htm" target="TopicContent">condition Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_WeatherInfoCurrent_icon.htm" target="TopicContent">icon Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_WeatherInfoCurrent_observation_time.htm" target="TopicContent">observation_time Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_WeatherInfoCurrent_temp_C.htm" target="TopicContent">temp_C Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_WeatherInfoCurrent_temp_F.htm" target="TopicContent">temp_F Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T_SeizeDay_WeatherSettings.htm" target="TopicContent">WeatherSettings Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers_T_SeizeDay_WeatherSettings.htm" target="TopicContent">WeatherSettings Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_WeatherSettings__ctor.htm" target="TopicContent">WeatherSettings Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields_T_SeizeDay_WeatherSettings.htm" target="TopicContent">WeatherSettings Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_WeatherSettings__componentItems.htm" target="TopicContent">_componentItems Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_WeatherSettings__contentLoaded.htm" target="TopicContent">_contentLoaded Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_WeatherSettings_ApplicationTitle.htm" target="TopicContent">ApplicationTitle Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_WeatherSettings_btnSaveLocation.htm" target="TopicContent">btnSaveLocation Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_WeatherSettings_cbxLocationAuto.htm" target="TopicContent">cbxLocationAuto Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_WeatherSettings_cbxLocationMan.htm" target="TopicContent">cbxLocationMan Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_WeatherSettings_ComponentDB.htm" target="TopicContent">ComponentDB Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_WeatherSettings_ContentPanel.htm" target="TopicContent">ContentPanel Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_WeatherSettings_LayoutRoot.htm" target="TopicContent">LayoutRoot Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_WeatherSettings_listBoxc.htm" target="TopicContent">listBoxc Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_WeatherSettings_Options.htm" target="TopicContent">Options Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_WeatherSettings_PageTitle.htm" target="TopicContent">PageTitle Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_WeatherSettings_tbxCity.htm" target="TopicContent">tbxCity Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_WeatherSettings_tbxCountry.htm" target="TopicContent">tbxCountry Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_WeatherSettings_textBlock1.htm" target="TopicContent">textBlock1 Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_WeatherSettings_textBlock2.htm" target="TopicContent">textBlock2 Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_WeatherSettings_textBlock3.htm" target="TopicContent">textBlock3 Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_WeatherSettings_textBlock4.htm" target="TopicContent">textBlock4 Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_WeatherSettings_TitlePanel.htm" target="TopicContent">TitlePanel Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_WeatherSettings_Weather.htm" target="TopicContent">Weather Field</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods_T_SeizeDay_WeatherSettings.htm" target="TopicContent">WeatherSettings Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_WeatherSettings_btnSaveLocation_Click.htm" target="TopicContent">btnSaveLocation_Click Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_WeatherSettings_InitializeComponent.htm" target="TopicContent">InitializeComponent Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_WeatherSettings_NotifyPropertyChanged.htm" target="TopicContent">NotifyPropertyChanged Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties_T_SeizeDay_WeatherSettings.htm" target="TopicContent">WeatherSettings Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_WeatherSettings_ComponentItems.htm" target="TopicContent">ComponentItems Property </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Events_T_SeizeDay_WeatherSettings.htm" target="TopicContent">WeatherSettings Events</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/E_SeizeDay_WeatherSettings_PropertyChanged.htm" target="TopicContent">PropertyChanged Event</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/N_SeizeDay_ViewModels.htm" target="TopicContent">SeizeDay.ViewModels Namespace</a>
+<div class="Hidden">
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T_SeizeDay_ViewModels_Component.htm" target="TopicContent">Component Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers_T_SeizeDay_ViewModels_Component.htm" target="TopicContent">Component Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ViewModels_Component__ctor.htm" target="TopicContent">Component Constructor </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ViewModels_Component__cctor.htm" target="TopicContent">Component Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields_T_SeizeDay_ViewModels_Component.htm" target="TopicContent">Component Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ViewModels_Component_ComponentItems.htm" target="TopicContent">ComponentItems Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ViewModels_Component_DBConnectionString.htm" target="TopicContent">DBConnectionString Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ViewModels_Component_TimeItems.htm" target="TopicContent">TimeItems Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ViewModels_Component_ToDoItems.htm" target="TopicContent">ToDoItems Field</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T_SeizeDay_ViewModels_ComponentItem.htm" target="TopicContent">ComponentItem Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers_T_SeizeDay_ViewModels_ComponentItem.htm" target="TopicContent">ComponentItem Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ViewModels_ComponentItem__ctor.htm" target="TopicContent">ComponentItem Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields_T_SeizeDay_ViewModels_ComponentItem.htm" target="TopicContent">ComponentItem Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ViewModels_ComponentItem__componentItemId.htm" target="TopicContent">_componentItemId Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ViewModels_ComponentItem__data.htm" target="TopicContent">_data Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ViewModels_ComponentItem__itemName.htm" target="TopicContent">_itemName Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ViewModels_ComponentItem__version.htm" target="TopicContent">_version Field</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods_T_SeizeDay_ViewModels_ComponentItem.htm" target="TopicContent">ComponentItem Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ViewModels_ComponentItem_NotifyPropertyChanged.htm" target="TopicContent">NotifyPropertyChanged Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ViewModels_ComponentItem_NotifyPropertyChanging.htm" target="TopicContent">NotifyPropertyChanging Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties_T_SeizeDay_ViewModels_ComponentItem.htm" target="TopicContent">ComponentItem Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_ViewModels_ComponentItem_Data.htm" target="TopicContent">Data Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_ViewModels_ComponentItem_ItemId.htm" target="TopicContent">ItemId Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_ViewModels_ComponentItem_ItemName.htm" target="TopicContent">ItemName Property </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Events_T_SeizeDay_ViewModels_ComponentItem.htm" target="TopicContent">ComponentItem Events</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/E_SeizeDay_ViewModels_ComponentItem_PropertyChanged.htm" target="TopicContent">PropertyChanged Event</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/E_SeizeDay_ViewModels_ComponentItem_PropertyChanging.htm" target="TopicContent">PropertyChanging Event</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T_SeizeDay_ViewModels_Maintenance.htm" target="TopicContent">Maintenance Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers_T_SeizeDay_ViewModels_Maintenance.htm" target="TopicContent">Maintenance Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods_T_SeizeDay_ViewModels_Maintenance.htm" target="TopicContent">Maintenance Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ViewModels_Maintenance_toDate.htm" target="TopicContent">toDate Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T_SeizeDay_ViewModels_TimeItem.htm" target="TopicContent">TimeItem Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers_T_SeizeDay_ViewModels_TimeItem.htm" target="TopicContent">TimeItem Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ViewModels_TimeItem__ctor.htm" target="TopicContent">TimeItem Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields_T_SeizeDay_ViewModels_TimeItem.htm" target="TopicContent">TimeItem Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ViewModels_TimeItem__dateField.htm" target="TopicContent">_dateField Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ViewModels_TimeItem__itemAlarmName.htm" target="TopicContent">_itemAlarmName Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ViewModels_TimeItem__itemReminderName.htm" target="TopicContent">_itemReminderName Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ViewModels_TimeItem__timeItemId.htm" target="TopicContent">_timeItemId Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ViewModels_TimeItem__version.htm" target="TopicContent">_version Field</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods_T_SeizeDay_ViewModels_TimeItem.htm" target="TopicContent">TimeItem Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ViewModels_TimeItem_NotifyPropertyChanged.htm" target="TopicContent">NotifyPropertyChanged Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ViewModels_TimeItem_NotifyPropertyChanging.htm" target="TopicContent">NotifyPropertyChanging Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties_T_SeizeDay_ViewModels_TimeItem.htm" target="TopicContent">TimeItem Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_ViewModels_TimeItem_DateField.htm" target="TopicContent">DateField Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_ViewModels_TimeItem_ItemAlarmName.htm" target="TopicContent">ItemAlarmName Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_ViewModels_TimeItem_ItemReminderName.htm" target="TopicContent">ItemReminderName Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_ViewModels_TimeItem_ToDoItemId.htm" target="TopicContent">ToDoItemId Property </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Events_T_SeizeDay_ViewModels_TimeItem.htm" target="TopicContent">TimeItem Events</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/E_SeizeDay_ViewModels_TimeItem_PropertyChanged.htm" target="TopicContent">PropertyChanged Event</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/E_SeizeDay_ViewModels_TimeItem_PropertyChanging.htm" target="TopicContent">PropertyChanging Event</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T_SeizeDay_ViewModels_ToDoItem.htm" target="TopicContent">ToDoItem Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers_T_SeizeDay_ViewModels_ToDoItem.htm" target="TopicContent">ToDoItem Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ViewModels_ToDoItem__ctor.htm" target="TopicContent">ToDoItem Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields_T_SeizeDay_ViewModels_ToDoItem.htm" target="TopicContent">ToDoItem Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ViewModels_ToDoItem__componentItemId.htm" target="TopicContent">_componentItemId Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ViewModels_ToDoItem__isComplete.htm" target="TopicContent">_isComplete Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ViewModels_ToDoItem__itemName.htm" target="TopicContent">_itemName Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F_SeizeDay_ViewModels_ToDoItem__version.htm" target="TopicContent">_version Field</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods_T_SeizeDay_ViewModels_ToDoItem.htm" target="TopicContent">ToDoItem Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ViewModels_ToDoItem_NotifyPropertyChanged.htm" target="TopicContent">NotifyPropertyChanged Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M_SeizeDay_ViewModels_ToDoItem_NotifyPropertyChanging.htm" target="TopicContent">NotifyPropertyChanging Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties_T_SeizeDay_ViewModels_ToDoItem.htm" target="TopicContent">ToDoItem Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_ViewModels_ToDoItem_IsComplete.htm" target="TopicContent">IsComplete Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_ViewModels_ToDoItem_ItemName.htm" target="TopicContent">ItemName Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P_SeizeDay_ViewModels_ToDoItem_ToDoItemId.htm" target="TopicContent">ToDoItemId Property </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.gif"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Events_T_SeizeDay_ViewModels_ToDoItem.htm" target="TopicContent">ToDoItem Events</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/E_SeizeDay_ViewModels_ToDoItem_PropertyChanged.htm" target="TopicContent">PropertyChanged Event</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/E_SeizeDay_ViewModels_ToDoItem_PropertyChanging.htm" target="TopicContent">PropertyChanging Event</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div id="TOCSizer" class="TOCSizer" onmousedown="OnMouseDown(event)" onselectstart="javascript: return false;"></div>
+
+<iframe id="TopicContent" name="TopicContent" class="TopicContent" src="html/N_AlarmAlarm.htm">
+This page uses an IFRAME but your browser does not support it.
+</iframe>
+
+</form>
+
+</body>
+
+</html>

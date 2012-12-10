@@ -1,0 +1,847 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+
+  <HelpKINode Title="AddAlarm class" Url="html/AllMembers_T_AlarmAlarm_AddAlarm.htm" />
+  <HelpKINode Title="AddAlarm class" Url="html/T_AlarmAlarm_AddAlarm.htm" />
+  <HelpKINode Title="AddAlarm class">
+    <HelpKINode Title="about AddAlarm class" Url="html/T_AlarmAlarm_AddAlarm.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_AlarmAlarm_AddAlarm.htm" />
+    <HelpKINode Title="constructor" Url="html/M_AlarmAlarm_AddAlarm__ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_AlarmAlarm_AddAlarm.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_AlarmAlarm_AddAlarm.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AddAlarm.AddAlarm constructor" Url="html/M_AlarmAlarm_AddAlarm__ctor.htm" />
+  <HelpKINode Title="AddAlarm.alarmSound field" Url="html/F_AlarmAlarm_AddAlarm_alarmSound.htm" />
+  <HelpKINode Title="AddAlarm.ApplicationTitle field" Url="html/F_AlarmAlarm_AddAlarm_ApplicationTitle.htm" />
+  <HelpKINode Title="AddAlarm.beginTimeLabel field" Url="html/F_AlarmAlarm_AddAlarm_beginTimeLabel.htm" />
+  <HelpKINode Title="AddAlarm.btnSaveAlarm field" Url="html/F_AlarmAlarm_AddAlarm_btnSaveAlarm.htm" />
+  <HelpKINode Title="AddAlarm.btnSoundAlarm field" Url="html/F_AlarmAlarm_AddAlarm_btnSoundAlarm.htm" />
+  <HelpKINode Title="AddAlarm.ChooseSoundButton_Click method" Url="html/M_AlarmAlarm_AddAlarm_ChooseSoundButton_Click.htm" />
+  <HelpKINode Title="AddAlarm.ContentPanel field" Url="html/F_AlarmAlarm_AddAlarm_ContentPanel.htm" />
+  <HelpKINode Title="AddAlarm.InitializeComponent method" Url="html/M_AlarmAlarm_AddAlarm_InitializeComponent.htm" />
+  <HelpKINode Title="AddAlarm.LayoutRoot field" Url="html/F_AlarmAlarm_AddAlarm_LayoutRoot.htm" />
+  <HelpKINode Title="AddAlarm.OnNavigatedTo method" Url="html/M_AlarmAlarm_AddAlarm_OnNavigatedTo.htm" />
+  <HelpKINode Title="AddAlarm.PageTitle field" Url="html/F_AlarmAlarm_AddAlarm_PageTitle.htm" />
+  <HelpKINode Title="AddAlarm.SaveButton_Click method" Url="html/M_AlarmAlarm_AddAlarm_SaveButton_Click.htm" />
+  <HelpKINode Title="AddAlarm.timePicker field" Url="html/F_AlarmAlarm_AddAlarm_timePicker.htm" />
+  <HelpKINode Title="AddAlarm.TitlePanel field" Url="html/F_AlarmAlarm_AddAlarm_TitlePanel.htm" />
+  <HelpKINode Title="AddAlarm._contentLoaded field" Url="html/F_AlarmAlarm_AddAlarm__contentLoaded.htm" />
+  <HelpKINode Title="AddComponent method" Url="html/M_SeizeDay_MainViewModel_AddComponent.htm" />
+  <HelpKINode Title="AddComponent_Click method" Url="html/M_SeizeDay_MainPage_AddComponent_Click.htm" />
+  <HelpKINode Title="AlarmAlarm namespace" Url="html/N_AlarmAlarm.htm" />
+  <HelpKINode Title="AlarmAlarm.AddAlarm class" Url="html/AllMembers_T_AlarmAlarm_AddAlarm.htm" />
+  <HelpKINode Title="AlarmAlarm.AddAlarm class" Url="html/T_AlarmAlarm_AddAlarm.htm" />
+  <HelpKINode Title="alarmList field" Url="html/F_SeizeDay_MainPage_alarmList.htm" />
+  <HelpKINode Title="alarmSound field" Url="html/F_AlarmAlarm_AddAlarm_alarmSound.htm" />
+  <HelpKINode Title="Aphorism field" Url="html/F_SeizeDay_ComponentPage_Aphorism.htm" />
+  <HelpKINode Title="Aphorism field" Url="html/F_SeizeDay_ShowSeizeDay_Aphorism.htm" />
+  <HelpKINode Title="AphorismComponent method" Url="html/M_SeizeDay_ShowSeizeDay_AphorismComponent.htm" />
+  <HelpKINode Title="AphorismList field" Url="html/F_SeizeDay_ShowSeizeDay_AphorismList.htm" />
+  <HelpKINode Title="App class" Url="html/AllMembers_T_SeizeDay_App.htm" />
+  <HelpKINode Title="App class" Url="html/T_SeizeDay_App.htm" />
+  <HelpKINode Title="App class">
+    <HelpKINode Title="about App class" Url="html/T_SeizeDay_App.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_SeizeDay_App.htm" />
+    <HelpKINode Title="constructor" Url="html/M_SeizeDay_App__cctor.htm" />
+    <HelpKINode Title="constructor" Url="html/M_SeizeDay_App__ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_SeizeDay_App.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_SeizeDay_App.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_SeizeDay_App.htm" />
+  </HelpKINode>
+  <HelpKINode Title="App.App constructor" Url="html/M_SeizeDay_App__cctor.htm" />
+  <HelpKINode Title="App.App constructor" Url="html/M_SeizeDay_App__ctor.htm" />
+  <HelpKINode Title="App.Application_Activated method" Url="html/M_SeizeDay_App_Application_Activated.htm" />
+  <HelpKINode Title="App.Application_Closing method" Url="html/M_SeizeDay_App_Application_Closing.htm" />
+  <HelpKINode Title="App.Application_Deactivated method" Url="html/M_SeizeDay_App_Application_Deactivated.htm" />
+  <HelpKINode Title="App.Application_Launching method" Url="html/M_SeizeDay_App_Application_Launching.htm" />
+  <HelpKINode Title="App.Application_UnhandledException method" Url="html/M_SeizeDay_App_Application_UnhandledException.htm" />
+  <HelpKINode Title="App.CompleteInitializePhoneApplication method" Url="html/M_SeizeDay_App_CompleteInitializePhoneApplication.htm" />
+  <HelpKINode Title="App.InitializeComponent method" Url="html/M_SeizeDay_App_InitializeComponent.htm" />
+  <HelpKINode Title="App.InitializePhoneApplication method" Url="html/M_SeizeDay_App_InitializePhoneApplication.htm" />
+  <HelpKINode Title="App.phoneApplicationInitialized field" Url="html/F_SeizeDay_App_phoneApplicationInitialized.htm" />
+  <HelpKINode Title="App.RootFrame property" Url="html/P_SeizeDay_App_RootFrame.htm" />
+  <HelpKINode Title="App.RootFrame_NavigationFailed method" Url="html/M_SeizeDay_App_RootFrame_NavigationFailed.htm" />
+  <HelpKINode Title="App.viewModel field" Url="html/F_SeizeDay_App_viewModel.htm" />
+  <HelpKINode Title="App.ViewModel property" Url="html/P_SeizeDay_App_ViewModel.htm" />
+  <HelpKINode Title="App._contentLoaded field" Url="html/F_SeizeDay_App__contentLoaded.htm" />
+  <HelpKINode Title="ApplicationTitle field" Url="html/F_AlarmAlarm_AddAlarm_ApplicationTitle.htm" />
+  <HelpKINode Title="ApplicationTitle field" Url="html/F_SeizeDay_ToDoPage_ApplicationTitle.htm" />
+  <HelpKINode Title="ApplicationTitle field" Url="html/F_SeizeDay_WeatherSettings_ApplicationTitle.htm" />
+  <HelpKINode Title="Application_Activated method" Url="html/M_SeizeDay_App_Application_Activated.htm" />
+  <HelpKINode Title="Application_Closing method" Url="html/M_SeizeDay_App_Application_Closing.htm" />
+  <HelpKINode Title="Application_Deactivated method" Url="html/M_SeizeDay_App_Application_Deactivated.htm" />
+  <HelpKINode Title="Application_Launching method" Url="html/M_SeizeDay_App_Application_Launching.htm" />
+  <HelpKINode Title="Application_UnhandledException method" Url="html/M_SeizeDay_App_Application_UnhandledException.htm" />
+  <HelpKINode Title="arrow1 field" Url="html/F_SeizeDay_MainPage_arrow1.htm" />
+  <HelpKINode Title="arrow2 field" Url="html/F_SeizeDay_MainPage_arrow2.htm" />
+  <HelpKINode Title="baroqueloop field" Url="html/F_SeizeDay_SoundCollectionPage_baroqueloop.htm" />
+  <HelpKINode Title="beginTimeLabel field" Url="html/F_AlarmAlarm_AddAlarm_beginTimeLabel.htm" />
+  <HelpKINode Title="beyonthepain field" Url="html/F_SeizeDay_SoundCollectionPage_beyonthepain.htm" />
+  <HelpKINode Title="btnAddAlarm field" Url="html/F_SeizeDay_MainPage_btnAddAlarm.htm" />
+  <HelpKINode Title="btnAddComponent field" Url="html/F_SeizeDay_MainPage_btnAddComponent.htm" />
+  <HelpKINode Title="btndeleteAlarm field" Url="html/F_SeizeDay_MainPage_btndeleteAlarm.htm" />
+  <HelpKINode Title="btndeleteComponent field" Url="html/F_SeizeDay_MainPage_btndeleteComponent.htm" />
+  <HelpKINode Title="btnSaveAlarm field" Url="html/F_AlarmAlarm_AddAlarm_btnSaveAlarm.htm" />
+  <HelpKINode Title="btnSaveAlarm field" Url="html/F_SeizeDay_ToDoPage_btnSaveAlarm.htm" />
+  <HelpKINode Title="btnSaveLocation field" Url="html/F_SeizeDay_WeatherSettings_btnSaveLocation.htm" />
+  <HelpKINode Title="btnSaveLocation_Click method" Url="html/M_SeizeDay_WeatherSettings_btnSaveLocation_Click.htm" />
+  <HelpKINode Title="btnSoundAlarm field" Url="html/F_AlarmAlarm_AddAlarm_btnSoundAlarm.htm" />
+  <HelpKINode Title="ButtonAddAlarm_Click method" Url="html/M_SeizeDay_MainPage_ButtonAddAlarm_Click.htm" />
+  <HelpKINode Title="ButtonDeleteAlarm_Click method" Url="html/M_SeizeDay_MainPage_ButtonDeleteAlarm_Click.htm" />
+  <HelpKINode Title="cbxLocationAuto field" Url="html/F_SeizeDay_WeatherSettings_cbxLocationAuto.htm" />
+  <HelpKINode Title="cbxLocationMan field" Url="html/F_SeizeDay_WeatherSettings_cbxLocationMan.htm" />
+  <HelpKINode Title="CheckAddedElements method" Url="html/M_SeizeDay_MainPage_CheckAddedElements.htm" />
+  <HelpKINode Title="ChooseSoundButton_Click method" Url="html/M_AlarmAlarm_AddAlarm_ChooseSoundButton_Click.htm" />
+  <HelpKINode Title="ClockFaceEllipse field" Url="html/F_SeizeDay_MainPage_ClockFaceEllipse.htm" />
+  <HelpKINode Title="ClockFaceEllipse field" Url="html/F_SeizeDay_ShowSeizeDay_ClockFaceEllipse.htm" />
+  <HelpKINode Title="ClockHandsCanvas field" Url="html/F_SeizeDay_MainPage_ClockHandsCanvas.htm" />
+  <HelpKINode Title="ClockHandsCanvas field" Url="html/F_SeizeDay_ShowSeizeDay_ClockHandsCanvas.htm" />
+  <HelpKINode Title="ClockStoryboard field" Url="html/F_SeizeDay_MainPage_ClockStoryboard.htm" />
+  <HelpKINode Title="ClockStoryboard field" Url="html/F_SeizeDay_ShowSeizeDay_ClockStoryboard.htm" />
+  <HelpKINode Title="Clock_Loaded method" Url="html/M_SeizeDay_MainPage_Clock_Loaded.htm" />
+  <HelpKINode Title="Clock_Loaded method" Url="html/M_SeizeDay_ShowSeizeDay_Clock_Loaded.htm" />
+  <HelpKINode Title="CompleteInitializePhoneApplication method" Url="html/M_SeizeDay_App_CompleteInitializePhoneApplication.htm" />
+  <HelpKINode Title="Component class" Url="html/AllMembers_T_SeizeDay_ViewModels_Component.htm" />
+  <HelpKINode Title="Component class" Url="html/T_SeizeDay_ViewModels_Component.htm" />
+  <HelpKINode Title="Component class">
+    <HelpKINode Title="about Component class" Url="html/T_SeizeDay_ViewModels_Component.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_SeizeDay_ViewModels_Component.htm" />
+    <HelpKINode Title="constructor" Url="html/M_SeizeDay_ViewModels_Component__cctor.htm" />
+    <HelpKINode Title="constructor" Url="html/M_SeizeDay_ViewModels_Component__ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_SeizeDay_ViewModels_Component.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Component.Component constructor" Url="html/M_SeizeDay_ViewModels_Component__cctor.htm" />
+  <HelpKINode Title="Component.Component constructor" Url="html/M_SeizeDay_ViewModels_Component__ctor.htm" />
+  <HelpKINode Title="Component.ComponentItems field" Url="html/F_SeizeDay_ViewModels_Component_ComponentItems.htm" />
+  <HelpKINode Title="Component.DBConnectionString field" Url="html/F_SeizeDay_ViewModels_Component_DBConnectionString.htm" />
+  <HelpKINode Title="Component.TimeItems field" Url="html/F_SeizeDay_ViewModels_Component_TimeItems.htm" />
+  <HelpKINode Title="Component.ToDoItems field" Url="html/F_SeizeDay_ViewModels_Component_ToDoItems.htm" />
+  <HelpKINode Title="ComponentDB field" Url="html/F_SeizeDay_MainPage_ComponentDB.htm" />
+  <HelpKINode Title="ComponentDB field" Url="html/F_SeizeDay_NewsPage_ComponentDB.htm" />
+  <HelpKINode Title="ComponentDB field" Url="html/F_SeizeDay_ShowSeizeDay_ComponentDB.htm" />
+  <HelpKINode Title="ComponentDB field" Url="html/F_SeizeDay_ToDoPage_ComponentDB.htm" />
+  <HelpKINode Title="ComponentDB field" Url="html/F_SeizeDay_WeatherSettings_ComponentDB.htm" />
+  <HelpKINode Title="ComponentItem class" Url="html/AllMembers_T_SeizeDay_ViewModels_ComponentItem.htm" />
+  <HelpKINode Title="ComponentItem class" Url="html/T_SeizeDay_ViewModels_ComponentItem.htm" />
+  <HelpKINode Title="ComponentItem class">
+    <HelpKINode Title="about ComponentItem class" Url="html/T_SeizeDay_ViewModels_ComponentItem.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_SeizeDay_ViewModels_ComponentItem.htm" />
+    <HelpKINode Title="constructor" Url="html/M_SeizeDay_ViewModels_ComponentItem__ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events_T_SeizeDay_ViewModels_ComponentItem.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_SeizeDay_ViewModels_ComponentItem.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_SeizeDay_ViewModels_ComponentItem.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_SeizeDay_ViewModels_ComponentItem.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ComponentItem.ComponentItem constructor" Url="html/M_SeizeDay_ViewModels_ComponentItem__ctor.htm" />
+  <HelpKINode Title="ComponentItem.Data property" Url="html/P_SeizeDay_ViewModels_ComponentItem_Data.htm" />
+  <HelpKINode Title="ComponentItem.ItemId property" Url="html/P_SeizeDay_ViewModels_ComponentItem_ItemId.htm" />
+  <HelpKINode Title="ComponentItem.ItemName property" Url="html/P_SeizeDay_ViewModels_ComponentItem_ItemName.htm" />
+  <HelpKINode Title="ComponentItem.NotifyPropertyChanged method" Url="html/M_SeizeDay_ViewModels_ComponentItem_NotifyPropertyChanged.htm" />
+  <HelpKINode Title="ComponentItem.NotifyPropertyChanging method" Url="html/M_SeizeDay_ViewModels_ComponentItem_NotifyPropertyChanging.htm" />
+  <HelpKINode Title="ComponentItem.PropertyChanged event" Url="html/E_SeizeDay_ViewModels_ComponentItem_PropertyChanged.htm" />
+  <HelpKINode Title="ComponentItem.PropertyChanging event" Url="html/E_SeizeDay_ViewModels_ComponentItem_PropertyChanging.htm" />
+  <HelpKINode Title="ComponentItem._componentItemId field" Url="html/F_SeizeDay_ViewModels_ComponentItem__componentItemId.htm" />
+  <HelpKINode Title="ComponentItem._data field" Url="html/F_SeizeDay_ViewModels_ComponentItem__data.htm" />
+  <HelpKINode Title="ComponentItem._itemName field" Url="html/F_SeizeDay_ViewModels_ComponentItem__itemName.htm" />
+  <HelpKINode Title="ComponentItem._version field" Url="html/F_SeizeDay_ViewModels_ComponentItem__version.htm" />
+  <HelpKINode Title="ComponentItems field" Url="html/F_SeizeDay_ViewModels_Component_ComponentItems.htm" />
+  <HelpKINode Title="ComponentItems property" Url="html/P_SeizeDay_MainPage_ComponentItems.htm" />
+  <HelpKINode Title="ComponentItems property" Url="html/P_SeizeDay_NewsPage_ComponentItems.htm" />
+  <HelpKINode Title="ComponentItems property" Url="html/P_SeizeDay_ShowSeizeDay_ComponentItems.htm" />
+  <HelpKINode Title="ComponentItems property" Url="html/P_SeizeDay_WeatherSettings_ComponentItems.htm" />
+  <HelpKINode Title="ComponentPage class" Url="html/AllMembers_T_SeizeDay_ComponentPage.htm" />
+  <HelpKINode Title="ComponentPage class" Url="html/T_SeizeDay_ComponentPage.htm" />
+  <HelpKINode Title="ComponentPage class">
+    <HelpKINode Title="about ComponentPage class" Url="html/T_SeizeDay_ComponentPage.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_SeizeDay_ComponentPage.htm" />
+    <HelpKINode Title="constructor" Url="html/M_SeizeDay_ComponentPage__ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_SeizeDay_ComponentPage.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_SeizeDay_ComponentPage.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ComponentPage.Aphorism field" Url="html/F_SeizeDay_ComponentPage_Aphorism.htm" />
+  <HelpKINode Title="ComponentPage.ComponentPage constructor" Url="html/M_SeizeDay_ComponentPage__ctor.htm" />
+  <HelpKINode Title="ComponentPage.ContentPanel field" Url="html/F_SeizeDay_ComponentPage_ContentPanel.htm" />
+  <HelpKINode Title="ComponentPage.Grid_Tap_Aphorism method" Url="html/M_SeizeDay_ComponentPage_Grid_Tap_Aphorism.htm" />
+  <HelpKINode Title="ComponentPage.Grid_Tap_ListToDo method" Url="html/M_SeizeDay_ComponentPage_Grid_Tap_ListToDo.htm" />
+  <HelpKINode Title="ComponentPage.Grid_Tap_News method" Url="html/M_SeizeDay_ComponentPage_Grid_Tap_News.htm" />
+  <HelpKINode Title="ComponentPage.Grid_Tap_Weather method" Url="html/M_SeizeDay_ComponentPage_Grid_Tap_Weather.htm" />
+  <HelpKINode Title="ComponentPage.InitializeComponent method" Url="html/M_SeizeDay_ComponentPage_InitializeComponent.htm" />
+  <HelpKINode Title="ComponentPage.LayoutRoot field" Url="html/F_SeizeDay_ComponentPage_LayoutRoot.htm" />
+  <HelpKINode Title="ComponentPage.ListToDo field" Url="html/F_SeizeDay_ComponentPage_ListToDo.htm" />
+  <HelpKINode Title="ComponentPage.News field" Url="html/F_SeizeDay_ComponentPage_News.htm" />
+  <HelpKINode Title="ComponentPage.OnNavigatedTo method" Url="html/M_SeizeDay_ComponentPage_OnNavigatedTo.htm" />
+  <HelpKINode Title="ComponentPage.Weather field" Url="html/F_SeizeDay_ComponentPage_Weather.htm" />
+  <HelpKINode Title="ComponentPage._contentLoaded field" Url="html/F_SeizeDay_ComponentPage__contentLoaded.htm" />
+  <HelpKINode Title="condition property" Url="html/P_SeizeDay_WeatherInfoCurrent_condition.htm" />
+  <HelpKINode Title="condition property" Url="html/P_SeizeDay_WeatherInfo_condition.htm" />
+  <HelpKINode Title="ContentGrid field" Url="html/F_SeizeDay_MainPage_ContentGrid.htm" />
+  <HelpKINode Title="ContentGrid field" Url="html/F_SeizeDay_ShowSeizeDay_ContentGrid.htm" />
+  <HelpKINode Title="ContentPanel field" Url="html/F_AlarmAlarm_AddAlarm_ContentPanel.htm" />
+  <HelpKINode Title="ContentPanel field" Url="html/F_SeizeDay_ComponentPage_ContentPanel.htm" />
+  <HelpKINode Title="ContentPanel field" Url="html/F_SeizeDay_NewsPage_ContentPanel.htm" />
+  <HelpKINode Title="ContentPanel field" Url="html/F_SeizeDay_ShowSeizeDay_ContentPanel.htm" />
+  <HelpKINode Title="ContentPanel field" Url="html/F_SeizeDay_SoundCollectionPage_ContentPanel.htm" />
+  <HelpKINode Title="ContentPanel field" Url="html/F_SeizeDay_ToDoPage_ContentPanel.htm" />
+  <HelpKINode Title="ContentPanel field" Url="html/F_SeizeDay_WeatherSettings_ContentPanel.htm" />
+  <HelpKINode Title="Data property" Url="html/P_SeizeDay_ViewModels_ComponentItem_Data.htm" />
+  <HelpKINode Title="DateField property" Url="html/P_SeizeDay_ViewModels_TimeItem_DateField.htm" />
+  <HelpKINode Title="day_of_week property" Url="html/P_SeizeDay_WeatherInfo_day_of_week.htm" />
+  <HelpKINode Title="DBConnectionString field" Url="html/F_SeizeDay_ViewModels_Component_DBConnectionString.htm" />
+  <HelpKINode Title="DeleteComponent_Click method" Url="html/M_SeizeDay_MainPage_DeleteComponent_Click.htm" />
+  <HelpKINode Title="deleteTaskButton_Click method" Url="html/M_SeizeDay_ToDoPage_deleteTaskButton_Click.htm" />
+  <HelpKINode Title="Description property" Url="html/P_SeizeDay_FeedItem_Description.htm" />
+  <HelpKINode Title="DoubleTap_action method" Url="html/M_SeizeDay_MainPage_DoubleTap_action.htm" />
+  <HelpKINode Title="FeedItem class" Url="html/AllMembers_T_SeizeDay_FeedItem.htm" />
+  <HelpKINode Title="FeedItem class" Url="html/T_SeizeDay_FeedItem.htm" />
+  <HelpKINode Title="FeedItem class">
+    <HelpKINode Title="about FeedItem class" Url="html/T_SeizeDay_FeedItem.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_SeizeDay_FeedItem.htm" />
+    <HelpKINode Title="constructor" Url="html/M_SeizeDay_FeedItem__ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_SeizeDay_FeedItem.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_SeizeDay_FeedItem.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FeedItem.Description property" Url="html/P_SeizeDay_FeedItem_Description.htm" />
+  <HelpKINode Title="FeedItem.FeedItem constructor" Url="html/M_SeizeDay_FeedItem__ctor.htm" />
+  <HelpKINode Title="FeedItem.Guid property" Url="html/P_SeizeDay_FeedItem_Guid.htm" />
+  <HelpKINode Title="FeedItem.Link property" Url="html/P_SeizeDay_FeedItem_Link.htm" />
+  <HelpKINode Title="FeedItem.Published property" Url="html/P_SeizeDay_FeedItem_Published.htm" />
+  <HelpKINode Title="FeedItem.Title property" Url="html/P_SeizeDay_FeedItem_Title.htm" />
+  <HelpKINode Title="FeedItem._description field" Url="html/F_SeizeDay_FeedItem__description.htm" />
+  <HelpKINode Title="FeedItem._guid field" Url="html/F_SeizeDay_FeedItem__guid.htm" />
+  <HelpKINode Title="FeedItem._link field" Url="html/F_SeizeDay_FeedItem__link.htm" />
+  <HelpKINode Title="FeedItem._published field" Url="html/F_SeizeDay_FeedItem__published.htm" />
+  <HelpKINode Title="FeedItem._title field" Url="html/F_SeizeDay_FeedItem__title.htm" />
+  <HelpKINode Title="FirstListBox field" Url="html/F_SeizeDay_MainPage_FirstListBox.htm" />
+  <HelpKINode Title="Future field" Url="html/F_SeizeDay_NewsPage_Future.htm" />
+  <HelpKINode Title="Grid_Tap_Aphorism method" Url="html/M_SeizeDay_ComponentPage_Grid_Tap_Aphorism.htm" />
+  <HelpKINode Title="Grid_Tap_baroqueloop method" Url="html/M_SeizeDay_SoundCollectionPage_Grid_Tap_baroqueloop.htm" />
+  <HelpKINode Title="Grid_Tap_beyonthepain method" Url="html/M_SeizeDay_SoundCollectionPage_Grid_Tap_beyonthepain.htm" />
+  <HelpKINode Title="Grid_Tap_Future method" Url="html/M_SeizeDay_NewsPage_Grid_Tap_Future.htm" />
+  <HelpKINode Title="Grid_Tap_Health method" Url="html/M_SeizeDay_NewsPage_Grid_Tap_Health.htm" />
+  <HelpKINode Title="Grid_Tap_History method" Url="html/M_SeizeDay_NewsPage_Grid_Tap_History.htm" />
+  <HelpKINode Title="Grid_Tap_inbetween method" Url="html/M_SeizeDay_SoundCollectionPage_Grid_Tap_inbetween.htm" />
+  <HelpKINode Title="Grid_Tap_ListToDo method" Url="html/M_SeizeDay_ComponentPage_Grid_Tap_ListToDo.htm" />
+  <HelpKINode Title="Grid_Tap_Nature method" Url="html/M_SeizeDay_NewsPage_Grid_Tap_Nature.htm" />
+  <HelpKINode Title="Grid_Tap_News method" Url="html/M_SeizeDay_ComponentPage_Grid_Tap_News.htm" />
+  <HelpKINode Title="Grid_Tap_sensitivewalk method" Url="html/M_SeizeDay_SoundCollectionPage_Grid_Tap_sensitivewalk.htm" />
+  <HelpKINode Title="Grid_Tap_spanishmusic method" Url="html/M_SeizeDay_SoundCollectionPage_Grid_Tap_spanishmusic.htm" />
+  <HelpKINode Title="Grid_Tap_Travel method" Url="html/M_SeizeDay_NewsPage_Grid_Tap_Travel.htm" />
+  <HelpKINode Title="Grid_Tap_ukrainwarship method" Url="html/M_SeizeDay_SoundCollectionPage_Grid_Tap_ukrainwarship.htm" />
+  <HelpKINode Title="Grid_Tap_Weather method" Url="html/M_SeizeDay_ComponentPage_Grid_Tap_Weather.htm" />
+  <HelpKINode Title="Grid_Tap_World method" Url="html/M_SeizeDay_NewsPage_Grid_Tap_World.htm" />
+  <HelpKINode Title="Guid property" Url="html/P_SeizeDay_FeedItem_Guid.htm" />
+  <HelpKINode Title="Health field" Url="html/F_SeizeDay_NewsPage_Health.htm" />
+  <HelpKINode Title="high property" Url="html/P_SeizeDay_WeatherInfo_high.htm" />
+  <HelpKINode Title="History field" Url="html/F_SeizeDay_NewsPage_History.htm" />
+  <HelpKINode Title="HourAnimation field" Url="html/F_SeizeDay_MainPage_HourAnimation.htm" />
+  <HelpKINode Title="HourAnimation field" Url="html/F_SeizeDay_ShowSeizeDay_HourAnimation.htm" />
+  <HelpKINode Title="HourHandTransform field" Url="html/F_SeizeDay_MainPage_HourHandTransform.htm" />
+  <HelpKINode Title="HourHandTransform field" Url="html/F_SeizeDay_ShowSeizeDay_HourHandTransform.htm" />
+  <HelpKINode Title="icon property" Url="html/P_SeizeDay_WeatherInfoCurrent_icon.htm" />
+  <HelpKINode Title="icon property" Url="html/P_SeizeDay_WeatherInfo_icon.htm" />
+  <HelpKINode Title="inbetween field" Url="html/F_SeizeDay_SoundCollectionPage_inbetween.htm" />
+  <HelpKINode Title="InitializeComponent method" Url="html/M_AlarmAlarm_AddAlarm_InitializeComponent.htm" />
+  <HelpKINode Title="InitializeComponent method" Url="html/M_SeizeDay_App_InitializeComponent.htm" />
+  <HelpKINode Title="InitializeComponent method" Url="html/M_SeizeDay_ComponentPage_InitializeComponent.htm" />
+  <HelpKINode Title="InitializeComponent method" Url="html/M_SeizeDay_MainPage_InitializeComponent.htm" />
+  <HelpKINode Title="InitializeComponent method" Url="html/M_SeizeDay_NewsPage_InitializeComponent.htm" />
+  <HelpKINode Title="InitializeComponent method" Url="html/M_SeizeDay_ShowSeizeDay_InitializeComponent.htm" />
+  <HelpKINode Title="InitializeComponent method" Url="html/M_SeizeDay_SoundCollectionPage_InitializeComponent.htm" />
+  <HelpKINode Title="InitializeComponent method" Url="html/M_SeizeDay_ToDoPage_InitializeComponent.htm" />
+  <HelpKINode Title="InitializeComponent method" Url="html/M_SeizeDay_WeatherSettings_InitializeComponent.htm" />
+  <HelpKINode Title="InitializePhoneApplication method" Url="html/M_SeizeDay_App_InitializePhoneApplication.htm" />
+  <HelpKINode Title="IsComplete property" Url="html/P_SeizeDay_ViewModels_ToDoItem_IsComplete.htm" />
+  <HelpKINode Title="IsDataLoaded property" Url="html/P_SeizeDay_MainViewModel_IsDataLoaded.htm" />
+  <HelpKINode Title="ItemAlarmName property" Url="html/P_SeizeDay_ViewModels_TimeItem_ItemAlarmName.htm" />
+  <HelpKINode Title="itemComponentToDelete field" Url="html/F_SeizeDay_MainPage_itemComponentToDelete.htm" />
+  <HelpKINode Title="ItemId property" Url="html/P_SeizeDay_ViewModels_ComponentItem_ItemId.htm" />
+  <HelpKINode Title="ItemName property" Url="html/P_SeizeDay_ViewModels_ComponentItem_ItemName.htm" />
+  <HelpKINode Title="ItemName property" Url="html/P_SeizeDay_ViewModels_ToDoItem_ItemName.htm" />
+  <HelpKINode Title="ItemReminderName property" Url="html/P_SeizeDay_ViewModels_TimeItem_ItemReminderName.htm" />
+  <HelpKINode Title="Items property" Url="html/P_SeizeDay_MainViewModel_Items.htm" />
+  <HelpKINode Title="itemTimeToDelete field" Url="html/F_SeizeDay_MainPage_itemTimeToDelete.htm" />
+  <HelpKINode Title="ItemViewModel class" Url="html/AllMembers_T_SeizeDay_ItemViewModel.htm" />
+  <HelpKINode Title="ItemViewModel class" Url="html/T_SeizeDay_ItemViewModel.htm" />
+  <HelpKINode Title="ItemViewModel class">
+    <HelpKINode Title="about ItemViewModel class" Url="html/T_SeizeDay_ItemViewModel.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_SeizeDay_ItemViewModel.htm" />
+    <HelpKINode Title="constructor" Url="html/M_SeizeDay_ItemViewModel__ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events_T_SeizeDay_ItemViewModel.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_SeizeDay_ItemViewModel.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_SeizeDay_ItemViewModel.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_SeizeDay_ItemViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ItemViewModel.ItemViewModel constructor" Url="html/M_SeizeDay_ItemViewModel__ctor.htm" />
+  <HelpKINode Title="ItemViewModel.LineOne property" Url="html/P_SeizeDay_ItemViewModel_LineOne.htm" />
+  <HelpKINode Title="ItemViewModel.LineThree property" Url="html/P_SeizeDay_ItemViewModel_LineThree.htm" />
+  <HelpKINode Title="ItemViewModel.LineTwo property" Url="html/P_SeizeDay_ItemViewModel_LineTwo.htm" />
+  <HelpKINode Title="ItemViewModel.NotifyPropertyChanged method" Url="html/M_SeizeDay_ItemViewModel_NotifyPropertyChanged.htm" />
+  <HelpKINode Title="ItemViewModel.PropertyChanged event" Url="html/E_SeizeDay_ItemViewModel_PropertyChanged.htm" />
+  <HelpKINode Title="ItemViewModel._lineOne field" Url="html/F_SeizeDay_ItemViewModel__lineOne.htm" />
+  <HelpKINode Title="ItemViewModel._lineThree field" Url="html/F_SeizeDay_ItemViewModel__lineThree.htm" />
+  <HelpKINode Title="ItemViewModel._lineTwo field" Url="html/F_SeizeDay_ItemViewModel__lineTwo.htm" />
+  <HelpKINode Title="LayoutRoot field" Url="html/F_AlarmAlarm_AddAlarm_LayoutRoot.htm" />
+  <HelpKINode Title="LayoutRoot field" Url="html/F_SeizeDay_ComponentPage_LayoutRoot.htm" />
+  <HelpKINode Title="LayoutRoot field" Url="html/F_SeizeDay_MainPage_LayoutRoot.htm" />
+  <HelpKINode Title="LayoutRoot field" Url="html/F_SeizeDay_NewsPage_LayoutRoot.htm" />
+  <HelpKINode Title="LayoutRoot field" Url="html/F_SeizeDay_ShowSeizeDay_LayoutRoot.htm" />
+  <HelpKINode Title="LayoutRoot field" Url="html/F_SeizeDay_SoundCollectionPage_LayoutRoot.htm" />
+  <HelpKINode Title="LayoutRoot field" Url="html/F_SeizeDay_ToDoPage_LayoutRoot.htm" />
+  <HelpKINode Title="LayoutRoot field" Url="html/F_SeizeDay_WeatherSettings_LayoutRoot.htm" />
+  <HelpKINode Title="LineOne property" Url="html/P_SeizeDay_ItemViewModel_LineOne.htm" />
+  <HelpKINode Title="LineThree property" Url="html/P_SeizeDay_ItemViewModel_LineThree.htm" />
+  <HelpKINode Title="LineTwo property" Url="html/P_SeizeDay_ItemViewModel_LineTwo.htm" />
+  <HelpKINode Title="Link property" Url="html/P_SeizeDay_FeedItem_Link.htm" />
+  <HelpKINode Title="listBoxc field" Url="html/F_SeizeDay_ShowSeizeDay_listBoxc.htm" />
+  <HelpKINode Title="listBoxc field" Url="html/F_SeizeDay_WeatherSettings_listBoxc.htm" />
+  <HelpKINode Title="listBoxComponent_SelectionChanged method" Url="html/M_SeizeDay_MainPage_listBoxComponent_SelectionChanged.htm" />
+  <HelpKINode Title="listBox_SelectionChanged method" Url="html/M_SeizeDay_MainPage_listBox_SelectionChanged.htm" />
+  <HelpKINode Title="ListComponent method" Url="html/M_SeizeDay_ShowSeizeDay_ListComponent.htm" />
+  <HelpKINode Title="ListToDo field" Url="html/F_SeizeDay_ComponentPage_ListToDo.htm" />
+  <HelpKINode Title="ListToDo field" Url="html/F_SeizeDay_ShowSeizeDay_ListToDo.htm" />
+  <HelpKINode Title="LoadComponents method" Url="html/M_SeizeDay_ShowSeizeDay_LoadComponents.htm" />
+  <HelpKINode Title="LoadData method" Url="html/M_SeizeDay_MainViewModel_LoadData.htm" />
+  <HelpKINode Title="low property" Url="html/P_SeizeDay_WeatherInfo_low.htm" />
+  <HelpKINode Title="MainPage class" Url="html/AllMembers_T_SeizeDay_MainPage.htm" />
+  <HelpKINode Title="MainPage class" Url="html/T_SeizeDay_MainPage.htm" />
+  <HelpKINode Title="MainPage class">
+    <HelpKINode Title="about MainPage class" Url="html/T_SeizeDay_MainPage.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_SeizeDay_MainPage.htm" />
+    <HelpKINode Title="constructor" Url="html/M_SeizeDay_MainPage__ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events_T_SeizeDay_MainPage.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_SeizeDay_MainPage.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_SeizeDay_MainPage.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_SeizeDay_MainPage.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MainPage.AddComponent_Click method" Url="html/M_SeizeDay_MainPage_AddComponent_Click.htm" />
+  <HelpKINode Title="MainPage.alarmList field" Url="html/F_SeizeDay_MainPage_alarmList.htm" />
+  <HelpKINode Title="MainPage.arrow1 field" Url="html/F_SeizeDay_MainPage_arrow1.htm" />
+  <HelpKINode Title="MainPage.arrow2 field" Url="html/F_SeizeDay_MainPage_arrow2.htm" />
+  <HelpKINode Title="MainPage.btnAddAlarm field" Url="html/F_SeizeDay_MainPage_btnAddAlarm.htm" />
+  <HelpKINode Title="MainPage.btnAddComponent field" Url="html/F_SeizeDay_MainPage_btnAddComponent.htm" />
+  <HelpKINode Title="MainPage.btndeleteAlarm field" Url="html/F_SeizeDay_MainPage_btndeleteAlarm.htm" />
+  <HelpKINode Title="MainPage.btndeleteComponent field" Url="html/F_SeizeDay_MainPage_btndeleteComponent.htm" />
+  <HelpKINode Title="MainPage.ButtonAddAlarm_Click method" Url="html/M_SeizeDay_MainPage_ButtonAddAlarm_Click.htm" />
+  <HelpKINode Title="MainPage.ButtonDeleteAlarm_Click method" Url="html/M_SeizeDay_MainPage_ButtonDeleteAlarm_Click.htm" />
+  <HelpKINode Title="MainPage.CheckAddedElements method" Url="html/M_SeizeDay_MainPage_CheckAddedElements.htm" />
+  <HelpKINode Title="MainPage.ClockFaceEllipse field" Url="html/F_SeizeDay_MainPage_ClockFaceEllipse.htm" />
+  <HelpKINode Title="MainPage.ClockHandsCanvas field" Url="html/F_SeizeDay_MainPage_ClockHandsCanvas.htm" />
+  <HelpKINode Title="MainPage.ClockStoryboard field" Url="html/F_SeizeDay_MainPage_ClockStoryboard.htm" />
+  <HelpKINode Title="MainPage.Clock_Loaded method" Url="html/M_SeizeDay_MainPage_Clock_Loaded.htm" />
+  <HelpKINode Title="MainPage.ComponentDB field" Url="html/F_SeizeDay_MainPage_ComponentDB.htm" />
+  <HelpKINode Title="MainPage.ComponentItems property" Url="html/P_SeizeDay_MainPage_ComponentItems.htm" />
+  <HelpKINode Title="MainPage.ContentGrid field" Url="html/F_SeizeDay_MainPage_ContentGrid.htm" />
+  <HelpKINode Title="MainPage.DeleteComponent_Click method" Url="html/M_SeizeDay_MainPage_DeleteComponent_Click.htm" />
+  <HelpKINode Title="MainPage.DoubleTap_action method" Url="html/M_SeizeDay_MainPage_DoubleTap_action.htm" />
+  <HelpKINode Title="MainPage.FirstListBox field" Url="html/F_SeizeDay_MainPage_FirstListBox.htm" />
+  <HelpKINode Title="MainPage.HourAnimation field" Url="html/F_SeizeDay_MainPage_HourAnimation.htm" />
+  <HelpKINode Title="MainPage.HourHandTransform field" Url="html/F_SeizeDay_MainPage_HourHandTransform.htm" />
+  <HelpKINode Title="MainPage.InitializeComponent method" Url="html/M_SeizeDay_MainPage_InitializeComponent.htm" />
+  <HelpKINode Title="MainPage.itemComponentToDelete field" Url="html/F_SeizeDay_MainPage_itemComponentToDelete.htm" />
+  <HelpKINode Title="MainPage.itemTimeToDelete field" Url="html/F_SeizeDay_MainPage_itemTimeToDelete.htm" />
+  <HelpKINode Title="MainPage.LayoutRoot field" Url="html/F_SeizeDay_MainPage_LayoutRoot.htm" />
+  <HelpKINode Title="MainPage.listBoxComponent_SelectionChanged method" Url="html/M_SeizeDay_MainPage_listBoxComponent_SelectionChanged.htm" />
+  <HelpKINode Title="MainPage.listBox_SelectionChanged method" Url="html/M_SeizeDay_MainPage_listBox_SelectionChanged.htm" />
+  <HelpKINode Title="MainPage.MainPage constructor" Url="html/M_SeizeDay_MainPage__ctor.htm" />
+  <HelpKINode Title="MainPage.MainPage_Loaded method" Url="html/M_SeizeDay_MainPage_MainPage_Loaded.htm" />
+  <HelpKINode Title="MainPage.MinuteAnimation field" Url="html/F_SeizeDay_MainPage_MinuteAnimation.htm" />
+  <HelpKINode Title="MainPage.MinuteHandTransform field" Url="html/F_SeizeDay_MainPage_MinuteHandTransform.htm" />
+  <HelpKINode Title="MainPage.myProgressBar field" Url="html/F_SeizeDay_MainPage_myProgressBar.htm" />
+  <HelpKINode Title="MainPage.NotifyPropertyChanged method" Url="html/M_SeizeDay_MainPage_NotifyPropertyChanged.htm" />
+  <HelpKINode Title="MainPage.OnNavigatedFrom method" Url="html/M_SeizeDay_MainPage_OnNavigatedFrom.htm" />
+  <HelpKINode Title="MainPage.OnNavigatedTo method" Url="html/M_SeizeDay_MainPage_OnNavigatedTo.htm" />
+  <HelpKINode Title="MainPage.PropertyChanged event" Url="html/E_SeizeDay_MainPage_PropertyChanged.htm" />
+  <HelpKINode Title="MainPage.SecondAnimation field" Url="html/F_SeizeDay_MainPage_SecondAnimation.htm" />
+  <HelpKINode Title="MainPage.SecondHandTransform field" Url="html/F_SeizeDay_MainPage_SecondHandTransform.htm" />
+  <HelpKINode Title="MainPage.text1 field" Url="html/F_SeizeDay_MainPage_text1.htm" />
+  <HelpKINode Title="MainPage.text2 field" Url="html/F_SeizeDay_MainPage_text2.htm" />
+  <HelpKINode Title="MainPage.TimeItems property" Url="html/P_SeizeDay_MainPage_TimeItems.htm" />
+  <HelpKINode Title="MainPage.ValidateDate method" Url="html/M_SeizeDay_MainPage_ValidateDate.htm" />
+  <HelpKINode Title="MainPage._componentItems field" Url="html/F_SeizeDay_MainPage__componentItems.htm" />
+  <HelpKINode Title="MainPage._contentLoaded field" Url="html/F_SeizeDay_MainPage__contentLoaded.htm" />
+  <HelpKINode Title="MainPage._timeItems field" Url="html/F_SeizeDay_MainPage__timeItems.htm" />
+  <HelpKINode Title="MainPage_Loaded method" Url="html/M_SeizeDay_MainPage_MainPage_Loaded.htm" />
+  <HelpKINode Title="MainPage_Loaded method" Url="html/M_SeizeDay_ShowSeizeDay_MainPage_Loaded.htm" />
+  <HelpKINode Title="Maintenance class" Url="html/AllMembers_T_SeizeDay_ViewModels_Maintenance.htm" />
+  <HelpKINode Title="Maintenance class" Url="html/T_SeizeDay_ViewModels_Maintenance.htm" />
+  <HelpKINode Title="Maintenance class">
+    <HelpKINode Title="about Maintenance class" Url="html/T_SeizeDay_ViewModels_Maintenance.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_SeizeDay_ViewModels_Maintenance.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_SeizeDay_ViewModels_Maintenance.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Maintenance.toDate method" Url="html/M_SeizeDay_ViewModels_Maintenance_toDate.htm" />
+  <HelpKINode Title="MainViewModel class" Url="html/AllMembers_T_SeizeDay_MainViewModel.htm" />
+  <HelpKINode Title="MainViewModel class" Url="html/T_SeizeDay_MainViewModel.htm" />
+  <HelpKINode Title="MainViewModel class">
+    <HelpKINode Title="about MainViewModel class" Url="html/T_SeizeDay_MainViewModel.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_SeizeDay_MainViewModel.htm" />
+    <HelpKINode Title="constructor" Url="html/M_SeizeDay_MainViewModel__ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events_T_SeizeDay_MainViewModel.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_SeizeDay_MainViewModel.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_SeizeDay_MainViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MainViewModel.AddComponent method" Url="html/M_SeizeDay_MainViewModel_AddComponent.htm" />
+  <HelpKINode Title="MainViewModel.IsDataLoaded property" Url="html/P_SeizeDay_MainViewModel_IsDataLoaded.htm" />
+  <HelpKINode Title="MainViewModel.Items property" Url="html/P_SeizeDay_MainViewModel_Items.htm" />
+  <HelpKINode Title="MainViewModel.LoadData method" Url="html/M_SeizeDay_MainViewModel_LoadData.htm" />
+  <HelpKINode Title="MainViewModel.MainViewModel constructor" Url="html/M_SeizeDay_MainViewModel__ctor.htm" />
+  <HelpKINode Title="MainViewModel.NotifyPropertyChanged method" Url="html/M_SeizeDay_MainViewModel_NotifyPropertyChanged.htm" />
+  <HelpKINode Title="MainViewModel.PropertyChanged event" Url="html/E_SeizeDay_MainViewModel_PropertyChanged.htm" />
+  <HelpKINode Title="MinuteAnimation field" Url="html/F_SeizeDay_MainPage_MinuteAnimation.htm" />
+  <HelpKINode Title="MinuteAnimation field" Url="html/F_SeizeDay_ShowSeizeDay_MinuteAnimation.htm" />
+  <HelpKINode Title="MinuteHandTransform field" Url="html/F_SeizeDay_MainPage_MinuteHandTransform.htm" />
+  <HelpKINode Title="MinuteHandTransform field" Url="html/F_SeizeDay_ShowSeizeDay_MinuteHandTransform.htm" />
+  <HelpKINode Title="myProgressBar field" Url="html/F_SeizeDay_MainPage_myProgressBar.htm" />
+  <HelpKINode Title="myProgressBar field" Url="html/F_SeizeDay_ShowSeizeDay_myProgressBar.htm" />
+  <HelpKINode Title="Nature field" Url="html/F_SeizeDay_NewsPage_Nature.htm" />
+  <HelpKINode Title="News field" Url="html/F_SeizeDay_ComponentPage_News.htm" />
+  <HelpKINode Title="News field" Url="html/F_SeizeDay_ShowSeizeDay_News.htm" />
+  <HelpKINode Title="NewsComponent method" Url="html/M_SeizeDay_ShowSeizeDay_NewsComponent.htm" />
+  <HelpKINode Title="NewsList field" Url="html/F_SeizeDay_ShowSeizeDay_NewsList.htm" />
+  <HelpKINode Title="NewsPage class" Url="html/AllMembers_T_SeizeDay_NewsPage.htm" />
+  <HelpKINode Title="NewsPage class" Url="html/T_SeizeDay_NewsPage.htm" />
+  <HelpKINode Title="NewsPage class">
+    <HelpKINode Title="about NewsPage class" Url="html/T_SeizeDay_NewsPage.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_SeizeDay_NewsPage.htm" />
+    <HelpKINode Title="constructor" Url="html/M_SeizeDay_NewsPage__ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events_T_SeizeDay_NewsPage.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_SeizeDay_NewsPage.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_SeizeDay_NewsPage.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_SeizeDay_NewsPage.htm" />
+  </HelpKINode>
+  <HelpKINode Title="NewsPage.ComponentDB field" Url="html/F_SeizeDay_NewsPage_ComponentDB.htm" />
+  <HelpKINode Title="NewsPage.ComponentItems property" Url="html/P_SeizeDay_NewsPage_ComponentItems.htm" />
+  <HelpKINode Title="NewsPage.ContentPanel field" Url="html/F_SeizeDay_NewsPage_ContentPanel.htm" />
+  <HelpKINode Title="NewsPage.Future field" Url="html/F_SeizeDay_NewsPage_Future.htm" />
+  <HelpKINode Title="NewsPage.Grid_Tap_Future method" Url="html/M_SeizeDay_NewsPage_Grid_Tap_Future.htm" />
+  <HelpKINode Title="NewsPage.Grid_Tap_Health method" Url="html/M_SeizeDay_NewsPage_Grid_Tap_Health.htm" />
+  <HelpKINode Title="NewsPage.Grid_Tap_History method" Url="html/M_SeizeDay_NewsPage_Grid_Tap_History.htm" />
+  <HelpKINode Title="NewsPage.Grid_Tap_Nature method" Url="html/M_SeizeDay_NewsPage_Grid_Tap_Nature.htm" />
+  <HelpKINode Title="NewsPage.Grid_Tap_Travel method" Url="html/M_SeizeDay_NewsPage_Grid_Tap_Travel.htm" />
+  <HelpKINode Title="NewsPage.Grid_Tap_World method" Url="html/M_SeizeDay_NewsPage_Grid_Tap_World.htm" />
+  <HelpKINode Title="NewsPage.Health field" Url="html/F_SeizeDay_NewsPage_Health.htm" />
+  <HelpKINode Title="NewsPage.History field" Url="html/F_SeizeDay_NewsPage_History.htm" />
+  <HelpKINode Title="NewsPage.InitializeComponent method" Url="html/M_SeizeDay_NewsPage_InitializeComponent.htm" />
+  <HelpKINode Title="NewsPage.LayoutRoot field" Url="html/F_SeizeDay_NewsPage_LayoutRoot.htm" />
+  <HelpKINode Title="NewsPage.Nature field" Url="html/F_SeizeDay_NewsPage_Nature.htm" />
+  <HelpKINode Title="NewsPage.NewsPage constructor" Url="html/M_SeizeDay_NewsPage__ctor.htm" />
+  <HelpKINode Title="NewsPage.NotifyPropertyChanged method" Url="html/M_SeizeDay_NewsPage_NotifyPropertyChanged.htm" />
+  <HelpKINode Title="NewsPage.OnNavigatedTo method" Url="html/M_SeizeDay_NewsPage_OnNavigatedTo.htm" />
+  <HelpKINode Title="NewsPage.PropertyChanged event" Url="html/E_SeizeDay_NewsPage_PropertyChanged.htm" />
+  <HelpKINode Title="NewsPage.SaveChosen method" Url="html/M_SeizeDay_NewsPage_SaveChosen.htm" />
+  <HelpKINode Title="NewsPage.Travel field" Url="html/F_SeizeDay_NewsPage_Travel.htm" />
+  <HelpKINode Title="NewsPage.World field" Url="html/F_SeizeDay_NewsPage_World.htm" />
+  <HelpKINode Title="NewsPage._componentItems field" Url="html/F_SeizeDay_NewsPage__componentItems.htm" />
+  <HelpKINode Title="NewsPage._contentLoaded field" Url="html/F_SeizeDay_NewsPage__contentLoaded.htm" />
+  <HelpKINode Title="newToDoAddButton field" Url="html/F_SeizeDay_ToDoPage_newToDoAddButton.htm" />
+  <HelpKINode Title="newToDoAddButton_Click method" Url="html/M_SeizeDay_ToDoPage_newToDoAddButton_Click.htm" />
+  <HelpKINode Title="newToDoTextBox field" Url="html/F_SeizeDay_ToDoPage_newToDoTextBox.htm" />
+  <HelpKINode Title="newToDoTextBox_GotFocus method" Url="html/M_SeizeDay_ToDoPage_newToDoTextBox_GotFocus.htm" />
+  <HelpKINode Title="NotifyPropertyChanged method" Url="html/M_SeizeDay_ItemViewModel_NotifyPropertyChanged.htm" />
+  <HelpKINode Title="NotifyPropertyChanged method" Url="html/M_SeizeDay_MainPage_NotifyPropertyChanged.htm" />
+  <HelpKINode Title="NotifyPropertyChanged method" Url="html/M_SeizeDay_MainViewModel_NotifyPropertyChanged.htm" />
+  <HelpKINode Title="NotifyPropertyChanged method" Url="html/M_SeizeDay_NewsPage_NotifyPropertyChanged.htm" />
+  <HelpKINode Title="NotifyPropertyChanged method" Url="html/M_SeizeDay_ShowSeizeDay_NotifyPropertyChanged.htm" />
+  <HelpKINode Title="NotifyPropertyChanged method" Url="html/M_SeizeDay_ToDoPage_NotifyPropertyChanged.htm" />
+  <HelpKINode Title="NotifyPropertyChanged method" Url="html/M_SeizeDay_ViewModels_ComponentItem_NotifyPropertyChanged.htm" />
+  <HelpKINode Title="NotifyPropertyChanged method" Url="html/M_SeizeDay_ViewModels_TimeItem_NotifyPropertyChanged.htm" />
+  <HelpKINode Title="NotifyPropertyChanged method" Url="html/M_SeizeDay_ViewModels_ToDoItem_NotifyPropertyChanged.htm" />
+  <HelpKINode Title="NotifyPropertyChanged method" Url="html/M_SeizeDay_WeatherSettings_NotifyPropertyChanged.htm" />
+  <HelpKINode Title="NotifyPropertyChanging method" Url="html/M_SeizeDay_ToDoPage_NotifyPropertyChanging.htm" />
+  <HelpKINode Title="NotifyPropertyChanging method" Url="html/M_SeizeDay_ViewModels_ComponentItem_NotifyPropertyChanging.htm" />
+  <HelpKINode Title="NotifyPropertyChanging method" Url="html/M_SeizeDay_ViewModels_TimeItem_NotifyPropertyChanging.htm" />
+  <HelpKINode Title="NotifyPropertyChanging method" Url="html/M_SeizeDay_ViewModels_ToDoItem_NotifyPropertyChanging.htm" />
+  <HelpKINode Title="observation_time property" Url="html/P_SeizeDay_WeatherInfoCurrent_observation_time.htm" />
+  <HelpKINode Title="OnNavigatedFrom method" Url="html/M_SeizeDay_MainPage_OnNavigatedFrom.htm" />
+  <HelpKINode Title="OnNavigatedFrom method" Url="html/M_SeizeDay_ShowSeizeDay_OnNavigatedFrom.htm" />
+  <HelpKINode Title="OnNavigatedFrom method" Url="html/M_SeizeDay_ToDoPage_OnNavigatedFrom.htm" />
+  <HelpKINode Title="OnNavigatedTo method" Url="html/M_AlarmAlarm_AddAlarm_OnNavigatedTo.htm" />
+  <HelpKINode Title="OnNavigatedTo method" Url="html/M_SeizeDay_ComponentPage_OnNavigatedTo.htm" />
+  <HelpKINode Title="OnNavigatedTo method" Url="html/M_SeizeDay_MainPage_OnNavigatedTo.htm" />
+  <HelpKINode Title="OnNavigatedTo method" Url="html/M_SeizeDay_NewsPage_OnNavigatedTo.htm" />
+  <HelpKINode Title="OnNavigatedTo method" Url="html/M_SeizeDay_SoundCollectionPage_OnNavigatedTo.htm" />
+  <HelpKINode Title="OnNavigatedTo method" Url="html/M_SeizeDay_ToDoPage_OnNavigatedTo.htm" />
+  <HelpKINode Title="Options field" Url="html/F_SeizeDay_WeatherSettings_Options.htm" />
+  <HelpKINode Title="PageTitle field" Url="html/F_AlarmAlarm_AddAlarm_PageTitle.htm" />
+  <HelpKINode Title="PageTitle field" Url="html/F_SeizeDay_ToDoPage_PageTitle.htm" />
+  <HelpKINode Title="PageTitle field" Url="html/F_SeizeDay_WeatherSettings_PageTitle.htm" />
+  <HelpKINode Title="phoneApplicationInitialized field" Url="html/F_SeizeDay_App_phoneApplicationInitialized.htm" />
+  <HelpKINode Title="PropertyChanged event" Url="html/E_SeizeDay_ItemViewModel_PropertyChanged.htm" />
+  <HelpKINode Title="PropertyChanged event" Url="html/E_SeizeDay_MainPage_PropertyChanged.htm" />
+  <HelpKINode Title="PropertyChanged event" Url="html/E_SeizeDay_MainViewModel_PropertyChanged.htm" />
+  <HelpKINode Title="PropertyChanged event" Url="html/E_SeizeDay_NewsPage_PropertyChanged.htm" />
+  <HelpKINode Title="PropertyChanged event" Url="html/E_SeizeDay_ShowSeizeDay_PropertyChanged.htm" />
+  <HelpKINode Title="PropertyChanged event" Url="html/E_SeizeDay_ToDoPage_PropertyChanged.htm" />
+  <HelpKINode Title="PropertyChanged event" Url="html/E_SeizeDay_ViewModels_ComponentItem_PropertyChanged.htm" />
+  <HelpKINode Title="PropertyChanged event" Url="html/E_SeizeDay_ViewModels_TimeItem_PropertyChanged.htm" />
+  <HelpKINode Title="PropertyChanged event" Url="html/E_SeizeDay_ViewModels_ToDoItem_PropertyChanged.htm" />
+  <HelpKINode Title="PropertyChanged event" Url="html/E_SeizeDay_WeatherSettings_PropertyChanged.htm" />
+  <HelpKINode Title="PropertyChanging event" Url="html/E_SeizeDay_ToDoPage_PropertyChanging.htm" />
+  <HelpKINode Title="PropertyChanging event" Url="html/E_SeizeDay_ViewModels_ComponentItem_PropertyChanging.htm" />
+  <HelpKINode Title="PropertyChanging event" Url="html/E_SeizeDay_ViewModels_TimeItem_PropertyChanging.htm" />
+  <HelpKINode Title="PropertyChanging event" Url="html/E_SeizeDay_ViewModels_ToDoItem_PropertyChanging.htm" />
+  <HelpKINode Title="Published property" Url="html/P_SeizeDay_FeedItem_Published.htm" />
+  <HelpKINode Title="RootFrame property" Url="html/P_SeizeDay_App_RootFrame.htm" />
+  <HelpKINode Title="RootFrame_NavigationFailed method" Url="html/M_SeizeDay_App_RootFrame_NavigationFailed.htm" />
+  <HelpKINode Title="SaveButton_Click method" Url="html/M_AlarmAlarm_AddAlarm_SaveButton_Click.htm" />
+  <HelpKINode Title="SaveButton_Click method" Url="html/M_SeizeDay_ToDoPage_SaveButton_Click.htm" />
+  <HelpKINode Title="SaveChosen method" Url="html/M_SeizeDay_NewsPage_SaveChosen.htm" />
+  <HelpKINode Title="SecondAnimation field" Url="html/F_SeizeDay_MainPage_SecondAnimation.htm" />
+  <HelpKINode Title="SecondAnimation field" Url="html/F_SeizeDay_ShowSeizeDay_SecondAnimation.htm" />
+  <HelpKINode Title="SecondHandTransform field" Url="html/F_SeizeDay_MainPage_SecondHandTransform.htm" />
+  <HelpKINode Title="SecondHandTransform field" Url="html/F_SeizeDay_ShowSeizeDay_SecondHandTransform.htm" />
+  <HelpKINode Title="SeizeDay namespace" Url="html/N_SeizeDay.htm" />
+  <HelpKINode Title="SeizeDay.App class" Url="html/AllMembers_T_SeizeDay_App.htm" />
+  <HelpKINode Title="SeizeDay.App class" Url="html/T_SeizeDay_App.htm" />
+  <HelpKINode Title="SeizeDay.ComponentPage class" Url="html/AllMembers_T_SeizeDay_ComponentPage.htm" />
+  <HelpKINode Title="SeizeDay.ComponentPage class" Url="html/T_SeizeDay_ComponentPage.htm" />
+  <HelpKINode Title="SeizeDay.FeedItem class" Url="html/AllMembers_T_SeizeDay_FeedItem.htm" />
+  <HelpKINode Title="SeizeDay.FeedItem class" Url="html/T_SeizeDay_FeedItem.htm" />
+  <HelpKINode Title="SeizeDay.ItemViewModel class" Url="html/AllMembers_T_SeizeDay_ItemViewModel.htm" />
+  <HelpKINode Title="SeizeDay.ItemViewModel class" Url="html/T_SeizeDay_ItemViewModel.htm" />
+  <HelpKINode Title="SeizeDay.MainPage class" Url="html/AllMembers_T_SeizeDay_MainPage.htm" />
+  <HelpKINode Title="SeizeDay.MainPage class" Url="html/T_SeizeDay_MainPage.htm" />
+  <HelpKINode Title="SeizeDay.MainViewModel class" Url="html/AllMembers_T_SeizeDay_MainViewModel.htm" />
+  <HelpKINode Title="SeizeDay.MainViewModel class" Url="html/T_SeizeDay_MainViewModel.htm" />
+  <HelpKINode Title="SeizeDay.NewsPage class" Url="html/AllMembers_T_SeizeDay_NewsPage.htm" />
+  <HelpKINode Title="SeizeDay.NewsPage class" Url="html/T_SeizeDay_NewsPage.htm" />
+  <HelpKINode Title="SeizeDay.ShowSeizeDay class" Url="html/AllMembers_T_SeizeDay_ShowSeizeDay.htm" />
+  <HelpKINode Title="SeizeDay.ShowSeizeDay class" Url="html/T_SeizeDay_ShowSeizeDay.htm" />
+  <HelpKINode Title="SeizeDay.SoundCollectionPage class" Url="html/AllMembers_T_SeizeDay_SoundCollectionPage.htm" />
+  <HelpKINode Title="SeizeDay.SoundCollectionPage class" Url="html/T_SeizeDay_SoundCollectionPage.htm" />
+  <HelpKINode Title="SeizeDay.ToDoPage class" Url="html/AllMembers_T_SeizeDay_ToDoPage.htm" />
+  <HelpKINode Title="SeizeDay.ToDoPage class" Url="html/T_SeizeDay_ToDoPage.htm" />
+  <HelpKINode Title="SeizeDay.ViewModels namespace" Url="html/N_SeizeDay_ViewModels.htm" />
+  <HelpKINode Title="SeizeDay.ViewModels.Component class" Url="html/AllMembers_T_SeizeDay_ViewModels_Component.htm" />
+  <HelpKINode Title="SeizeDay.ViewModels.Component class" Url="html/T_SeizeDay_ViewModels_Component.htm" />
+  <HelpKINode Title="SeizeDay.ViewModels.ComponentItem class" Url="html/AllMembers_T_SeizeDay_ViewModels_ComponentItem.htm" />
+  <HelpKINode Title="SeizeDay.ViewModels.ComponentItem class" Url="html/T_SeizeDay_ViewModels_ComponentItem.htm" />
+  <HelpKINode Title="SeizeDay.ViewModels.Maintenance class" Url="html/AllMembers_T_SeizeDay_ViewModels_Maintenance.htm" />
+  <HelpKINode Title="SeizeDay.ViewModels.Maintenance class" Url="html/T_SeizeDay_ViewModels_Maintenance.htm" />
+  <HelpKINode Title="SeizeDay.ViewModels.TimeItem class" Url="html/AllMembers_T_SeizeDay_ViewModels_TimeItem.htm" />
+  <HelpKINode Title="SeizeDay.ViewModels.TimeItem class" Url="html/T_SeizeDay_ViewModels_TimeItem.htm" />
+  <HelpKINode Title="SeizeDay.ViewModels.ToDoItem class" Url="html/AllMembers_T_SeizeDay_ViewModels_ToDoItem.htm" />
+  <HelpKINode Title="SeizeDay.ViewModels.ToDoItem class" Url="html/T_SeizeDay_ViewModels_ToDoItem.htm" />
+  <HelpKINode Title="SeizeDay.WeatherInfo class" Url="html/AllMembers_T_SeizeDay_WeatherInfo.htm" />
+  <HelpKINode Title="SeizeDay.WeatherInfo class" Url="html/T_SeizeDay_WeatherInfo.htm" />
+  <HelpKINode Title="SeizeDay.WeatherInfoCurrent class" Url="html/AllMembers_T_SeizeDay_WeatherInfoCurrent.htm" />
+  <HelpKINode Title="SeizeDay.WeatherInfoCurrent class" Url="html/T_SeizeDay_WeatherInfoCurrent.htm" />
+  <HelpKINode Title="SeizeDay.WeatherSettings class" Url="html/AllMembers_T_SeizeDay_WeatherSettings.htm" />
+  <HelpKINode Title="SeizeDay.WeatherSettings class" Url="html/T_SeizeDay_WeatherSettings.htm" />
+  <HelpKINode Title="sensitivewalk field" Url="html/F_SeizeDay_SoundCollectionPage_sensitivewalk.htm" />
+  <HelpKINode Title="ShowError method" Url="html/M_SeizeDay_ShowSeizeDay_ShowError.htm" />
+  <HelpKINode Title="ShowSeizeDay class" Url="html/AllMembers_T_SeizeDay_ShowSeizeDay.htm" />
+  <HelpKINode Title="ShowSeizeDay class" Url="html/T_SeizeDay_ShowSeizeDay.htm" />
+  <HelpKINode Title="ShowSeizeDay class">
+    <HelpKINode Title="about ShowSeizeDay class" Url="html/T_SeizeDay_ShowSeizeDay.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_SeizeDay_ShowSeizeDay.htm" />
+    <HelpKINode Title="constructor" Url="html/M_SeizeDay_ShowSeizeDay__ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events_T_SeizeDay_ShowSeizeDay.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_SeizeDay_ShowSeizeDay.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_SeizeDay_ShowSeizeDay.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_SeizeDay_ShowSeizeDay.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ShowSeizeDay.Aphorism field" Url="html/F_SeizeDay_ShowSeizeDay_Aphorism.htm" />
+  <HelpKINode Title="ShowSeizeDay.AphorismComponent method" Url="html/M_SeizeDay_ShowSeizeDay_AphorismComponent.htm" />
+  <HelpKINode Title="ShowSeizeDay.AphorismList field" Url="html/F_SeizeDay_ShowSeizeDay_AphorismList.htm" />
+  <HelpKINode Title="ShowSeizeDay.ClockFaceEllipse field" Url="html/F_SeizeDay_ShowSeizeDay_ClockFaceEllipse.htm" />
+  <HelpKINode Title="ShowSeizeDay.ClockHandsCanvas field" Url="html/F_SeizeDay_ShowSeizeDay_ClockHandsCanvas.htm" />
+  <HelpKINode Title="ShowSeizeDay.ClockStoryboard field" Url="html/F_SeizeDay_ShowSeizeDay_ClockStoryboard.htm" />
+  <HelpKINode Title="ShowSeizeDay.Clock_Loaded method" Url="html/M_SeizeDay_ShowSeizeDay_Clock_Loaded.htm" />
+  <HelpKINode Title="ShowSeizeDay.ComponentDB field" Url="html/F_SeizeDay_ShowSeizeDay_ComponentDB.htm" />
+  <HelpKINode Title="ShowSeizeDay.ComponentItems property" Url="html/P_SeizeDay_ShowSeizeDay_ComponentItems.htm" />
+  <HelpKINode Title="ShowSeizeDay.ContentGrid field" Url="html/F_SeizeDay_ShowSeizeDay_ContentGrid.htm" />
+  <HelpKINode Title="ShowSeizeDay.ContentPanel field" Url="html/F_SeizeDay_ShowSeizeDay_ContentPanel.htm" />
+  <HelpKINode Title="ShowSeizeDay.HourAnimation field" Url="html/F_SeizeDay_ShowSeizeDay_HourAnimation.htm" />
+  <HelpKINode Title="ShowSeizeDay.HourHandTransform field" Url="html/F_SeizeDay_ShowSeizeDay_HourHandTransform.htm" />
+  <HelpKINode Title="ShowSeizeDay.InitializeComponent method" Url="html/M_SeizeDay_ShowSeizeDay_InitializeComponent.htm" />
+  <HelpKINode Title="ShowSeizeDay.LayoutRoot field" Url="html/F_SeizeDay_ShowSeizeDay_LayoutRoot.htm" />
+  <HelpKINode Title="ShowSeizeDay.listBoxc field" Url="html/F_SeizeDay_ShowSeizeDay_listBoxc.htm" />
+  <HelpKINode Title="ShowSeizeDay.ListComponent method" Url="html/M_SeizeDay_ShowSeizeDay_ListComponent.htm" />
+  <HelpKINode Title="ShowSeizeDay.ListToDo field" Url="html/F_SeizeDay_ShowSeizeDay_ListToDo.htm" />
+  <HelpKINode Title="ShowSeizeDay.LoadComponents method" Url="html/M_SeizeDay_ShowSeizeDay_LoadComponents.htm" />
+  <HelpKINode Title="ShowSeizeDay.MainPage_Loaded method" Url="html/M_SeizeDay_ShowSeizeDay_MainPage_Loaded.htm" />
+  <HelpKINode Title="ShowSeizeDay.MinuteAnimation field" Url="html/F_SeizeDay_ShowSeizeDay_MinuteAnimation.htm" />
+  <HelpKINode Title="ShowSeizeDay.MinuteHandTransform field" Url="html/F_SeizeDay_ShowSeizeDay_MinuteHandTransform.htm" />
+  <HelpKINode Title="ShowSeizeDay.myProgressBar field" Url="html/F_SeizeDay_ShowSeizeDay_myProgressBar.htm" />
+  <HelpKINode Title="ShowSeizeDay.News field" Url="html/F_SeizeDay_ShowSeizeDay_News.htm" />
+  <HelpKINode Title="ShowSeizeDay.NewsComponent method" Url="html/M_SeizeDay_ShowSeizeDay_NewsComponent.htm" />
+  <HelpKINode Title="ShowSeizeDay.NewsList field" Url="html/F_SeizeDay_ShowSeizeDay_NewsList.htm" />
+  <HelpKINode Title="ShowSeizeDay.NotifyPropertyChanged method" Url="html/M_SeizeDay_ShowSeizeDay_NotifyPropertyChanged.htm" />
+  <HelpKINode Title="ShowSeizeDay.OnNavigatedFrom method" Url="html/M_SeizeDay_ShowSeizeDay_OnNavigatedFrom.htm" />
+  <HelpKINode Title="ShowSeizeDay.PropertyChanged event" Url="html/E_SeizeDay_ShowSeizeDay_PropertyChanged.htm" />
+  <HelpKINode Title="ShowSeizeDay.SecondAnimation field" Url="html/F_SeizeDay_ShowSeizeDay_SecondAnimation.htm" />
+  <HelpKINode Title="ShowSeizeDay.SecondHandTransform field" Url="html/F_SeizeDay_ShowSeizeDay_SecondHandTransform.htm" />
+  <HelpKINode Title="ShowSeizeDay.ShowError method" Url="html/M_SeizeDay_ShowSeizeDay_ShowError.htm" />
+  <HelpKINode Title="ShowSeizeDay.ShowSeizeDay constructor" Url="html/M_SeizeDay_ShowSeizeDay__ctor.htm" />
+  <HelpKINode Title="ShowSeizeDay.TimeItems property" Url="html/P_SeizeDay_ShowSeizeDay_TimeItems.htm" />
+  <HelpKINode Title="ShowSeizeDay.ToDoItems property" Url="html/P_SeizeDay_ShowSeizeDay_ToDoItems.htm" />
+  <HelpKINode Title="ShowSeizeDay.toDoItemsListBox field" Url="html/F_SeizeDay_ShowSeizeDay_toDoItemsListBox.htm" />
+  <HelpKINode Title="ShowSeizeDay.ValidateDate method" Url="html/M_SeizeDay_ShowSeizeDay_ValidateDate.htm" />
+  <HelpKINode Title="ShowSeizeDay.warning field" Url="html/F_SeizeDay_ShowSeizeDay_warning.htm" />
+  <HelpKINode Title="ShowSeizeDay.Weather field" Url="html/F_SeizeDay_ShowSeizeDay_Weather.htm" />
+  <HelpKINode Title="ShowSeizeDay.WeatherComponent method" Url="html/M_SeizeDay_ShowSeizeDay_WeatherComponent.htm" />
+  <HelpKINode Title="ShowSeizeDay.webclient_DownloadStringCompleted_Aphorism method" Url="html/M_SeizeDay_ShowSeizeDay_webclient_DownloadStringCompleted_Aphorism.htm" />
+  <HelpKINode Title="ShowSeizeDay.webclient_DownloadStringCompleted_Feed method" Url="html/M_SeizeDay_ShowSeizeDay_webclient_DownloadStringCompleted_Feed.htm" />
+  <HelpKINode Title="ShowSeizeDay.webclient_DownloadStringCompleted_Weather method" Url="html/M_SeizeDay_ShowSeizeDay_webclient_DownloadStringCompleted_Weather.htm" />
+  <HelpKINode Title="ShowSeizeDay._componentItems field" Url="html/F_SeizeDay_ShowSeizeDay__componentItems.htm" />
+  <HelpKINode Title="ShowSeizeDay._contentLoaded field" Url="html/F_SeizeDay_ShowSeizeDay__contentLoaded.htm" />
+  <HelpKINode Title="ShowSeizeDay._timeItems field" Url="html/F_SeizeDay_ShowSeizeDay__timeItems.htm" />
+  <HelpKINode Title="ShowSeizeDay._toDoItems field" Url="html/F_SeizeDay_ShowSeizeDay__toDoItems.htm" />
+  <HelpKINode Title="SoundCollectionPage class" Url="html/AllMembers_T_SeizeDay_SoundCollectionPage.htm" />
+  <HelpKINode Title="SoundCollectionPage class" Url="html/T_SeizeDay_SoundCollectionPage.htm" />
+  <HelpKINode Title="SoundCollectionPage class">
+    <HelpKINode Title="about SoundCollectionPage class" Url="html/T_SeizeDay_SoundCollectionPage.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_SeizeDay_SoundCollectionPage.htm" />
+    <HelpKINode Title="constructor" Url="html/M_SeizeDay_SoundCollectionPage__ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_SeizeDay_SoundCollectionPage.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_SeizeDay_SoundCollectionPage.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SoundCollectionPage.baroqueloop field" Url="html/F_SeizeDay_SoundCollectionPage_baroqueloop.htm" />
+  <HelpKINode Title="SoundCollectionPage.beyonthepain field" Url="html/F_SeizeDay_SoundCollectionPage_beyonthepain.htm" />
+  <HelpKINode Title="SoundCollectionPage.ContentPanel field" Url="html/F_SeizeDay_SoundCollectionPage_ContentPanel.htm" />
+  <HelpKINode Title="SoundCollectionPage.Grid_Tap_baroqueloop method" Url="html/M_SeizeDay_SoundCollectionPage_Grid_Tap_baroqueloop.htm" />
+  <HelpKINode Title="SoundCollectionPage.Grid_Tap_beyonthepain method" Url="html/M_SeizeDay_SoundCollectionPage_Grid_Tap_beyonthepain.htm" />
+  <HelpKINode Title="SoundCollectionPage.Grid_Tap_inbetween method" Url="html/M_SeizeDay_SoundCollectionPage_Grid_Tap_inbetween.htm" />
+  <HelpKINode Title="SoundCollectionPage.Grid_Tap_sensitivewalk method" Url="html/M_SeizeDay_SoundCollectionPage_Grid_Tap_sensitivewalk.htm" />
+  <HelpKINode Title="SoundCollectionPage.Grid_Tap_spanishmusic method" Url="html/M_SeizeDay_SoundCollectionPage_Grid_Tap_spanishmusic.htm" />
+  <HelpKINode Title="SoundCollectionPage.Grid_Tap_ukrainwarship method" Url="html/M_SeizeDay_SoundCollectionPage_Grid_Tap_ukrainwarship.htm" />
+  <HelpKINode Title="SoundCollectionPage.inbetween field" Url="html/F_SeizeDay_SoundCollectionPage_inbetween.htm" />
+  <HelpKINode Title="SoundCollectionPage.InitializeComponent method" Url="html/M_SeizeDay_SoundCollectionPage_InitializeComponent.htm" />
+  <HelpKINode Title="SoundCollectionPage.LayoutRoot field" Url="html/F_SeizeDay_SoundCollectionPage_LayoutRoot.htm" />
+  <HelpKINode Title="SoundCollectionPage.OnNavigatedTo method" Url="html/M_SeizeDay_SoundCollectionPage_OnNavigatedTo.htm" />
+  <HelpKINode Title="SoundCollectionPage.sensitivewalk field" Url="html/F_SeizeDay_SoundCollectionPage_sensitivewalk.htm" />
+  <HelpKINode Title="SoundCollectionPage.SoundCollectionPage constructor" Url="html/M_SeizeDay_SoundCollectionPage__ctor.htm" />
+  <HelpKINode Title="SoundCollectionPage.spanishmusic field" Url="html/F_SeizeDay_SoundCollectionPage_spanishmusic.htm" />
+  <HelpKINode Title="SoundCollectionPage.ukrainwarship field" Url="html/F_SeizeDay_SoundCollectionPage_ukrainwarship.htm" />
+  <HelpKINode Title="SoundCollectionPage._contentLoaded field" Url="html/F_SeizeDay_SoundCollectionPage__contentLoaded.htm" />
+  <HelpKINode Title="spanishmusic field" Url="html/F_SeizeDay_SoundCollectionPage_spanishmusic.htm" />
+  <HelpKINode Title="tbxCity field" Url="html/F_SeizeDay_WeatherSettings_tbxCity.htm" />
+  <HelpKINode Title="tbxCountry field" Url="html/F_SeizeDay_WeatherSettings_tbxCountry.htm" />
+  <HelpKINode Title="temp_C property" Url="html/P_SeizeDay_WeatherInfoCurrent_temp_C.htm" />
+  <HelpKINode Title="temp_F property" Url="html/P_SeizeDay_WeatherInfoCurrent_temp_F.htm" />
+  <HelpKINode Title="text1 field" Url="html/F_SeizeDay_MainPage_text1.htm" />
+  <HelpKINode Title="text2 field" Url="html/F_SeizeDay_MainPage_text2.htm" />
+  <HelpKINode Title="textBlock1 field" Url="html/F_SeizeDay_WeatherSettings_textBlock1.htm" />
+  <HelpKINode Title="textBlock2 field" Url="html/F_SeizeDay_WeatherSettings_textBlock2.htm" />
+  <HelpKINode Title="textBlock3 field" Url="html/F_SeizeDay_WeatherSettings_textBlock3.htm" />
+  <HelpKINode Title="textBlock4 field" Url="html/F_SeizeDay_WeatherSettings_textBlock4.htm" />
+  <HelpKINode Title="TimeItem class" Url="html/AllMembers_T_SeizeDay_ViewModels_TimeItem.htm" />
+  <HelpKINode Title="TimeItem class" Url="html/T_SeizeDay_ViewModels_TimeItem.htm" />
+  <HelpKINode Title="TimeItem class">
+    <HelpKINode Title="about TimeItem class" Url="html/T_SeizeDay_ViewModels_TimeItem.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_SeizeDay_ViewModels_TimeItem.htm" />
+    <HelpKINode Title="constructor" Url="html/M_SeizeDay_ViewModels_TimeItem__ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events_T_SeizeDay_ViewModels_TimeItem.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_SeizeDay_ViewModels_TimeItem.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_SeizeDay_ViewModels_TimeItem.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_SeizeDay_ViewModels_TimeItem.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TimeItem.DateField property" Url="html/P_SeizeDay_ViewModels_TimeItem_DateField.htm" />
+  <HelpKINode Title="TimeItem.ItemAlarmName property" Url="html/P_SeizeDay_ViewModels_TimeItem_ItemAlarmName.htm" />
+  <HelpKINode Title="TimeItem.ItemReminderName property" Url="html/P_SeizeDay_ViewModels_TimeItem_ItemReminderName.htm" />
+  <HelpKINode Title="TimeItem.NotifyPropertyChanged method" Url="html/M_SeizeDay_ViewModels_TimeItem_NotifyPropertyChanged.htm" />
+  <HelpKINode Title="TimeItem.NotifyPropertyChanging method" Url="html/M_SeizeDay_ViewModels_TimeItem_NotifyPropertyChanging.htm" />
+  <HelpKINode Title="TimeItem.PropertyChanged event" Url="html/E_SeizeDay_ViewModels_TimeItem_PropertyChanged.htm" />
+  <HelpKINode Title="TimeItem.PropertyChanging event" Url="html/E_SeizeDay_ViewModels_TimeItem_PropertyChanging.htm" />
+  <HelpKINode Title="TimeItem.TimeItem constructor" Url="html/M_SeizeDay_ViewModels_TimeItem__ctor.htm" />
+  <HelpKINode Title="TimeItem.ToDoItemId property" Url="html/P_SeizeDay_ViewModels_TimeItem_ToDoItemId.htm" />
+  <HelpKINode Title="TimeItem._dateField field" Url="html/F_SeizeDay_ViewModels_TimeItem__dateField.htm" />
+  <HelpKINode Title="TimeItem._itemAlarmName field" Url="html/F_SeizeDay_ViewModels_TimeItem__itemAlarmName.htm" />
+  <HelpKINode Title="TimeItem._itemReminderName field" Url="html/F_SeizeDay_ViewModels_TimeItem__itemReminderName.htm" />
+  <HelpKINode Title="TimeItem._timeItemId field" Url="html/F_SeizeDay_ViewModels_TimeItem__timeItemId.htm" />
+  <HelpKINode Title="TimeItem._version field" Url="html/F_SeizeDay_ViewModels_TimeItem__version.htm" />
+  <HelpKINode Title="TimeItems field" Url="html/F_SeizeDay_ViewModels_Component_TimeItems.htm" />
+  <HelpKINode Title="TimeItems property" Url="html/P_SeizeDay_MainPage_TimeItems.htm" />
+  <HelpKINode Title="TimeItems property" Url="html/P_SeizeDay_ShowSeizeDay_TimeItems.htm" />
+  <HelpKINode Title="timePicker field" Url="html/F_AlarmAlarm_AddAlarm_timePicker.htm" />
+  <HelpKINode Title="Title property" Url="html/P_SeizeDay_FeedItem_Title.htm" />
+  <HelpKINode Title="TitlePanel field" Url="html/F_AlarmAlarm_AddAlarm_TitlePanel.htm" />
+  <HelpKINode Title="TitlePanel field" Url="html/F_SeizeDay_ToDoPage_TitlePanel.htm" />
+  <HelpKINode Title="TitlePanel field" Url="html/F_SeizeDay_WeatherSettings_TitlePanel.htm" />
+  <HelpKINode Title="toDate method" Url="html/M_SeizeDay_ViewModels_Maintenance_toDate.htm" />
+  <HelpKINode Title="ToDoItem class" Url="html/AllMembers_T_SeizeDay_ViewModels_ToDoItem.htm" />
+  <HelpKINode Title="ToDoItem class" Url="html/T_SeizeDay_ViewModels_ToDoItem.htm" />
+  <HelpKINode Title="ToDoItem class">
+    <HelpKINode Title="about ToDoItem class" Url="html/T_SeizeDay_ViewModels_ToDoItem.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_SeizeDay_ViewModels_ToDoItem.htm" />
+    <HelpKINode Title="constructor" Url="html/M_SeizeDay_ViewModels_ToDoItem__ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events_T_SeizeDay_ViewModels_ToDoItem.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_SeizeDay_ViewModels_ToDoItem.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_SeizeDay_ViewModels_ToDoItem.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_SeizeDay_ViewModels_ToDoItem.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ToDoItem.IsComplete property" Url="html/P_SeizeDay_ViewModels_ToDoItem_IsComplete.htm" />
+  <HelpKINode Title="ToDoItem.ItemName property" Url="html/P_SeizeDay_ViewModels_ToDoItem_ItemName.htm" />
+  <HelpKINode Title="ToDoItem.NotifyPropertyChanged method" Url="html/M_SeizeDay_ViewModels_ToDoItem_NotifyPropertyChanged.htm" />
+  <HelpKINode Title="ToDoItem.NotifyPropertyChanging method" Url="html/M_SeizeDay_ViewModels_ToDoItem_NotifyPropertyChanging.htm" />
+  <HelpKINode Title="ToDoItem.PropertyChanged event" Url="html/E_SeizeDay_ViewModels_ToDoItem_PropertyChanged.htm" />
+  <HelpKINode Title="ToDoItem.PropertyChanging event" Url="html/E_SeizeDay_ViewModels_ToDoItem_PropertyChanging.htm" />
+  <HelpKINode Title="ToDoItem.ToDoItem constructor" Url="html/M_SeizeDay_ViewModels_ToDoItem__ctor.htm" />
+  <HelpKINode Title="ToDoItem.ToDoItemId property" Url="html/P_SeizeDay_ViewModels_ToDoItem_ToDoItemId.htm" />
+  <HelpKINode Title="ToDoItem._componentItemId field" Url="html/F_SeizeDay_ViewModels_ToDoItem__componentItemId.htm" />
+  <HelpKINode Title="ToDoItem._isComplete field" Url="html/F_SeizeDay_ViewModels_ToDoItem__isComplete.htm" />
+  <HelpKINode Title="ToDoItem._itemName field" Url="html/F_SeizeDay_ViewModels_ToDoItem__itemName.htm" />
+  <HelpKINode Title="ToDoItem._version field" Url="html/F_SeizeDay_ViewModels_ToDoItem__version.htm" />
+  <HelpKINode Title="ToDoItemId property" Url="html/P_SeizeDay_ViewModels_TimeItem_ToDoItemId.htm" />
+  <HelpKINode Title="ToDoItemId property" Url="html/P_SeizeDay_ViewModels_ToDoItem_ToDoItemId.htm" />
+  <HelpKINode Title="ToDoItems field" Url="html/F_SeizeDay_ViewModels_Component_ToDoItems.htm" />
+  <HelpKINode Title="ToDoItems property" Url="html/P_SeizeDay_ShowSeizeDay_ToDoItems.htm" />
+  <HelpKINode Title="ToDoItems property" Url="html/P_SeizeDay_ToDoPage_ToDoItems.htm" />
+  <HelpKINode Title="toDoItemsListBox field" Url="html/F_SeizeDay_ShowSeizeDay_toDoItemsListBox.htm" />
+  <HelpKINode Title="toDoItemsListBox field" Url="html/F_SeizeDay_ToDoPage_toDoItemsListBox.htm" />
+  <HelpKINode Title="ToDoPage class" Url="html/AllMembers_T_SeizeDay_ToDoPage.htm" />
+  <HelpKINode Title="ToDoPage class" Url="html/T_SeizeDay_ToDoPage.htm" />
+  <HelpKINode Title="ToDoPage class">
+    <HelpKINode Title="about ToDoPage class" Url="html/T_SeizeDay_ToDoPage.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_SeizeDay_ToDoPage.htm" />
+    <HelpKINode Title="constructor" Url="html/M_SeizeDay_ToDoPage__ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events_T_SeizeDay_ToDoPage.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_SeizeDay_ToDoPage.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_SeizeDay_ToDoPage.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_SeizeDay_ToDoPage.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ToDoPage.ApplicationTitle field" Url="html/F_SeizeDay_ToDoPage_ApplicationTitle.htm" />
+  <HelpKINode Title="ToDoPage.btnSaveAlarm field" Url="html/F_SeizeDay_ToDoPage_btnSaveAlarm.htm" />
+  <HelpKINode Title="ToDoPage.ComponentDB field" Url="html/F_SeizeDay_ToDoPage_ComponentDB.htm" />
+  <HelpKINode Title="ToDoPage.ContentPanel field" Url="html/F_SeizeDay_ToDoPage_ContentPanel.htm" />
+  <HelpKINode Title="ToDoPage.deleteTaskButton_Click method" Url="html/M_SeizeDay_ToDoPage_deleteTaskButton_Click.htm" />
+  <HelpKINode Title="ToDoPage.InitializeComponent method" Url="html/M_SeizeDay_ToDoPage_InitializeComponent.htm" />
+  <HelpKINode Title="ToDoPage.LayoutRoot field" Url="html/F_SeizeDay_ToDoPage_LayoutRoot.htm" />
+  <HelpKINode Title="ToDoPage.newToDoAddButton field" Url="html/F_SeizeDay_ToDoPage_newToDoAddButton.htm" />
+  <HelpKINode Title="ToDoPage.newToDoAddButton_Click method" Url="html/M_SeizeDay_ToDoPage_newToDoAddButton_Click.htm" />
+  <HelpKINode Title="ToDoPage.newToDoTextBox field" Url="html/F_SeizeDay_ToDoPage_newToDoTextBox.htm" />
+  <HelpKINode Title="ToDoPage.newToDoTextBox_GotFocus method" Url="html/M_SeizeDay_ToDoPage_newToDoTextBox_GotFocus.htm" />
+  <HelpKINode Title="ToDoPage.NotifyPropertyChanged method" Url="html/M_SeizeDay_ToDoPage_NotifyPropertyChanged.htm" />
+  <HelpKINode Title="ToDoPage.NotifyPropertyChanging method" Url="html/M_SeizeDay_ToDoPage_NotifyPropertyChanging.htm" />
+  <HelpKINode Title="ToDoPage.OnNavigatedFrom method" Url="html/M_SeizeDay_ToDoPage_OnNavigatedFrom.htm" />
+  <HelpKINode Title="ToDoPage.OnNavigatedTo method" Url="html/M_SeizeDay_ToDoPage_OnNavigatedTo.htm" />
+  <HelpKINode Title="ToDoPage.PageTitle field" Url="html/F_SeizeDay_ToDoPage_PageTitle.htm" />
+  <HelpKINode Title="ToDoPage.PropertyChanged event" Url="html/E_SeizeDay_ToDoPage_PropertyChanged.htm" />
+  <HelpKINode Title="ToDoPage.PropertyChanging event" Url="html/E_SeizeDay_ToDoPage_PropertyChanging.htm" />
+  <HelpKINode Title="ToDoPage.SaveButton_Click method" Url="html/M_SeizeDay_ToDoPage_SaveButton_Click.htm" />
+  <HelpKINode Title="ToDoPage.TitlePanel field" Url="html/F_SeizeDay_ToDoPage_TitlePanel.htm" />
+  <HelpKINode Title="ToDoPage.ToDoItems property" Url="html/P_SeizeDay_ToDoPage_ToDoItems.htm" />
+  <HelpKINode Title="ToDoPage.toDoItemsListBox field" Url="html/F_SeizeDay_ToDoPage_toDoItemsListBox.htm" />
+  <HelpKINode Title="ToDoPage.ToDoPage constructor" Url="html/M_SeizeDay_ToDoPage__ctor.htm" />
+  <HelpKINode Title="ToDoPage._contentLoaded field" Url="html/F_SeizeDay_ToDoPage__contentLoaded.htm" />
+  <HelpKINode Title="ToDoPage._toDoItems field" Url="html/F_SeizeDay_ToDoPage__toDoItems.htm" />
+  <HelpKINode Title="Travel field" Url="html/F_SeizeDay_NewsPage_Travel.htm" />
+  <HelpKINode Title="ukrainwarship field" Url="html/F_SeizeDay_SoundCollectionPage_ukrainwarship.htm" />
+  <HelpKINode Title="ValidateDate method" Url="html/M_SeizeDay_MainPage_ValidateDate.htm" />
+  <HelpKINode Title="ValidateDate method" Url="html/M_SeizeDay_ShowSeizeDay_ValidateDate.htm" />
+  <HelpKINode Title="viewModel field" Url="html/F_SeizeDay_App_viewModel.htm" />
+  <HelpKINode Title="ViewModel property" Url="html/P_SeizeDay_App_ViewModel.htm" />
+  <HelpKINode Title="warning field" Url="html/F_SeizeDay_ShowSeizeDay_warning.htm" />
+  <HelpKINode Title="Weather field" Url="html/F_SeizeDay_ComponentPage_Weather.htm" />
+  <HelpKINode Title="Weather field" Url="html/F_SeizeDay_ShowSeizeDay_Weather.htm" />
+  <HelpKINode Title="Weather field" Url="html/F_SeizeDay_WeatherSettings_Weather.htm" />
+  <HelpKINode Title="WeatherComponent method" Url="html/M_SeizeDay_ShowSeizeDay_WeatherComponent.htm" />
+  <HelpKINode Title="WeatherInfo class" Url="html/AllMembers_T_SeizeDay_WeatherInfo.htm" />
+  <HelpKINode Title="WeatherInfo class" Url="html/T_SeizeDay_WeatherInfo.htm" />
+  <HelpKINode Title="WeatherInfo class">
+    <HelpKINode Title="about WeatherInfo class" Url="html/T_SeizeDay_WeatherInfo.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_SeizeDay_WeatherInfo.htm" />
+    <HelpKINode Title="constructor" Url="html/M_SeizeDay_WeatherInfo__ctor.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_SeizeDay_WeatherInfo.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WeatherInfo.condition property" Url="html/P_SeizeDay_WeatherInfo_condition.htm" />
+  <HelpKINode Title="WeatherInfo.day_of_week property" Url="html/P_SeizeDay_WeatherInfo_day_of_week.htm" />
+  <HelpKINode Title="WeatherInfo.high property" Url="html/P_SeizeDay_WeatherInfo_high.htm" />
+  <HelpKINode Title="WeatherInfo.icon property" Url="html/P_SeizeDay_WeatherInfo_icon.htm" />
+  <HelpKINode Title="WeatherInfo.low property" Url="html/P_SeizeDay_WeatherInfo_low.htm" />
+  <HelpKINode Title="WeatherInfo.WeatherInfo constructor" Url="html/M_SeizeDay_WeatherInfo__ctor.htm" />
+  <HelpKINode Title="WeatherInfoCurrent class" Url="html/AllMembers_T_SeizeDay_WeatherInfoCurrent.htm" />
+  <HelpKINode Title="WeatherInfoCurrent class" Url="html/T_SeizeDay_WeatherInfoCurrent.htm" />
+  <HelpKINode Title="WeatherInfoCurrent class">
+    <HelpKINode Title="about WeatherInfoCurrent class" Url="html/T_SeizeDay_WeatherInfoCurrent.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_SeizeDay_WeatherInfoCurrent.htm" />
+    <HelpKINode Title="constructor" Url="html/M_SeizeDay_WeatherInfoCurrent__ctor.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_SeizeDay_WeatherInfoCurrent.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WeatherInfoCurrent.condition property" Url="html/P_SeizeDay_WeatherInfoCurrent_condition.htm" />
+  <HelpKINode Title="WeatherInfoCurrent.icon property" Url="html/P_SeizeDay_WeatherInfoCurrent_icon.htm" />
+  <HelpKINode Title="WeatherInfoCurrent.observation_time property" Url="html/P_SeizeDay_WeatherInfoCurrent_observation_time.htm" />
+  <HelpKINode Title="WeatherInfoCurrent.temp_C property" Url="html/P_SeizeDay_WeatherInfoCurrent_temp_C.htm" />
+  <HelpKINode Title="WeatherInfoCurrent.temp_F property" Url="html/P_SeizeDay_WeatherInfoCurrent_temp_F.htm" />
+  <HelpKINode Title="WeatherInfoCurrent.WeatherInfoCurrent constructor" Url="html/M_SeizeDay_WeatherInfoCurrent__ctor.htm" />
+  <HelpKINode Title="WeatherSettings class" Url="html/AllMembers_T_SeizeDay_WeatherSettings.htm" />
+  <HelpKINode Title="WeatherSettings class" Url="html/T_SeizeDay_WeatherSettings.htm" />
+  <HelpKINode Title="WeatherSettings class">
+    <HelpKINode Title="about WeatherSettings class" Url="html/T_SeizeDay_WeatherSettings.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_SeizeDay_WeatherSettings.htm" />
+    <HelpKINode Title="constructor" Url="html/M_SeizeDay_WeatherSettings__ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events_T_SeizeDay_WeatherSettings.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_SeizeDay_WeatherSettings.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_SeizeDay_WeatherSettings.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_SeizeDay_WeatherSettings.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WeatherSettings.ApplicationTitle field" Url="html/F_SeizeDay_WeatherSettings_ApplicationTitle.htm" />
+  <HelpKINode Title="WeatherSettings.btnSaveLocation field" Url="html/F_SeizeDay_WeatherSettings_btnSaveLocation.htm" />
+  <HelpKINode Title="WeatherSettings.btnSaveLocation_Click method" Url="html/M_SeizeDay_WeatherSettings_btnSaveLocation_Click.htm" />
+  <HelpKINode Title="WeatherSettings.cbxLocationAuto field" Url="html/F_SeizeDay_WeatherSettings_cbxLocationAuto.htm" />
+  <HelpKINode Title="WeatherSettings.cbxLocationMan field" Url="html/F_SeizeDay_WeatherSettings_cbxLocationMan.htm" />
+  <HelpKINode Title="WeatherSettings.ComponentDB field" Url="html/F_SeizeDay_WeatherSettings_ComponentDB.htm" />
+  <HelpKINode Title="WeatherSettings.ComponentItems property" Url="html/P_SeizeDay_WeatherSettings_ComponentItems.htm" />
+  <HelpKINode Title="WeatherSettings.ContentPanel field" Url="html/F_SeizeDay_WeatherSettings_ContentPanel.htm" />
+  <HelpKINode Title="WeatherSettings.InitializeComponent method" Url="html/M_SeizeDay_WeatherSettings_InitializeComponent.htm" />
+  <HelpKINode Title="WeatherSettings.LayoutRoot field" Url="html/F_SeizeDay_WeatherSettings_LayoutRoot.htm" />
+  <HelpKINode Title="WeatherSettings.listBoxc field" Url="html/F_SeizeDay_WeatherSettings_listBoxc.htm" />
+  <HelpKINode Title="WeatherSettings.NotifyPropertyChanged method" Url="html/M_SeizeDay_WeatherSettings_NotifyPropertyChanged.htm" />
+  <HelpKINode Title="WeatherSettings.Options field" Url="html/F_SeizeDay_WeatherSettings_Options.htm" />
+  <HelpKINode Title="WeatherSettings.PageTitle field" Url="html/F_SeizeDay_WeatherSettings_PageTitle.htm" />
+  <HelpKINode Title="WeatherSettings.PropertyChanged event" Url="html/E_SeizeDay_WeatherSettings_PropertyChanged.htm" />
+  <HelpKINode Title="WeatherSettings.tbxCity field" Url="html/F_SeizeDay_WeatherSettings_tbxCity.htm" />
+  <HelpKINode Title="WeatherSettings.tbxCountry field" Url="html/F_SeizeDay_WeatherSettings_tbxCountry.htm" />
+  <HelpKINode Title="WeatherSettings.textBlock1 field" Url="html/F_SeizeDay_WeatherSettings_textBlock1.htm" />
+  <HelpKINode Title="WeatherSettings.textBlock2 field" Url="html/F_SeizeDay_WeatherSettings_textBlock2.htm" />
+  <HelpKINode Title="WeatherSettings.textBlock3 field" Url="html/F_SeizeDay_WeatherSettings_textBlock3.htm" />
+  <HelpKINode Title="WeatherSettings.textBlock4 field" Url="html/F_SeizeDay_WeatherSettings_textBlock4.htm" />
+  <HelpKINode Title="WeatherSettings.TitlePanel field" Url="html/F_SeizeDay_WeatherSettings_TitlePanel.htm" />
+  <HelpKINode Title="WeatherSettings.Weather field" Url="html/F_SeizeDay_WeatherSettings_Weather.htm" />
+  <HelpKINode Title="WeatherSettings.WeatherSettings constructor" Url="html/M_SeizeDay_WeatherSettings__ctor.htm" />
+  <HelpKINode Title="WeatherSettings._componentItems field" Url="html/F_SeizeDay_WeatherSettings__componentItems.htm" />
+  <HelpKINode Title="WeatherSettings._contentLoaded field" Url="html/F_SeizeDay_WeatherSettings__contentLoaded.htm" />
+  <HelpKINode Title="webclient_DownloadStringCompleted_Aphorism method" Url="html/M_SeizeDay_ShowSeizeDay_webclient_DownloadStringCompleted_Aphorism.htm" />
+  <HelpKINode Title="webclient_DownloadStringCompleted_Feed method" Url="html/M_SeizeDay_ShowSeizeDay_webclient_DownloadStringCompleted_Feed.htm" />
+  <HelpKINode Title="webclient_DownloadStringCompleted_Weather method" Url="html/M_SeizeDay_ShowSeizeDay_webclient_DownloadStringCompleted_Weather.htm" />
+  <HelpKINode Title="World field" Url="html/F_SeizeDay_NewsPage_World.htm" />
+  <HelpKINode Title="_componentItemId field" Url="html/F_SeizeDay_ViewModels_ComponentItem__componentItemId.htm" />
+  <HelpKINode Title="_componentItemId field" Url="html/F_SeizeDay_ViewModels_ToDoItem__componentItemId.htm" />
+  <HelpKINode Title="_componentItems field" Url="html/F_SeizeDay_MainPage__componentItems.htm" />
+  <HelpKINode Title="_componentItems field" Url="html/F_SeizeDay_NewsPage__componentItems.htm" />
+  <HelpKINode Title="_componentItems field" Url="html/F_SeizeDay_ShowSeizeDay__componentItems.htm" />
+  <HelpKINode Title="_componentItems field" Url="html/F_SeizeDay_WeatherSettings__componentItems.htm" />
+  <HelpKINode Title="_contentLoaded field" Url="html/F_AlarmAlarm_AddAlarm__contentLoaded.htm" />
+  <HelpKINode Title="_contentLoaded field" Url="html/F_SeizeDay_App__contentLoaded.htm" />
+  <HelpKINode Title="_contentLoaded field" Url="html/F_SeizeDay_ComponentPage__contentLoaded.htm" />
+  <HelpKINode Title="_contentLoaded field" Url="html/F_SeizeDay_MainPage__contentLoaded.htm" />
+  <HelpKINode Title="_contentLoaded field" Url="html/F_SeizeDay_NewsPage__contentLoaded.htm" />
+  <HelpKINode Title="_contentLoaded field" Url="html/F_SeizeDay_ShowSeizeDay__contentLoaded.htm" />
+  <HelpKINode Title="_contentLoaded field" Url="html/F_SeizeDay_SoundCollectionPage__contentLoaded.htm" />
+  <HelpKINode Title="_contentLoaded field" Url="html/F_SeizeDay_ToDoPage__contentLoaded.htm" />
+  <HelpKINode Title="_contentLoaded field" Url="html/F_SeizeDay_WeatherSettings__contentLoaded.htm" />
+  <HelpKINode Title="_data field" Url="html/F_SeizeDay_ViewModels_ComponentItem__data.htm" />
+  <HelpKINode Title="_dateField field" Url="html/F_SeizeDay_ViewModels_TimeItem__dateField.htm" />
+  <HelpKINode Title="_description field" Url="html/F_SeizeDay_FeedItem__description.htm" />
+  <HelpKINode Title="_guid field" Url="html/F_SeizeDay_FeedItem__guid.htm" />
+  <HelpKINode Title="_isComplete field" Url="html/F_SeizeDay_ViewModels_ToDoItem__isComplete.htm" />
+  <HelpKINode Title="_itemAlarmName field" Url="html/F_SeizeDay_ViewModels_TimeItem__itemAlarmName.htm" />
+  <HelpKINode Title="_itemName field" Url="html/F_SeizeDay_ViewModels_ComponentItem__itemName.htm" />
+  <HelpKINode Title="_itemName field" Url="html/F_SeizeDay_ViewModels_ToDoItem__itemName.htm" />
+  <HelpKINode Title="_itemReminderName field" Url="html/F_SeizeDay_ViewModels_TimeItem__itemReminderName.htm" />
+  <HelpKINode Title="_lineOne field" Url="html/F_SeizeDay_ItemViewModel__lineOne.htm" />
+  <HelpKINode Title="_lineThree field" Url="html/F_SeizeDay_ItemViewModel__lineThree.htm" />
+  <HelpKINode Title="_lineTwo field" Url="html/F_SeizeDay_ItemViewModel__lineTwo.htm" />
+  <HelpKINode Title="_link field" Url="html/F_SeizeDay_FeedItem__link.htm" />
+  <HelpKINode Title="_published field" Url="html/F_SeizeDay_FeedItem__published.htm" />
+  <HelpKINode Title="_timeItemId field" Url="html/F_SeizeDay_ViewModels_TimeItem__timeItemId.htm" />
+  <HelpKINode Title="_timeItems field" Url="html/F_SeizeDay_MainPage__timeItems.htm" />
+  <HelpKINode Title="_timeItems field" Url="html/F_SeizeDay_ShowSeizeDay__timeItems.htm" />
+  <HelpKINode Title="_title field" Url="html/F_SeizeDay_FeedItem__title.htm" />
+  <HelpKINode Title="_toDoItems field" Url="html/F_SeizeDay_ShowSeizeDay__toDoItems.htm" />
+  <HelpKINode Title="_toDoItems field" Url="html/F_SeizeDay_ToDoPage__toDoItems.htm" />
+  <HelpKINode Title="_version field" Url="html/F_SeizeDay_ViewModels_ComponentItem__version.htm" />
+  <HelpKINode Title="_version field" Url="html/F_SeizeDay_ViewModels_TimeItem__version.htm" />
+  <HelpKINode Title="_version field" Url="html/F_SeizeDay_ViewModels_ToDoItem__version.htm" />
+</HelpKI>
